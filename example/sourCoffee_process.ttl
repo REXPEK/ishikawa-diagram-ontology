@@ -1,0 +1,445 @@
+@prefix : <#> .
+@prefix rdfs: <http://example.org/rdfs/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix ishi: <http://example.org/ishi/> .
+
+## BEGIN: PROBLEM DEFINITION  #################
+
+:sour_coffee a ishi:Factor, prov:Entity;
+    rdfs:label "Sour coffee";
+    prov:wasGeneratedBy :make_coffee .
+
+## END: PROBLEM DEFINITION   #################
+
+## BEGIN: ACTIVITIES DEFINITION  #################
+
+:buy_beans a ishi:Factor, prov:Activity;
+    rdfs:label "Buy beans";
+    rdfs:comment "Coffee beans for the department coffee machine are financed by the employer, but employees are responsible to buy their preferred coffee beans.";
+    prov:informed :clean_machine ;
+    prov:wasAssociatedWith :alessio,
+                           :bianca,
+                           :carlo;
+    prov:qualifiedAssociation [
+        a prov:Association;
+        prov:agent      :alessio;
+        ishi:hadRole    ishi:accountable,
+            ishi:responsible;
+        rdfs:comment "Alessio is accountable and responsible to buy new coffee beans."  
+    ];
+    prov:qualifiedAssociation [
+        a prov:Association;
+        prov:agent      :bianca;
+        ishi:hadRole    ishi:consulted ;
+        rdfs:comment "Bianca is consulted in what kind of coffee beans should be bought."  
+    ];
+    prov:qualifiedAssociation [
+        a prov:Association;
+        prov:agent      :carlo;
+        ishi:hadRole    ishi:supporting;
+        rdfs:comment "Carlo regularly buys coffee beans while not directly responsible for the task."  
+    ] ;
+    ishi:wasCausedBy :quality_of_beans ,
+        :freshness ,
+        :roast_level .
+
+:clean_machine a ishi:Factor, prov:activity;
+    rdfs:label "Clean machine";
+    rdfs:comment "The coffee machine is regularly cleaned by the staff to avoid any growth of yeast or bacteria.";
+    prov:informed :refill_water ;
+    prov:wasAssociatedWith :alessio,
+                           :carlo;
+    prov:qualifiedAssociation [
+        a prov:Association;
+        prov:agent      :alessio;
+        ishi:hadRole    ishi:accountable;
+        rdfs:comment "Alessio is accountable that the machine is regularly cleaned."  
+    ];
+    prov:qualifiedAssociation [
+        a prov:Association;
+        prov:agent      :carlo;
+        ishi:hadRole    ishi:responsible;
+        rdfs:comment "Carlo is responsible to clean the machine."  
+    ];
+    ishi:wasCausedBy :parts_to_be_cleaned,
+                     :cleaning_material,
+                     :cleaning_frequency.
+
+:refill_water a ishi:Factor, prov:Activity;
+    rdfs:label "Refill Water";
+    rdfs:comment "The coffee reservoir has a one liter volume and must be refilled regularly.";
+    prov:informed :make_coffee ;
+    prov:wasAssociatedWith :alessio ,
+                           :bianca ;
+    prov:qualifiedAssociation [
+        a prov:Association;
+        prov:agent      :alessio;
+        ishi:hadRole    ishi:accountable ;
+        rdfs:comment "Alessio is accountable for all processes in the department including water refillment."  
+    ];
+    prov:qualifiedAssociation [
+        a prov:Association;
+        prov:agent      :bianca;
+        ishi:hadRole    ishi:responsible ;
+        rdfs:comment "Bianca is responsible to refill the coffee reservoir."  
+    ] ;
+    ishi:wasCausedBy :water_quality ,
+        :coffee_reservoir .
+
+
+:make_coffee a ishi:Factor, prov:Activity;
+    rdfs:label "Make Coffee";
+    rdfs:comment "The coffee reservoir has a one liter volume and must be refilled regularly.";
+    prov:informed :make_coffee ;
+    prov:wasAssociatedWith :alessio,
+                           :bianca,
+                           :carlo;
+    prov:qualifiedAssociation [
+        a prov:Association;
+        prov:agent      :alessio;
+        ishi:hadRole    ishi:accountable,
+            ishi:informed;
+        rdfs:comment "Alessio is accountable and is informed when the coffee is ready."  
+    ];
+    prov:qualifiedAssociation [
+        a prov:Association;
+        prov:agent      :bianca;
+        ishi:hadRole    ishi:responsible ;
+        rdfs:comment "Bianca is responsible to make the coffee."  
+    ];
+    prov:qualifiedAssociation [
+        a prov:Association;
+        prov:agent      :carlo;
+        ishi:hadRole    ishi:informed;
+        rdfs:comment "Carlo is informed when the coffee is ready."  
+    ] ;
+    ishi:wasCausedBy :brewing_time ,
+        :coffee_water_ratio .
+
+## END: ACTIVITIES DEFINITION  ###############
+
+## BEGIN: BUY BEANS CAUSES  ###############
+
+
+
+:quality_of_beans a ishi:Factor, prov:Entity;
+    rdfs:label "Quality of beans";
+    ishi:caused :buy_beans;
+    ishi:wasCausedBy :origin,
+                     :variety.
+
+:origin a ishi:Factor, prov:Entity;
+    rdfs:label "Origin";
+    ishi:caused :quality_of_beans;
+    ishi:wasCausedBy :brazil,
+                     :kenia.
+
+:brazil a ishi:Factor, prov:Entity;
+    rdfs:label "Brazil";
+    ishi:caused :origin.
+
+:kenia a ishi:Factor, prov:Entity;
+    rdfs:label "Kenia";
+    ishi:caused :origin.
+
+:variety a ishi:Factor, prov:Entity;
+    rdfs:label "Variety";
+    ishi:caused :quality_of_beans;
+    ishi:wasCausedBy :arabica,
+                     :robusta.
+
+:arabica a ishi:Factor, prov:Entity;
+    rdfs:label "Arabica";
+    ishi:caused :variety.
+
+:robusta a ishi:Factor, prov:Entity;
+    rdfs:label "Robusta";
+    ishi:caused :variety.
+
+:freshness a ishi:Factor, prov:Entity;
+    rdfs:label "Freshness";
+    ishi:caused :buy_beans;
+    ishi:wasCausedBy :roasting_date,
+                     :storage.
+
+:roasting_date a ishi:Factor, prov:Entity;
+    rdfs:label "Roasting date";
+    ishi:caused :freshness;
+    ishi:wasCausedBy :two_weeks,
+                     :four_weeks.
+
+:two_weeks a ishi:Factor, prov:Entity;
+    rdfs:label "2 weeks";
+    ishi:caused :roasting_date.
+
+:four_weeks a ishi:Factor, prov:Entity;
+    rdfs:label "4 weeks";
+    ishi:caused :roasting_date.
+
+:storage a ishi:Factor, prov:Entity;
+    rdfs:label "Storage";
+    ishi:caused :freshness;
+    ishi:wasCausedBy :storage_moisture,
+                     :storage_temperature.
+
+:storage_moisture a ishi:Factor, prov:Entity;
+    rdfs:label "Moisture";
+    ishi:caused :storage.
+
+:storage_temperature a ishi:Factor, prov:Entity;
+    rdfs:label "Temperature";
+    ishi:caused :storage.
+
+:roast_level a ishi:Factor, prov:Entity;
+    rdfs:label "Roast level";
+    ishi:caused :buy_beans;
+    ishi:wasCausedBy :roast_duration,
+                     :roast_temperature.
+
+:roast_duration a ishi:Factor, prov:Entity;
+    rdfs:label "Duration";
+    ishi:caused :roast_level.
+
+:roast_temperature a ishi:Factor, prov:Entity;
+    rdfs:label "Temperature";
+    ishi:caused :roast_level;
+    ishi:wasCausedBy :temp_220C,
+                     :temp_200C.
+
+:temp_220C a ishi:Factor, prov:Entity;
+    rdfs:label "220°C";
+    ishi:caused :roast_temperature.      
+
+:temp_200C a ishi:Factor, prov:Entity;
+    rdfs:label "200°C";
+    ishi:caused :roast_temperature.             
+
+## END: BUY BEANS CAUSES  ###############
+
+## BEGIN: CLEAN MACHINE CAUSES  ###############
+
+
+:parts_to_be_cleaned a ishi:Factor, prov:Entity;
+    rdfs:label "Parts to be cleaned";
+    ishi:caused :clean_machine ;
+    ishi:wasCausedBy :coffee_reservoir,
+        :brewing_unit .
+
+:coffee_reservoir a ishi:Factor, prov:Entity;
+    rdfs:label "Coffee reservoir" ;
+    ishi:caused :parts_to_be_cleaned ;
+    ishi:wasCausedBy :stale_water,
+        :yeast .
+
+:stale_water a ishi:Factor, prov:Entity;
+    rdfs:label "Stale water" ;
+    ishi:caused :coffee_reservoir .
+
+:yeast a ishi:Factor, prov:Entity;
+    rdfs:label "Yeast" ;
+    ishi:caused :coffee_reservoir .
+
+:brewing_unit a ishi:Factor, prov:Entity;
+    rdfs:label "Brewing unit";
+    ishi:caused :parts_to_be_cleaned;
+    ishi:wasCausedBy :lubricant,
+        :coffee_remains .
+
+:lubricant a ishi:Factor, prov:Entity;
+    rdfs:label "Lubricant" ;
+    ishi:caused :brewing_unit .
+
+:coffee_remains a ishi:Factor, prov:Entity;
+    rdfs:label "Coffee remains" ;
+    ishi:caused :brewing_unit .
+
+
+:cleaning_material a ishi:Factor, prov:Entity;
+    rdfs:label "Cleaning material";
+    ishi:caused :clean_machine;
+    ishi:wasCausedBy :clean_water_quality,
+        :sponge .
+
+:clean_water_quality a ishi:Factor, prov:Entity;
+    rdfs:label "Water quality";
+    ishi:caused :cleaning_material ;
+    ishi:wasCausedBy :filtered ,
+        :rinsing_agent ,
+        :tap_water .
+
+:filtered a ishi:Factor, prov:Entity;
+    rdfs:label "Filtered";
+    ishi:caused :clean_water_quality .
+
+:rinsing_agent a ishi:Factor, prov:Entity;
+    rdfs:label "Rinsing agent" ;
+    ishi:caused :clean_water_quality .
+
+:tap_water a ishi:Factor, prov:Entity;
+    rdfs:label "Tap water" ;
+    ishi:caused :clean_water_quality .
+
+:sponge a ishi:Factor, prov:Entity;
+    rdfs:label "Sponge" ;
+    ishi:caused :cleaning_material ;
+    ishi:wasCausedBy :usage .
+
+:usage a ishi:Factor, prov:Entity;
+    rdfs:label "Usage" ;
+    ishi:caused :sponge .
+
+:cleaning_frequency a ishi:Factor, prov:Entity;
+    rdfs:label "Cleaning frequency";
+    ishi:caused :clean_machine;
+    ishi:wasCausedBy :time_schedule .
+
+:time_schedule a ishi:Factor, prov:Entity;
+    rdfs:label "Time schedule";
+    ishi:caused :cleaning_frequency ;
+    ishi:wasCausedBy :weekly ,
+        :on_demand .
+
+:weekly a ishi:Factor, prov:Entity;
+    rdfs:label "Weekly";
+    ishi:caused :time_schedule .
+
+:on_demand a ishi:Factor, prov:Entity;
+    rdfs:label "On-demand" ;
+    ishi:caused :time_schedule .
+
+
+## BEGIN: REFILL WATER CAUSES  ###############
+
+:water_quality a ishi:Factor, prov:Entity;
+    rdfs:label "Water Quality";
+    ishi:caused :refill_water ;
+    ishi:wasCausedBy :filtered ,
+        :tap_water .
+
+:filtered a ishi:Factor, prov:Entity;
+    rdfs:label "Filtered";
+    ishi:caused :water_quality ;
+    ishi:wasCausedBy :filter ,
+        :on_tap_filter .
+
+:filter a ishi:Factor, prov:Entity;
+    rdfs:label "Filter";
+    ishi:caused :filtered .
+
+:on_tap_filter a ishi:Factor, prov:Entity;
+    rdfs:label "On-tap filter";
+    ishi:caused :filtered .
+
+:tap_water a ishi:Factor, prov:Entity;
+    rdfs:label "Tap water";
+    ishi:caused  :water_quality;
+    ishi:wasCausedBy :water_temperature ,
+        :kitchen .
+
+:water_temperature a ishi:Factor, prov:Entity;
+    rdfs:label "Temperature";
+    ishi:caused  :tap_water .
+
+:kitchen a ishi:Factor, prov:Entity;
+    rdfs:label "Kitchen" ;
+    ishi:caused  :tap_water .
+
+:coffee_reservoir a ishi:Factor, prov:Entity;
+    rdfs:label "Coffee reservoir";
+    ishi:caused  :refill_water;
+    ishi:wasCausedBy :mechanism,
+        :capacity .
+
+:mechanism a ishi:Factor, prov:Entity;
+    rdfs:label "Mechanism";
+    ishi:caused  :coffee_reservoir ;
+    ishi:wasCausedBy :sensor ,
+        :safety_lock .
+
+:sensor a ishi:Factor, prov:Entity;
+    rdfs:label "Sensor";
+    ishi:caused  :mechanism .
+
+:safety_lock a ishi:Factor, prov:Entity;
+    rdfs:label "Safety lock" ;
+    ishi:caused  :mechanism .
+
+:capacity a ishi:Factor, prov:Entity;
+    rdfs:label "Capacity";
+    ishi:caused :coffee_reservoir ;
+    ishi:wasCausedBy :thousand .
+
+:thousand a ishi:Factor, prov:Entity;
+    rdfs:label "1000 ml";
+    ishi:caused  :capacity .
+
+## END: REFILL WATER CAUSES  ###############
+
+
+## BEGIN: MAKE COFFEE CAUSES  ###############
+
+:brewing_time a ishi:Factor, prov:Entity;
+    rdfs:label "Brewing time";
+    ishi:caused :make_coffee ;
+    ishi:wasCausedBy :coffee_type ,
+        :machine_program .
+
+:coffee_type a ishi:Factor, prov:Entity;
+    rdfs:label "Coffee type ";
+    ishi:caused  :brewing_time;
+    ishi:wasCausedBy :lungo ,
+        :espresso .
+
+:lungo a ishi:Factor, prov:Entity;
+    rdfs:label "Lungo";
+    ishi:caused  :coffee_type .
+
+:espresso a ishi:Factor, prov:Entity;
+    rdfs:label "Espresso" ;
+    ishi:caused  :coffee_type.
+
+:machine_program a ishi:Factor, prov:Entity;
+    rdfs:label "Machine program" ;
+    ishi:caused :brewing_time ;
+    ishi:wasCausedBy :normal ,
+        :eco_mode .
+
+:normal a ishi:Factor, prov:Entity;
+    rdfs:label "Normal";
+    ishi:caused  :machine_program .
+
+:eco_mode a ishi:Factor, prov:Entity;
+    rdfs:label "Eco mode";
+    ishi:caused  :machine_program .
+
+:coffee_water_ratio a ishi:Factor, prov:Entity;
+    rdfs:label "Coffee-to-water ratio";
+    ishi:caused  :make_coffee;
+    ishi:wasCausedBy :beans,
+        :submission_due_date .
+
+:beans a ishi:Factor, prov:Entity;
+    rdfs:label "Beans";
+    ishi:caused  :coffee_water_ratio;
+    ishi:wasCausedBy :caffeine_ratio,
+        :flavour .
+
+:caffeine_ratio a ishi:Factor, prov:Entity;
+    rdfs:label "Caffeine ratio";
+    ishi:caused  :beans .
+
+:flavour a ishi:Factor, prov:Entity;
+    rdfs:label "Flavour" ;
+    ishi:caused  :beans .
+
+:submission_due_date a ishi:Factor, prov:Entity;
+    rdfs:label "Submission due date";
+    ishi:caused :coffee_water_ratio ;
+    ishi:wasCausedBy :iswc_2025 .
+
+:iswc_2025 a ishi:Factor, prov:Entity;
+    rdfs:label "ISWC 2025" ;
+    ishi:caused  :submission_due_date .
+
+## END: MAKE COFFEE CAUSES  ###############
+

@@ -1,0 +1,852 @@
+@prefix : <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://example.org/rdfs/> .
+@prefix schema: <http://schema.org/> .
+@prefix ishi: <http://example.org/ishi/> .
+
+## BEGIN: WEIGHT DEFINITION  #################
+
+:scale a ishi:RelevanceScale ;
+    :hasWeightRange [
+        a ishi:WeightRange ;
+        schema:minValue 0.0 ;
+        schema:maxValue 1.0 
+    ] ;
+    :hasNamedRange [
+        a ishi:WeightRange ;
+        rdfs:label "Low Relevance";
+        schema:minValue 0.0 ;
+        schema:maxValue 0.33 
+    ];
+    :hasNamedRange [
+        a ishi:WeightRange ;
+        rdfs:label "Medium Relevance";
+        schema:minValue 0.34 ;
+        schema:maxValue 0.66 
+    ] ;
+    :hasNamedRange [
+        a ishi:WeightRange ;
+        rdfs:label "High Relevance";
+        schema:minValue 0.67 ;
+        schema:maxValue 1.00 
+    ] .
+
+## END: WEIGHT DEFINITION  ##################
+
+
+## BEGIN: 5M1E PATTERN #################
+
+:sour_coffee a ishi:Factor ;
+    rdfs:label "Sour coffee" .
+
+:man a ishi:Factor ;
+    rdfs:label "Man" ;
+    ishi:caused :sour_coffee ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :man ;
+        ishi:effect :sour_coffee ;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 1.0 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:machine a ishi:Factor ;
+    rdfs:label "machine" ;
+    ishi:caused :sour_coffee ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :machine ;
+        ishi:effect :sour_coffee ;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 1.0 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:material a ishi:Factor ;
+    rdfs:label "material" ;
+    ishi:caused :sour_coffee ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :material ;
+        ishi:effect :sour_coffee ;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 1.0 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:method a ishi:Factor ;
+    rdfs:label "Method" ;
+    ishi:caused :sour_coffee ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :method ;
+        ishi:effect :sour_coffee ;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 1.0 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:measurement a ishi:Factor ;
+    rdfs:label "Measurement" ;
+    ishi:caused :sour_coffee ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :measurement ;
+        ishi:effect :sour_coffee ;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 1.0 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:environment a ishi:Factor ;
+    rdfs:label "Environment" ;
+    ishi:caused :sour_coffee ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :environment ;
+        ishi:effect :sour_coffee ;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 1.0 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+## END: 5M1E PATTERN ####################
+
+
+## BEGIN: MAN BRANCH ####################
+
+:incorrect_brewing_method a ishi:Factor ;
+    rdfs:label  "Incorrect brewing method" ;
+    ishi:caused :skills ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :incorrect_brewing_method ;
+        ishi:effect :skills ;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.1 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:improper_cleaning_technique a ishi:Factor ;
+    rdfs:label "Improper cleaning technique" ;
+    ishi:caused :skills ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :improper_cleaning_technique ;
+        ishi:effect :skills ;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.39 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:skills a ishi:Factor ;
+    rdfs:label "Skills" ;
+    ishi:caused :man ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :skills ;
+        ishi:effect :man ;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.5 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:unaware_of_process a ishi:Factor ;
+    rdfs:label "Unaware of process" ;
+    ishi:caused :knowledge ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :unaware_of_process ;
+        ishi:effect :knowledge ;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.05 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:knowledge a ishi:Factor ;
+    rdfs:label "Knowledge" ;
+    ishi:caused :man ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :knowledge ;
+        ishi:effect :man ;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.15 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:incorrect_beans a ishi:Factor ;
+    rdfs:label "Incorrect beans" ;
+    ishi:caused :attention_to_detail ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :incorrect_beans ;
+        ishi:effect :attention_to_detail ;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.3 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:incorrect_program a ishi:Factor ;
+    rdfs:label "Incorrect program" ;
+    ishi:caused :attention_to_detail ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :incorrect_program ;
+        ishi:effect :attention_to_detail ;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.2 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:attention_to_detail a ishi:Factor ;
+    rdfs:label "Attention to detail" ;
+    ishi:caused :man ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :attention_to_detail ;
+        ishi:effect :man ;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.3 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+## END: MAN BRANCH ####################
+
+## BEGIN: MACHINE BRANCH ####################
+
+:residue_build_up a ishi:Factor ;
+    rdfs:label "Residue build-up affecting taste" ;
+    ishi:caused :coffee_machine ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :residue_build_up ;
+        ishi:effect :coffee_machine ;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.2 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:faulty_sensors a ishi:Factor ;
+    rdfs:label "Faulty sensors or components" ;
+    ishi:caused :coffee_machine ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :faulty_sensors ;
+        ishi:effect :coffee_machine;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.2 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:coffee_machine a ishi:Factor ;
+    rdfs:label "Coffee machine" ;
+    ishi:caused :machine ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :coffee_machine ;
+        ishi:effect :machine;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.3 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:inconsistent_grind_size a ishi:Factor ;
+    rdfs:label "Inconsistent grind size" ;
+    ishi:caused :grinder ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :inconsistent_grind_size ;
+        ishi:effect :grinder;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.1 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:grinder a ishi:Factor ;
+    rdfs:label "Grinder" ;
+    ishi:caused :machine ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :grinder ;
+        ishi:effect :machine;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.2 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:yeast_growth a ishi:Factor ;
+    rdfs:label "Yeast growth due to infrequent cleaning" ;
+    ishi:caused :coffee_reservoir ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :yeast_growth ;
+        ishi:effect :coffee_reservoir;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.5 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:mineral_deposits a ishi:Factor ;
+    rdfs:label "Mineral deposits blocking water lines" ;
+    ishi:caused :coffee_reservoir ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :mineral_deposits ;
+        ishi:effect :coffee_reservoir;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.2 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:coffee_reservoir a ishi:Factor ;
+    rdfs:label "Coffee reservoir" ;
+    ishi:caused :machine ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :coffee_reservoir ;
+        ishi:effect :machine;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.6 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+## END: MACHINE BRANCH ####################
+
+## BEGIN: MATERIAL BRANCH ####################
+
+:low_quality a ishi:Factor ;
+    rdfs:label "Low quality" ;
+    ishi:caused :coffee_beans ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :low_quality ;
+        ishi:effect :coffee_beans;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.2 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:not_fresh a ishi:Factor ;
+    rdfs:label "Not fresh" ;
+    ishi:caused :coffee_beans ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :not_fresh ;
+        ishi:effect :coffee_beans;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.7 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:coffee_beans a ishi:Factor ;
+    rdfs:label "Coffee beans" ;
+    ishi:caused :material ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :coffee_beans ;
+        ishi:effect :material;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 1.0 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:unfiltered_water a ishi:Factor ;
+    rdfs:label "Using unfiltered or distilled water" ;
+    ishi:caused :water ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :unfiltered_water ;
+        ishi:effect :water;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.9 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:water_temperature a ishi:Factor ;
+    rdfs:label "Incorrect water temperature" ;
+    ishi:caused :water ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :water_temperature ;
+        ishi:effect :water;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.2 ;
+            ishi:scale :scale
+        ]
+    ] .
+
+:water a ishi:Factor ;
+    rdfs:label "Water" ;
+    ishi:caused :material ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :water ;
+        ishi:effect :material;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 1.0 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:cleaning_agents a ishi:Factor ;
+    rdfs:label "Ineffective cleaning agents" ;
+    ishi:caused :cleaning_supplies ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :cleaning_agents ;
+        ishi:effect :cleaning_supplies;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.2;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:dirty_sponge a ishi:Factor ;
+    rdfs:label "Dirty sponge" ;
+    ishi:caused :cleaning_supplies ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :dirty_sponge ;
+        ishi:effect :cleaning_supplies;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.7 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:cleaning_supplies a ishi:Factor ;
+    rdfs:label "Cleaning supplies" ;
+    ishi:caused :material ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :cleaning_supplies ;
+        ishi:effect :material;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.9 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+## END: MATERIAL BRANCH ####################
+
+## BEGIN: METHOD BRANCH ####################
+
+
+:improper_storage a ishi:Factor ;
+    rdfs:label "Improper storage of coffee beans" ;
+    ishi:caused :storage ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :improper_storage ;
+        ishi:effect :storage;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.4 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:storage a ishi:Factor ;
+    rdfs:label "Storage" ;
+    ishi:caused :method ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :storage ;
+        ishi:effect :method;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.5 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:too_short a ishi:Factor ;
+    rdfs:label "Too short" ;
+    ishi:caused :brewing_process ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :too_short ;
+        ishi:effect :brewing_process;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.2 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:brewing_coffee_water_ratio a ishi:Factor ;
+    rdfs:label "Incorrect coffee to water ratio" ;
+    ishi:caused :brewing_process ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :brewing_coffee_water_ratio ;
+        ishi:effect :brewing_process;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.2 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:too_long a ishi:Factor ;
+    rdfs:label "Too long" ;
+    ishi:caused :brewing_process ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :too_long ;
+        ishi:effect :brewing_process;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.2 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:brewing_process a ishi:Factor ;
+    rdfs:label "Brewing process" ;
+    ishi:caused :method ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :brewing_process ;
+        ishi:effect :method;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.3 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:infrequent_cleaning a ishi:Factor ;
+    rdfs:label "Infrequent cleaning leading to residue build-up" ;
+    ishi:caused :cleaning_routine ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :infrequent_cleaning ;
+        ishi:effect :cleaning_routine;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.2 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:descaling_methods a ishi:Factor ;
+    rdfs:label "Ineffective descaling methods" ;
+    ishi:caused :cleaning_routine ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :descaling_methods ;
+        ishi:effect :cleaning_routine;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.2 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:cleaning_routine a ishi:Factor ;
+    rdfs:label "Cleaning routine" ;
+    ishi:caused :method ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :cleaning_routine ;
+        ishi:effect :method;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.2 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+## END: METHOD BRANCH ####################
+
+## BEGIN: MEASUREMENT BRANCH ####################
+
+:under_extraction a ishi:Factor ;
+    rdfs:label "Under-extraction" ;
+    ishi:caused :brewing_time ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :under_extraction ;
+        ishi:effect :brewing_time;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.5 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:over_extraction a ishi:Factor ;
+    rdfs:label "Over-extraction" ;
+    ishi:caused :brewing_time ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :over_extraction ;
+        ishi:effect :brewing_time;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.5 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:brewing_time a ishi:Factor ;
+    rdfs:label "Brewing time" ;
+    ishi:caused :measurement ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :brewing_time ;
+        ishi:effect :measurement;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.5 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:moreThan_96 a ishi:Factor ;
+    rdfs:label "> 96°C" ;
+    ishi:caused :temperature ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :moreThan_96 ;
+        ishi:effect :temperature;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.1 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:lessThan_90 a ishi:Factor ;
+    rdfs:label "< 90°C" ;
+    ishi:caused :temperature ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :lessThan_90 ;
+        ishi:effect :temperature;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.1 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:temperature a ishi:Factor ;
+    rdfs:label "Temperature" ;
+    ishi:caused :measurement ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :temperature ;
+        ishi:effect :measurement;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.2 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:incorrect_ratio a ishi:Factor ;
+    rdfs:label "Imbalanced flavors due to incorrect ratio";
+    ishi:caused :coffee_water_ratio ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :incorrect_ratio ;
+        ishi:effect :coffee_water_ratio;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.2 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:coffee_water_ratio a ishi:Factor ;
+    rdfs:label "Coffee-to-water ratio" ;
+    ishi:caused :measurement ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :coffee_water_ratio ;
+        ishi:effect :measurement;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.2 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+## END: MEASUREMENT BRANCH ####################
+
+## BEGIN: ENVIRONMENT BRANCH ####################
+
+:dark a ishi:Factor ;
+    rdfs:label "Dark" ;
+    ishi:caused :storage_conditions ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :dark ;
+        ishi:effect :storage_conditions;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.2 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:dry a ishi:Factor ;
+    rdfs:label "Dry" ;
+    ishi:caused :storage_conditions ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :dry ;
+        ishi:effect :storage_conditions;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.3 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:storage_conditions a ishi:Factor ;
+    rdfs:label "Storage conditions" ;
+    ishi:caused :environment ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :storage_conditions ;
+        ishi:effect :environment;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.3 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:tap_water a ishi:Factor ;
+    rdfs:label "Tap water" ;
+    ishi:caused :water_quality ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :tap_water ;
+        ishi:effect :water_quality;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.9 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:filtered a ishi:Factor ;
+    rdfs:label "Filtered" ;
+    ishi:caused :water_quality ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :filtered ;
+        ishi:effect :water_quality;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.25 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:water_quality a ishi:Factor ;
+    rdfs:label "Water quality" ;
+    ishi:caused :environment ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :water_quality ;
+        ishi:effect :environment;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 1.0 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:kitchen a ishi:Factor ;
+    rdfs:label "Kitchen" ;
+    ishi:caused :machine_location ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :kitchen ;
+        ishi:effect :machine_location;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.3 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+:machine_location a ishi:Factor ;
+    rdfs:label "Machine location" ;
+    ishi:caused :environment ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :machine_location ;
+        ishi:effect :environment;
+        ishi:weight [
+            a ishi:Weight ;
+            rdf:value 0.35 ;
+            ishi:scale :scale
+        ] 
+    ] .
+
+## END: ENVIRONMENT BRANCH ####################

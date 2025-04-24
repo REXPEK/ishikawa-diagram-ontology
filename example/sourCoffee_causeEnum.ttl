@@ -1,0 +1,543 @@
+@prefix : <#> .
+@prefix rdfs: <http://example.org/rdfs/>.
+@prefix ishi: <http://example.org/ishi/> .
+
+
+:sour_coffee a ishi:Factor ;
+    rdfs:label "Coffee machine outputs coffee with an unexpected sour after-taste." ;
+    ishi:wasCausedBy :coffee_beans,
+        :machine_maintenance ,
+        :brewing_process ,
+        :water ,
+        :environment ,
+        :person ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :coffee_beans ;
+        ishi:effect :sour_coffee ;
+        ishi:causeEffectType ishi:undecided
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :machine_maintenance ;
+        ishi:effect :sour_coffee ;
+        ishi:causeEffectType ishi:undecided
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :brewing_process ;
+        ishi:effect :sour_coffee ;
+        ishi:causeEffectType ishi:undecided
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :water ;
+        ishi:effect :sour_coffee ;
+        ishi:causeEffectType ishi:undecided
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :environment ;
+        ishi:effect :sour_coffee ;
+        ishi:causeEffectType ishi:undecided
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :person ;
+        ishi:effect :sour_coffee ;
+        ishi:causeEffectType ishi:undecided
+    ] .
+
+## BEGIN: COFFEE BEANS BRANCH #################
+
+:coffee_beans a ishi:Factor ;
+    rdfs:label "Coffee beans" ;
+    ishi:wasCausedBy :quality,
+        :storage ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :quality ;
+        ishi:effect :coffee_beans ;
+        ishi:causeEffectType ishi:aggravating
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :storage ;
+        ishi:effect :coffee_beans ;
+        ishi:causeEffectType ishi:undecided
+    ] .
+
+:quality a ishi:Factor ;
+    rdfs:label "Quality" ;
+    ishi:wasCausedBy :roast_level ,
+        :low_quality ,
+        :not_fresh ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :roast_level ;
+        ishi:effect :quality ;
+        ishi:causeEffectType ishi:undecided
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :low_quality ;
+        ishi:effect :quality ;
+        ishi:causeEffectType ishi:undecided
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :not_fresh ;
+        ishi:effect :quality ;
+        ishi:causeEffectType ishi:aggravating ;
+        ishi:hasQualitativeEvidence [ a ishi:Evidence]
+    ] .
+
+:roast_level a ishi:Factor ;
+    rdfs:label "Inappropriate roast level" .
+
+:low_quality a ishi:Factor ;
+    rdfs:label "Low quality" .
+
+:not_fresh a ishi:Factor ;
+    rdfs:label "Not fresh" .
+
+### Storage is described in environment branch
+
+## END: COFFEE BEANS BRANCH #################
+
+## BEGIN: MACHINE MAINTENANCE BRANCH #################
+
+:machine_maintenance a ishi:Factor ;
+    rdfs:label "Machine maintenance" ;
+    ishi:wasCausedBy :cleaning ,
+        :components ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :cleaning ;
+        ishi:effect :machine_maintenance ;
+        ishi:causeEffectType ishi:undecided
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :components ;
+        ishi:effect :machine_maintenance ;
+        ishi:causeEffectType ishi:undecided
+    ] .
+
+:cleaning a ishi:Factor ;
+    rdfs:label "Cleaning" ;
+    ishi:wasCausedBy :residue_build_up ,
+        :infrequent_cleaning ,
+        :inadequate_material ,
+        :cleaning_agents ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :residue_build_up ;
+        ishi:effect :cleaning ;
+        ishi:causeEffectType ishi:undecided
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :infrequent_cleaning ;
+        ishi:effect :cleaning ;
+        ishi:causeEffectType ishi:undecided ;
+        ishi:hasQuantitativeEvidence [ a ishi:Evidence ]
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :inadequate_material ;
+        ishi:effect :cleaning ;
+        ishi:causeEffectType ishi:aggravating
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :cleaning_agents ;
+        ishi:effect :cleaning ;
+        ishi:causeEffectType ishi:undecided
+    ] .
+
+:residue_build_up a ishi:Factor ;
+    rdfs:label "Residue build-up affecting taste" .
+
+:infrequent_cleaning a ishi:Factor ;
+    rdfs:label "Infrequent cleaning" .
+
+:inadequate_material a ishi:Factor ;
+    rdfs:label "Inadequate material" ;
+    ishi:wasCausedBy :dirty_sponge ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :dirty_sponge ;
+        ishi:effect :inadequate_material ;
+        ishi:causeEffectType ishi:undecided ;
+        ishi:hasQualitativeEvidence [ a ishi:Evidence ]
+    ] .
+
+:dirty_sponge a ishi:Factor ;
+    rdfs:label "Dirty sponge" .
+
+:cleaning_agents a ishi:Factor ;
+    rdfs:label "Ineffective cleaning agents" .
+
+:components a ishi:Factor ;
+    rdfs:label "Components" ;
+    ishi:wasCausedBy :faulty_sensors ,
+        :mineral_deposits ,
+        :yeast_growth ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :faulty_sensors ;
+        ishi:effect :components ;
+        ishi:causeEffectType ishi:undecided
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :mineral_deposits ;
+        ishi:effect :components ;
+        ishi:causeEffectType ishi:undecided
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :yeast_growth ;
+        ishi:effect :components ;
+        ishi:causeEffectType ishi:aggravating
+    ] .
+
+:faulty_sensors a ishi:Factor ;
+    rdfs:label "Faulty sensors" .
+
+:mineral_deposits a ishi:Factor ;
+    rdfs:label "Mineral deposits blocking water lines" .
+
+:yeast_growth a ishi:Factor ;
+    rdfs:label "Yeast growth due to infrequent cleaning" .
+
+## END: MACHINE MAINTENANCE BRANCH #################
+
+## BEGIN: BREWING PROCESS BRANCH #################
+
+:brewing_process a ishi:Factor ;
+    rdfs:label "Brewing process" ;
+    ishi:wasCausedBy :grind_size ,
+        :brewing_time ,
+        :coffee_water_ratio ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :grind_size ;
+        ishi:effect :brewing_process ;
+        ishi:causeEffectType ishi:undecided ;
+        ishi:hasQualitativeEvidence [ a ishi:Evidence]
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :brewing_time ;
+        ishi:effect :brewing_process ;
+        ishi:causeEffectType ishi:undecided
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :coffee_water_ratio ;
+        ishi:effect :brewing_process ;
+        ishi:causeEffectType ishi:undecided
+    ] .
+
+:grind_size a ishi:Factor ;
+    rdfs:label "Grind size" ;
+    ishi:wasCausedBy :inconsistent_grind_size ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :inconsistent_grind_size ;
+        ishi:effect :grind_size ;
+        ishi:causeEffectType ishi:undecided
+    ] .
+
+:inconsistent_grind_size a ishi:Factor ;
+    rdfs:label "Inconsistent grind size" .
+
+:brewing_time a ishi:Factor ;
+    rdfs:label "Brewing time" ;
+    ishi:wasCausedBy :too_short_too_long ,
+        :under_over_extraction ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :too_short_too_long ;
+        ishi:effect :brewing_time ;
+        ishi:causeEffectType ishi:undecided ;
+        ishi:hasQuantitativeEvidence [ a ishi:Evidence]
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :under_over_extraction ;
+        ishi:effect :brewing_time ;
+        ishi:causeEffectType ishi:undecided
+    ] .
+
+:too_short_too_long a ishi:Factor ;
+    rdfs:label "Too short or too long brewing time" .
+
+:under_over_extraction a ishi:Factor ;
+    rdfs:label "Under- or Overextraction" .
+
+:coffee_water_ratio a ishi:Factor ;
+    rdfs:label "Coffee-to-water ratio" ;
+    ishi:wasCausedBy :incorrect_coffee_water_ratio ,
+        :incorrect_ratio ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :incorrect_coffee_water_ratio ;
+        ishi:effect :coffee_water_ratio ;
+        ishi:causeEffectType ishi:aggravating ;
+        ishi:hasQualitativeEvidence [ a ishi:Evidence]
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :incorrect_ratio ;
+        ishi:effect :coffee_water_ratio ;
+        ishi:causeEffectType ishi:undecided
+    ] .
+
+:incorrect_coffee_water_ratio a ishi:Factor ;
+    rdfs:label "Incorrect coffee-to-water ratio" .
+
+:incorrect_ratio a ishi:Factor ;
+    rdfs:label "Imbalanced flavors due to incorrect ratio" .
+
+## END: BREWING PROCESS BRANCH #################
+
+## BEGIN: WATER BRANCH #################
+
+:water a ishi:Factor ;
+    rdfs:label "Water" ;
+    ishi:wasCausedBy :water_quality ,
+        :water_temperature ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :water_quality ;
+        ishi:effect :water ;
+        ishi:causeEffectType ishi:undecided
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :water_temperature ;
+        ishi:effect :water ;
+        ishi:causeEffectType ishi:undecided
+    ] .
+
+:water_quality a ishi:Factor ;
+    rdfs:label "Water quality" ;
+    ishi:wasCausedBy :tap_water ,
+        :unfiltered ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :tap_water ;
+        ishi:effect :water_quality ;
+        ishi:causeEffectType ishi:neutralizing
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :unfiltered ;
+        ishi:effect :water_quality ;
+        ishi:causeEffectType ishi:undecided
+    ] .
+
+:tap_water a ishi:Factor ;
+    rdfs:label "Tap water" .
+
+:unfiltered a ishi:Factor ;
+    rdfs:label "Unfiltered" .
+
+:water_temperature a ishi:Factor ;
+    rdfs:label "Temperature" ;
+    ishi:wasCausedBy :lessThan_90 ,
+        :moreThan_96 ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :lessThan_90 ;
+        ishi:effect :water_temperature ;
+        ishi:causeEffectType ishi:undecided ;
+        ishi:hasQuantitativeEvidence [ a ishi:Evidence]
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :moreThan_96 ;
+        ishi:effect :water_temperature ;
+        ishi:causeEffectType ishi:undecided ;
+        ishi:hasQuantitativeEvidence [ a ishi:Evidence]
+    ] .
+
+:moreThan_96 a ishi:Factor ;
+    rdfs:label "> 96°C" .
+
+:lessThan_90 a ishi:Factor ;
+    rdfs:label "< 90°C" .
+
+## END: WATER BRANCH #################
+
+
+## BEGIN: ENVIRONMENT BRANCH #################
+
+:environment a ishi:Factor ;
+    rdfs:label "Environment" ;
+    ishi:wasCausedBy :storage ,
+        :machine_location ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :storage ;
+        ishi:effect :environment ;
+        ishi:causeEffectType ishi:undecided
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :machine_location ;
+        ishi:effect :environment ;
+        ishi:causeEffectType ishi:undecided
+    ] .
+
+:storage a ishi:Factor ;
+    rdfs:label "Storage" ;
+    ishi:wasCausedBy :exposure_to ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :exposure_to ;
+        ishi:effect :storage ;
+        ishi:causeEffectType ishi:undecided
+    ] .
+
+:exposure_to a ishi:Factor ;
+    rdfs:label "Exposure to ..." ;
+    ishi:wasCausedBy :light ,
+        :air ,
+        :moisture ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :light ;
+        ishi:effect :exposure_to ;
+        ishi:causeEffectType ishi:undecided ;
+        ishi:hasQualitativeEvidence [ a ishi:Evidence]
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :air ;
+        ishi:effect :exposure_to ;
+        ishi:causeEffectType ishi:undecided ;
+        ishi:hasQualitativeEvidence [ a ishi:Evidence]
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :moisture ;
+        ishi:effect :exposure_to ;
+        ishi:causeEffectType ishi:undecided ;
+        ishi:hasQualitativeEvidence [ a ishi:Evidence]
+    ] .
+
+:light a ishi:Factor ;
+    rdfs:label "Light" .
+
+:air a ishi:Factor ;
+    rdfs:label "Air" .
+
+:moisture a ishi:Factor ;
+    rdfs:label "Moisture" .
+
+:machine_location a ishi:Factor ;
+    rdfs:label "Machine location" ;
+    ishi:wasCausedBy :kitchen ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :kitchen ;
+        ishi:effect :machine_location ;
+        ishi:causeEffectType ishi:neutralizing
+    ] .
+
+:kitchen a ishi:Factor ;
+    rdfs:label "Kitchen" .
+
+## END: ENVIRONMENT BRANCH #################
+
+## BEGIN: PERSON BRANCH #################
+
+:person a ishi:Factor ;
+    rdfs:label "Person" ;
+    ishi:wasCausedBy :knowledge ,
+        :skills ,
+        :attention_to_detail ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :knowledge ;
+        ishi:effect :person ;
+        ishi:causeEffectType ishi:undecided
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :skills ;
+        ishi:effect :person ;
+        ishi:causeEffectType ishi:undecided
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :attention_to_detail ;
+        ishi:effect :person ;
+        ishi:causeEffectType ishi:undecided
+    ] .
+
+:knowledge a ishi:Factor ;
+    rdfs:label "Knowledge" ;
+    ishi:wasCausedBy :unaware_of_process ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :unaware_of_process ;
+        ishi:effect :knowledge ;
+        ishi:causeEffectType ishi:aggravating
+    ].
+
+:unaware_of_process a ishi:Factor ;
+    rdfs:label "Unaware of process" .
+
+:skills a ishi:Factor ;
+    rdfs:label "Skills" ;
+    ishi:wasCausedBy :improper_cleaning_technique ,
+        :incorrect_brewing_method ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :improper_cleaning_technique ;
+        ishi:effect :skills ;
+        ishi:causeEffectType ishi:aggravating
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :incorrect_brewing_method ;
+        ishi:effect :skills ;
+        ishi:causeEffectType ishi:aggravating
+    ] .
+
+:improper_cleaning_technique a ishi:Factor ;
+    rdfs:label "Improper cleaning technique" .
+
+:incorrect_brewing_method a ishi:Factor ;
+    rdfs:label "Incorrect brewing method" .
+
+:attention_to_detail a ishi:Factor ;
+    rdfs:label "Attention to detail" ;
+    ishi:wasCausedBy :incorrect_beans ,
+        :incorrect_program ;
+    ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :incorrect_beans ;
+        ishi:effect :attention_to_detail ;
+        ishi:causeEffectType ishi:aggravating
+    ] ;
+     ishi:qualifiedCauseEffect [
+        a ishi:CauseEffect ;
+        ishi:cause :incorrect_program ;
+        ishi:effect :attention_to_detail ;
+        ishi:causeEffectType ishi:aggravating
+    ] .
+
+:incorrect_beans a ishi:Factor ;
+    rdfs:label "Incorrect beans" .
+
+:incorrect_program a ishi:Factor ;
+    rdfs:label "Incorrect program" .
+
+## END: PERSON BRANCH #################
+
