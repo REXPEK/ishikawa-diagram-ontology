@@ -29,9 +29,9 @@ if exist "%VOCABULARY%\%RELEASE%" (
     rem Move files
     move "%VOCABULARY%\latest\index-en.html" "%VOCABULARY%\latest\index.html"
 
-    for %%EXT in (jsonld nt owl ttl) do (
-        move "%VOCABULARY%\latest\ontology.%%EXT" "%VOCABULARY%\latest\%VOCABULARY%.%%EXT"
-        powershell -Command "(Get-Content '%VOCABULARY%\latest\index.html') -replace 'ontology.%%EXT', '%VOCABULARY%.%%EXT' | Set-Content '%VOCABULARY%\latest\index.html'"
+    for %%G in (jsonld nt owl ttl) do (
+        move "%VOCABULARY%\latest\ontology.%%G" "%VOCABULARY%\latest\%VOCABULARY%.%%G"
+        powershell -Command "(Get-Content '%VOCABULARY%\latest\index.html') -replace 'ontology.%%G', '%VOCABULARY%.%%G' | Set-Content '%VOCABULARY%\latest\index.html'"
     )
 
     rem Keep both extensions for rdf/xml
