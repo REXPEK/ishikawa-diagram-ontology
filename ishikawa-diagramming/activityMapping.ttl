@@ -1,0 +1,125 @@
+@prefix         : <https://w3id.org/ishikawa-diagram-ontology/ishikawa-diagramming/activity-mapping#> .
+@prefix     dcat: <http://www.w3.org/ns/dcat#> .
+@prefix  dcterms: <http://purl.org/dc/terms/> .
+@prefix    m4ing: <http://w3id.org/nfdi4ing/metadata4ing#> .
+@prefix      owl: <http://www.w3.org/2002/07/owl#> .
+@prefix      pko: <https://w3id.org/pko#> .
+@prefix    pplan: <http://purl.org/net/p-plan#> .
+@prefix      rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix     rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix      xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix      xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:activityMapping a pko:Procedure;
+    dcterms:title "Activity Mapping";
+    dcterms:description '''
+    Activity maps produce a detailed picture of the process as it currently exists. This
+    serves as a documentation of the current state and a basis for establishing a shared
+    vision of the as-is process at a relatively detailed level. Activity maps are a starting
+    point for two other process maps you will learn about later: opportunity maps and
+    deployment or swimlane maps.
+    ''';
+    <https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/fcKvHmTCPrxp> ;
+    dcterms:references [
+		dcterms:title "The Lean Healthcare Handbook" ;
+        dcterms:identifier "ISBN:978-3-030-69901-7";
+        dcterms:creator "Pyzdek, Thomas";
+        dcterms:language "en";
+        dcterms:createdDate "2021-12-31";
+		dcterms:format <http://publications.europa.eu/resource/authority/file-type/PDF> ;
+        dcat:accessURL <http://doi.org/10.1007/978-3-030-69901-7>;
+ 		a dcat:Resource ;
+	] ;
+    dcat:keyword "Knowledge elicitation", "Domain knowledge", "Qualitative data" ;
+    pko:isTemplate "true"^^xsd:boolean;
+    pko:versionNumber "0.1";
+    pko:hasFirstStep :step1 ;
+    pko:hasStep :step1, :step2, :step3, :step4 .
+
+:step1 a pplan:Step ;
+    dcterms:title "Step 1: Create team";
+    dcterms:description '''Create the team: Get the right people involved. Be sure to include people with hands-on knowledge of the way things are actually done.
+    ''';
+	<https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/gFBlAqMqgdhR> ;
+    pko:maxRepetitions  1;
+    pko:minRepetitions: 1;
+    pko:stepNumber "1";
+    pplan:hasOutputVar :createdTeam;
+    pko:nextStep :step2 .
+
+:step2 a pplan:Step ;
+    dcterms:title "Step 2: Educate team about process";
+    dcterms:description '''Go and look (Go to the Gemba): You cannot learn what you need to know unless you leave the conference room  and go watch the work being done. Going to the Gemba will provide insights that often get you half way to your goal instantly.
+    ''' ;
+	<https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/gFBlAqMqgdhR> ;
+    pko:maxRepetitions  1;
+    pko:minRepetitions: 1;
+    pplan:hasInputVar :createdTeam;
+    pplan:hasOutputVar :educatedTeam;
+    pko:previousStep :step1;
+    pko:nextStep :step3 .
+
+:step3 a pplan:Step ;
+    dcterms:title "Step 3: Record work";
+    dcterms:description '''Record the work: Write down what people do on sticky notes notes, one activity per note. 
+    ''';
+	<https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/gFBlAqMqgdhR> ;    
+    m4ing:hasTool :stickyNotesOrCards, :broadMarkingPen, :tape, :blankWallSpace;
+    pko:maxRepetitions  1;
+    pko:minRepetitions: 1;
+    pplan:hasInputVar :educatedTeam;
+    pplan:hasOutputVar :recordedWork;
+    pko:previousStep :step2;
+    pko:nextStep :step4 .
+
+:step4 a pplan:Step ;
+    dcterms:title "Step 4: Order work activities";
+    dcterms:description '''When all of the activities have been listed put them in the order in which the work is actually done
+    ''';
+	<https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/gFBlAqMqgdhR> ;
+    m4ing:hasTool :stickyNotesOrCards, :broadMarkingPen, :tape, :blankWallSpace;
+    pko:maxRepetitions  1;
+    pko:minRepetitions: 1;
+    pplan:hasInputVar :educatedTeam, :recordedWork;
+    pplan:hasOutputVar :orderedWork;
+    pko:previousStep :step3 ;
+    pko:nextStep :step5 .
+
+
+:step5 a pplan:Step ;
+    dcterms:title "Step 5: Define detail level";
+    dcterms:description '''Determine the level of detail for your activity map
+    ''';
+	<https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/gFBlAqMqgdhR> ;
+    m4ing:hasTool :stickyNotesOrCards, :broadMarkingPen, :tape, :blankWallSpace;
+    pko:maxRepetitions  1;
+    pko:minRepetitions: 1;
+    pplan:hasInputVar :educatedTeam, :orderedWork;
+    pplan:hasOutputVar :orderedWorkInDetail;
+    pko:previousStep :step4 ;
+    pko:nextStep :step6 .
+
+
+:step6 a pplan:Step ;
+    dcterms:title "Step 6: Decide on supergroups (if appropriate)";
+    dcterms:description '''Draw the map and distribute it for the input of others
+    ''';
+	<https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/gFBlAqMqgdhR> ;
+    m4ing:hasTool :stickyNotesOrCards, :broadMarkingPen, :tape, :blankWallSpace;
+    pko:maxRepetitions  1;
+    pko:minRepetitions: 1;
+    pplan:hasInputVar :educatedTeam, :orderedWorkInDetail;
+    pplan:hasOutputVar :activityMap;
+    pko:previousStep :step5 .
+   
+:stickyNotesOrCards a m4ing:Tool .
+:broadMarkingPen  a m4ing:Tool .
+:tape  a m4ing:Tool .
+:blankWallSpace  a m4ing:Tool .
+
+:createdTeam a pplan:Variable.
+:educatedTeam a pplan:Variable.
+:recordedWork  a pplan:Variable.
+:orderedWork  a pplan:Variable.
+:orderedWorkInDetail  a pplan:Variable.
+:activityMap a pplan:Variable.

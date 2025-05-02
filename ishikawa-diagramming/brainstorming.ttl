@@ -1,0 +1,95 @@
+@prefix         : <https://w3id.org/ishikawa-diagram-ontology/ishikawa-diagramming/brainstorming#> .
+@prefix     dcat: <http://www.w3.org/ns/dcat#> .
+@prefix  dcterms: <http://purl.org/dc/terms/> .
+@prefix    m4ing: <http://w3id.org/nfdi4ing/metadata4ing#> .
+@prefix      owl: <http://www.w3.org/2002/07/owl#> .
+@prefix      pko: <https://w3id.org/pko#> .
+@prefix    pplan: <http://purl.org/net/p-plan#> .
+@prefix      rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix     rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix      xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix      xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:brainstorming a pko:Procedure;
+    dcterms:title "Brainstorming";
+    dcterms:description "Brainstorming is a method for generating many creative ideas in a short period of time.";
+    dcterms:references [
+		dcterms:title "The quality toolbox" ;
+        dcterms:identifier "ISBN:978-1-63-694122-6";
+        dcterms:creator "Tague, Nancy";
+        dcterms:language "en";
+        dcterms:createdDate "2023-12-31";
+		dcterms:format <http://publications.europa.eu/resource/authority/file-type/PDF> ;
+		dcat:accessURL <https://asq.org/quality-press/display-item?item=H1592&amp;srsltid=AfmBOopFo3Q9WOz7mWTyJx8NaR6W4Q9uzQKi9-daZmb9G1W7mD8J2Q-J> ;
+		a dcat:Resource ;
+	] ;
+    <https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/fcKvHmTCPrxp> ;
+    pko:isTemplate "true"^^xsd:boolean;
+    pko:versionNumber "0.1";
+    pko:hasFirstStep :step1 ;
+    pko:hasStep :step1, :step2, :step3, :step4 .
+
+:step1 a pplan:Step ;
+    dcterms:title "Step 1: Review the rules";
+    dcterms:description '''Review the rules of brainstorming with the entire group:
+        • There is no criticism, no evaluation, and no discussion of ideas.
+        • There are no stupid ideas. The wilder the better.
+        • All ideas are recorded.
+        •Piggybacking is encouraged: combining, modifying, expanding others' ideas.
+    ''';
+    <https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/gFBlAqMqgdhR> ;
+    pko:maxRepetitions  1;
+    pko:minRepetitions: 1;
+    pko:stepNumber "1";
+    m4ing:hasTool :flipchart, :broadMarkingPen, :tape, :blankWallSpace;
+    pplan:hasOutputVar :awareOfRules;
+    pko:nextStep :step2 .
+
+:step2 a pplan:Step ;
+    dcterms:title "Step 2: Review topic";
+    dcterms:description '''Review the topic or problem to be discussed. Often it is best phrased as a
+    why, how, or what question. Make sure everyone understands the subject of the brainstorm.''' ;
+    <https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/gFBlAqMqgdhR> ;
+    m4ing:hasTool :flipchart, :broadMarkingPen, :tape, :blankWallSpace;
+    pko:maxRepetitions  1;
+    pko:minRepetitions: 1;
+    pplan:hasInputVar :awareOfRules;
+    pplan:hasOutputVar :awareOfTopic;
+    pko:previousStep :step1;
+    pko:nextStep :step3 .
+
+:step3 a pplan:Step ;
+    dcterms:title "Step 3: Reflect individually";
+    dcterms:description "Allow a minute or two of silence for everyone to think about the question.";
+    <https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/gFBlAqMqgdhR> ;
+    m4ing:hasTool :flipchart, :broadMarkingPen, :tape, :blankWallSpace;
+    pko:maxRepetitions  1;
+    pko:minRepetitions: 1;
+    pplan:hasInputVar :awareOfRules, :awareOfTopic;
+    pplan:hasOutputVar :reflectedOnTopic;
+    pko:previousStep :step2;
+    pko:nextStep :step4 .
+
+:step4 a pplan:Step ;
+    dcterms:title "Step 4";
+    dcterms:description '''Invite people to call out their ideas. Record all ideas, in words as close as possible to those used by the contributor. No discussion or evaluation of any
+        kind is permitted, except to determine the best rephrasing of an unclear or too long idea.
+        Continue to generate and record ideas until several minutes’ silence produces no more.''';
+    <https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/gFBlAqMqgdhR> ;
+    m4ing:hasTool :flipchart, :broadMarkingPen, :tape, :blankWallSpace;
+    pko:maxRepetitions  1;
+    pko:minRepetitions: 1;
+    pplan:hasInputVar :awareOfRules, :awareOfTopic, :reflectedOnTopic;
+    pplan:hasOutputVar :ideaCollection;
+    pko:previousStep :step3 .
+   
+:flipchart a m4ing:Tool .
+:broadMarkingPen  a m4ing:Tool .
+:tape  a m4ing:Tool .
+:blankWallSpace  a m4ing:Tool .
+
+:awareOfRules a pplan:Variable.
+:awareOfTopic a pplan:Variable.
+:reflectedOnTopic a pplan:Variable.
+:ideaCollection a pplan:Variable.

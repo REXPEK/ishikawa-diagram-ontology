@@ -1,0 +1,91 @@
+@prefix         : <https://w3id.org/ishikawa-diagram-ontology/ishikawa-diagramming/ishikawa-diagramming#> .
+@prefix     dcat: <http://www.w3.org/ns/dcat#> .
+@prefix  dcterms: <http://purl.org/dc/terms/> .
+@prefix    m4ing: <http://w3id.org/nfdi4ing/metadata4ing#> .
+@prefix      owl: <http://www.w3.org/2002/07/owl#> .
+@prefix      pko: <https://w3id.org/pko#> .
+@prefix    pplan: <http://purl.org/net/p-plan#> .
+@prefix      rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix     rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix      xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix      xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:ishikawaDiagramming a pko:Procedure;
+    <https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/fcKvHmTCPrxp> ;
+    dcterms:title "Ishikawa Diagramming";
+    dcterms:description '''The Ishikawa diagram identifies many possible causes for an effect or problem. It can be
+used to structure a brainstorming session. It immediately sorts ideas into useful categories''';
+    dcterms:references [
+		dcterms:title "The quality toolbox" ;
+        dcterms:identifier "ISBN:978-1-63-694122-6";
+        dcterms:creator "Tague, Nancy";
+        dcterms:language "en";
+        dcterms:createdDate "2023-12-31";
+		dcterms:format <http://publications.europa.eu/resource/authority/file-type/PDF> ;
+		dcat:accessURL <https://asq.org/quality-press/display-item?item=H1592&amp;srsltid=AfmBOopFo3Q9WOz7mWTyJx8NaR6W4Q9uzQKi9-daZmb9G1W7mD8J2Q-J> ;
+		a dcat:Resource ;
+	] ;
+
+    pko:isTemplate "true"^^xsd:boolean;
+    pko:versionNumber "0.1";
+    pko:hasFirstStep :step1 ;
+    pko:hasStep :step1, :step2, :step3, :step4 .
+
+:step1 a pplan:Step ;
+    dcterms:title "Step 1: Define problem";
+    dcterms:description '''Agree on a problem statement (effect). Write it at the center right of the flipchart
+or whiteboard. Draw a box around it and draw a horizontal arrow running to it.
+    ''';
+    <https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/gFBlAqMqgdhR> ;
+    pko:maxRepetitions  1;
+    pko:minRepetitions: 1;
+    m4ing:hasTool :flipchartOrWhiteboard, :broadMarkingPen;
+    pplan:hasOutputVar :definedProblem;
+    pko:nextStep :step2 .
+
+:step2 a pplan:Step ;
+    dcterms:title "Step 2: Define categories";
+    dcterms:description '''Brainstorm the major categories of causes of the problem. If there is difficulty
+here, use generic headings: methods, machines (equipment), people (manpower),
+materials, measurement, environment. Write the categories of causes as branches
+from the main arrow.
+    ''' ;
+    <https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/gFBlAqMqgdhR> ;
+    m4ing:hasTool :flipchartOrWhiteboard, :broadMarkingPen;
+    pko:maxRepetitions  1;
+    pko:minRepetitions: 1;
+    pplan:hasInputVar :definedProblem;
+    pplan:hasOutputVar :definedProblemAndCategories;
+    pko:previousStep :step1;
+    pko:nextStep :step3 .
+
+:step3 a pplan:Step ;
+    dcterms:title "Step 3: Define causes";
+    dcterms:description '''Brainstorm all the possible causes of the problem. Ask, “Why does this
+happen?” As each idea is given, the facilitator writes it as a branch from the
+appropriate category. Causes can be written in several places if they relate to
+several categories.
+
+Ask again, “Why does this happen?” about each cause. Write subcauses
+branching off the causes. Continue to ask “Why?” and generate deeper levels of
+causes. Layers of branches indicate causal relationships.
+
+When the group runs out of ideas, focus attention on places on the fishbone
+where ideas are few.
+    ''';
+    <https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/gFBlAqMqgdhR> ;    
+    m4ing:hasTool :flipchartOrWhiteboard, :broadMarkingPen;
+    pko:maxRepetitions  1;
+    pko:minRepetitions: 1;
+    pplan:hasInputVar :definedProblemAndCategories;
+    pplan:hasOutputVar :ishikawaDiagram;
+    pko:previousStep :step2.
+
+
+:flipchartOrWhiteboard a m4ing:Tool .
+:broadMarkingPen  a m4ing:Tool .
+
+:definedProblem  a pplan:Variable.
+:definedProblemAndCategories  a pplan:Variable.
+:ishikawaDiagram a pplan:Variable.

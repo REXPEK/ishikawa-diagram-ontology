@@ -1,0 +1,103 @@
+@prefix         : <https://w3id.org/ishikawa-diagram-ontology/ishikawa-diagramming/affinity-diagramming#> .
+@prefix     dcat: <http://www.w3.org/ns/dcat#> .
+@prefix  dcterms: <http://purl.org/dc/terms/> .
+@prefix    m4ing: <http://w3id.org/nfdi4ing/metadata4ing#> .
+@prefix      owl: <http://www.w3.org/2002/07/owl#> .
+@prefix      pko: <https://w3id.org/pko#> .
+@prefix    pplan: <http://purl.org/net/p-plan#> .
+@prefix      rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix     rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix      xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix      xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:affinityDiagramming a pko:Procedure;
+    <https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/fcKvHmTCPrxp> ;
+    dcterms:title "Affinity Diagramming";
+    dcterms:description "Affinity Diagramming is a technique used to organize ideas and data into clusters based on their natural relationships, helping to identify patterns and insights. This method is particularly useful in brainstorming sessions and qualitative research to make sense of large amounts of information.";
+    dcterms:references [
+		dcterms:title "The quality toolbox" ;
+        dcterms:identifier "ISBN:978-1-63-694122-6";
+        dcterms:creator "Tague, Nancy";
+        dcterms:language "en";
+        dcterms:createdDate "2023-12-31";
+		dcterms:format <http://publications.europa.eu/resource/authority/file-type/PDF> ;
+		dcat:accessURL <https://asq.org/quality-press/display-item?item=H1592&amp;srsltid=AfmBOopFo3Q9WOz7mWTyJx8NaR6W4Q9uzQKi9-daZmb9G1W7mD8J2Q-J> ;
+		a dcat:Resource ;
+	] ;
+	dcat:keyword "Knowledge elicitation", "Domain knowledge", "Qualitative data" ;
+    pko:isTemplate "true"^^xsd:boolean;
+    pko:versionNumber "0.1" ;
+    pko:hasFirstStep :step1 ;
+    pko:hasStep :step1, :step2, :step3, :step4 .
+
+# pplan:Step
+:step1 a pplan:Step ;
+    dcterms:title "Step 1: Capture ideas on sticky notes";
+    dcterms:description '''Record each idea with marking pens on a separate sticky note or card.
+(During a brainstorming session, write directly onto the sticky notes or cards
+if you suspect you will be following the brainstorm with an affinity diagram.)
+Randomly spread notes on a large work surface so all notes are visible to
+everyone. Everyone should gather around the notes and participate in
+the next steps.''';
+	<https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/gFBlAqMqgdhR> ;
+    pko:maxRepetitions  1;
+    pko:minRepetitions: 1;
+    m4ing:hasTool :stickyNotesOrCards, :broadMarkingPen, :tape, :blankWallSpace;
+    pplan:hasOutputVar :ideaCollection;
+    pko:nextStep :step2 .
+
+:step2 a  pplan:Step ;
+    dcterms:title "Step 2: Group related ideas together";
+    dcterms:description '''It is very important that no one talk during this step. Look for ideas that seem
+to be related in some way. Place them side by side. Repeat until all notes are
+grouped. It’s okay to have “loners” that don’t seem to fit a group. It’s all right to
+move a note someone else has already moved. If a note seems to belong in two
+groups, make a second note.''' ;
+    <https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/gFBlAqMqgdhR> ;
+    m4ing:hasTool :stickyNotesOrCards, :broadMarkingPen, :tape, :blankWallSpace;
+    pko:maxRepetitions  1;
+    pko:minRepetitions: 1;
+    pplan:hasInputVar :ideaCollection;
+    pplan:hasOutputVar :groupedIdeaCollection;
+    pko:previousStep :step1;
+    pko:nextStep :step3 .
+
+:step3 a pplan:Step ;
+    dcterms:title "Step 3: Decide on group names";
+    dcterms:description '''You can talk now. Participants can discuss the shape of the chart, any surprising
+patterns, and especially reasons for moving controversial notes. A few more
+changes may be made. When ideas are grouped, select a heading for each
+group. Look for a note in each grouping that captures the meaning of the group.
+Place it at the top of the group. If there is no such note, write one. Often it is
+useful to write or highlight this note in a different color.''';
+    <https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/gFBlAqMqgdhR> ;  
+    m4ing:hasTool :stickyNotesOrCards, :broadMarkingPen, :tape, :blankWallSpace;
+    pko:maxRepetitions  1;
+    pko:minRepetitions: 1;
+    pplan:hasInputVar :groupedIdeaCollection;
+    pplan:hasOutputVar :namedGroupedIdeaCollection, :affinityDiagram;
+    pko:previousStep :step2;
+    pko:nextStep :step4 .
+
+:step4 a pplan:Step ;
+    dcterms:title "Step 4: Decide on supergroups (if appropriate)";
+    dcterms:description '''Combine groups into supergroups if appropriate.
+    ''';
+    <https://vocab.sti2.at/ds/compliesWith> <https://semantify.it/ds/gFBlAqMqgdhR> ;
+    m4ing:hasTool :stickyNotesOrCards, :broadMarkingPen, :tape, :blankWallSpace;
+    pko:maxRepetitions  1;
+    pko:minRepetitions: 1;
+    pplan:hasInputVar :namedGroupedIdeaCollection, :affinityDiagram;
+    pplan:hasOutputVar :hierarchicallyNamedGroupedIdeaCollection, :affinityDiagram;
+    pko:previousStep :step3 .
+   
+:stickyNotesOrCards a m4ing:Tool .
+:broadMarkingPen  a m4ing:Tool .
+:tape a m4ing:Tool .
+:blankWallSpace  a m4ing:Tool .
+
+:ideaCollection a pplan:Variable.
+:groupedIdeaCollection  a pplan:Variable.
+:namedGroupedIdeaCollection  a pplan:Variable.
+:hierarchicallyNamedGroupedIdeaCollection  a pplan:Variable.
+:affinityDiagram a pplan:Variable.
