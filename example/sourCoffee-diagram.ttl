@@ -20,7 +20,7 @@
 :workshop a ishi:Workshop,
     pko:ProcedureExecution ;
     dcterms:title "Ishikawa Diagramming Workshop to resolve the problem of sour coffee" ;
-    pko:executesProcedure isdi:ishikawaDiagramming ;
+    ishi:usedTechnique isdi:ishikawaDiagramming ;
     adms:status pko:Completed ; 
     pko:wasExecutedBy <https://w3id.org/ishikawa-diagram-ontology/example/sourCoffee-process#alessio> ,
         <https://w3id.org/ishikawa-diagram-ontology/example/sourCoffee-process#bianca> ,
@@ -82,7 +82,7 @@
             rdf:value '''The dirty sponge led to ineffective cleaning of the coffee reservoir
                       where yeast grew as consequence making the coffee taste sour.  
                       ''' ;
-            oa:purpose oa:highlighting
+            oa:hasPurpose oa:highlighting
         ] ;
         oa:hasTarget [
             a oa:SpecificResource ;

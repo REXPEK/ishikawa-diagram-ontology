@@ -1,30 +1,30 @@
-# Template repository for an ontology
+# Ishikawa Diagram Ontology
 
-Repository for My Ontology.
+Repository for the Ishikawa Diagram Ontology and related modules.
 
 | Prefix    | IRI |
 | -- | ------- |
-| my-prefix:  | [https://knowledge.c-innovationhub.com/my-ontology#](https://knowledge.c-innovationhub.com/my-ontology#)  |
+| ishi:  | [https://w3id.org/ishikawa-diagram-ontology#](https://w3id.org/ishikawa-diagram-ontology#)  |
+| isdi:  | [https://w3id.org/ishikawa-diagram-ontology/ishikawa-diagramming/ishikawa-diagramming#](https://w3id.org/ishikawa-diagram-ontology/ishikawa-diagramming/ishikawa-diagramming#)  |
 
-## How to
+## Ontology purpose and scope
 
-Create a repository starting from this template repository. Rename the folders and the repository accordingly to the identifier of the ontology. The new repository name should be used to replace `my-ontology` in all the places.
+The Ishikawa ontology addresses the domain of Ishikawa diagrams which are one of the major tools for Root Cause Analysis (RCA) besides FMEA and Fault Tree Analysis.
+Ishikawa diagrams are also known as fishbone or cause and effect diagrams (CED).
+Ishikawa diagrams result from (iterative) workshops and are commonly stored as images which leads to ambiguous interpretations and a lack of machine-readability.
+Thus, the ontology contains the relevant concepts to describe Ishikawa diagrams as visual artifacts, their encoded data model, and the process the diagrams resulted from according to best practices.
 
-1. The RDF files describing the ontology can be defined manually or by modifying the [my-ontology.owl](.my-ontology/my-ontology.owl) file.
-
-2. Download the Widoco tool as discussed below and put the JAR in the `tools` folder to automatise its execution through the `run-onto.sh` script. A Java installation is required.
-
-### `widoco`: RDF to HTML
-Download release JAR from [here](https://github.com/dgarijo/Widoco/releases) and rename it as `widoco.jar`. Documentation for the CLI tool is available [here](https://github.com/dgarijo/Widoco#how-to-use-widoco). The `run-onto.sh` script was tested with version `1.4.21`.
-
-3. Execute the `sh run-onto.sh my-ontology x.y.z` script providing as argument the correct version number.
-
-4. Edit the documentation in the [sections](.my-ontology/sections) folder
-
-5. Git commit and push
-
-6. Enable GitHub Pages to host the ontology
-
-7. Configure a webserver by using the provided [.htaccess](.my-ontology/.htaccess) file.
+The ontology reuses existing ontologies, including the [Web Annotation Ontology](http://www.w3.org/ns/oa#), [PROV-O](https://www.w3.org/TR/prov-o/), and [Procedural Knowledge Ontology](https://w3id.org/pko#).
+For designing the ontology, we adopted the [Linked Open Terms (LOT) methodology](https://zenodo.org/records/2539305). 
 
 
+The intended use of terms is detailed in the [diagram](./ishikawa-diagram-ontology/media/ishikawa-diagram-ontology.png), which uses the [Chowlk notation]( https://chowlk.linkeddata.es/notation):
+
+<p align="left"><img src="./chowlk/ishikawa-diagram-ontology.png" alt="Diagram of Ishikawa diagram ontology" width="800"></p>
+
+## Content of the repository
+
+The RDF files describing the different versions of the ontology and its modules can be found in the folder [ishikawa-diagram-ontology](./ishikawa-diagram-ontology).
+
+The repository was created using the [Cefriel Ontology Template](https://github.com/cefriel/ontology-template).
+The ontology documentation and versioning is done using the Widoco tool.

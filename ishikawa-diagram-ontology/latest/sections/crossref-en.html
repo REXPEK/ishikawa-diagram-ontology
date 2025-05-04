@@ -37,6 +37,7 @@ This section provides details for each class and property defined by Ishikawa Di
   <li><a href="#Weight" title="https://w3id.org/ishikawa-diagram-ontology#Weight"> <span>Weight</span> </a></li>
   <li><a href="#WeightRange" title="https://w3id.org/ishikawa-diagram-ontology#WeightRange"> <span>Weight Range</span> </a></li>
   <li><a href="#WeightScale" title="https://w3id.org/ishikawa-diagram-ontology#WeightScale"> <span>Weight Scale</span> </a></li>
+  <li><a href="#Workshop" title="https://w3id.org/ishikawa-diagram-ontology#Workshop"> <span>Workshop</span> </a></li>
  </ul>
  <div class="entity" id="http://www.w3.org/ns/prov#Activity">
   <h3>Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
@@ -49,13 +50,13 @@ This section provides details for each class and property defined by Ishikawa Di
     is in domain of
    </dt>
    <dd>
-    <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">was Associated With</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#http://www.w3.org/ns/prov#qualifiedAssociationOf" title="http://www.w3.org/ns/prov#qualifiedAssociationOf">qualified Association Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">was Associated With</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#http://www.w3.org/ns/prov#qualifiedAssociation" title="http://www.w3.org/ns/prov#qualifiedAssociation">qualified Association</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#qualifiedAssociationOf" title="http://www.w3.org/ns/prov#qualifiedAssociationOf">qualified Association Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAssociatedFor" title="http://www.w3.org/ns/prov#wasAssociatedFor">was Associated For</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#http://www.w3.org/ns/prov#qualifiedAssociation" title="http://www.w3.org/ns/prov#qualifiedAssociation">qualified Association</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAssociatedFor" title="http://www.w3.org/ns/prov#wasAssociatedFor">was Associated For</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -98,7 +99,13 @@ This section provides details for each class and property defined by Ishikawa Di
     is in domain of
    </dt>
    <dd>
-    <a href="#http://www.w3.org/ns/prov#qualifiedAssociation" title="http://www.w3.org/ns/prov#qualifiedAssociation">qualified Association</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#qualifiedAssociationOf" title="http://www.w3.org/ns/prov#qualifiedAssociationOf">qualified Association Of</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#http://www.w3.org/ns/prov#qualifiedAssociation" title="http://www.w3.org/ns/prov#qualifiedAssociation">qualified Association</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#qualifiedAssociationOf" title="http://www.w3.org/ns/prov#qualifiedAssociationOf">qualified Association Of</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -188,13 +195,13 @@ This section provides details for each class and property defined by Ishikawa Di
     is in domain of
    </dt>
    <dd>
-    <a href="#cause" title="https://w3id.org/ishikawa-diagram-ontology#cause">cause</a> <sup class="type-op" title="object property">op</sup>, <a href="#causeEffectType" title="https://w3id.org/ishikawa-diagram-ontology#causeEffectType">cause Effect Type</a> <sup class="type-op" title="object property">op</sup>, <a href="#effect" title="https://w3id.org/ishikawa-diagram-ontology#effect">effect</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasEvidence" title="https://w3id.org/ishikawa-diagram-ontology#hasEvidence">has Evidence</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasQualitativeEvidence" title="https://w3id.org/ishikawa-diagram-ontology#hasQualitativeEvidence">has Qualitative Evidence</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasQuantitativeEvidence" title="https://w3id.org/ishikawa-diagram-ontology#hasQuantitativeEvidence">has Quantitative Evidence</a> <sup class="type-op" title="object property">op</sup>, <a href="#qualifiedCauseEffectOf" title="https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffectOf">qualified Cause Effect Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#weight" title="https://w3id.org/ishikawa-diagram-ontology#weight">weight</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#cause" title="https://w3id.org/ishikawa-diagram-ontology#cause">cause</a> <sup class="type-op" title="object property">op</sup>, <a href="#causeEffectType" title="https://w3id.org/ishikawa-diagram-ontology#causeEffectType">cause Effect Type</a> <sup class="type-op" title="object property">op</sup>, <a href="#effect" title="https://w3id.org/ishikawa-diagram-ontology#effect">effect</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasEvidence" title="https://w3id.org/ishikawa-diagram-ontology#hasEvidence">has Evidence</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasQualitativeEvidence" title="https://w3id.org/ishikawa-diagram-ontology#hasQualitativeEvidence">has Qualitative Evidence</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasQuantitativeEvidence" title="https://w3id.org/ishikawa-diagram-ontology#hasQuantitativeEvidence">has Quantitative Evidence</a> <sup class="type-op" title="object property">op</sup>, <a href="#isCauseEffectOf" title="https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf">is Cause Effect Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#qualifiedCauseEffectOf" title="https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffectOf">qualified Cause Effect Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#weight" title="https://w3id.org/ishikawa-diagram-ontology#weight">weight</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#qualifiedCauseEffect" title="https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffect">qualified Cause Effect</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#causeEffect" title="https://w3id.org/ishikawa-diagram-ontology#causeEffect">cause Effect</a> <sup class="type-op" title="object property">op</sup>, <a href="#qualifiedCauseEffect" title="https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffect">qualified Cause Effect</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -239,10 +246,16 @@ This section provides details for each class and property defined by Ishikawa Di
   </div>
   <dl class="description">
    <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#designPattern" title="https://w3id.org/ishikawa-diagram-ontology#designPattern">design Pattern</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
     has members
    </dt>
    <dd>
-    <a href="#5M&E" title="https://w3id.org/ishikawa-diagram-ontology#5M&amp;E">5M&amp;E structure</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DoE" title="https://w3id.org/ishikawa-diagram-ontology#DoE">Design of experiments</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#STEPC" title="https://w3id.org/ishikawa-diagram-ontology#STEPC">STEPC method</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#4S" title="https://w3id.org/ishikawa-diagram-ontology#4S">Service industry 4S method</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#8P" title="https://w3id.org/ishikawa-diagram-ontology#8P">Service industry 8P method</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#5MandE" title="https://w3id.org/ishikawa-diagram-ontology#5MandE">5M&amp;E structure</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DoE" title="https://w3id.org/ishikawa-diagram-ontology#DoE">Design of experiments</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#STEPC" title="https://w3id.org/ishikawa-diagram-ontology#STEPC">STEPC method</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#4S" title="https://w3id.org/ishikawa-diagram-ontology#4S">Service industry 4S method</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#8P" title="https://w3id.org/ishikawa-diagram-ontology#8P">Service industry 8P method</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -263,7 +276,7 @@ This section provides details for each class and property defined by Ishikawa Di
     is in domain of
    </dt>
    <dd>
-    <a href="#diagramType" title="https://w3id.org/ishikawa-diagram-ontology#diagramType">diagram Type</a> <sup class="type-op" title="object property">op</sup>, <a href="#enumerated" title="https://w3id.org/ishikawa-diagram-ontology#enumerated">enumerated</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#illustratedEvidence" title="https://w3id.org/ishikawa-diagram-ontology#illustratedEvidence">illustrated Evidence</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#illustratedRoles" title="https://w3id.org/ishikawa-diagram-ontology#illustratedRoles">illustrated Roles</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#illustratedWeight" title="https://w3id.org/ishikawa-diagram-ontology#illustratedWeight">illustrated Weight</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#model" title="https://w3id.org/ishikawa-diagram-ontology#model">model</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#depth" title="https://w3id.org/ishikawa-diagram-ontology#depth">depth</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#designPattern" title="https://w3id.org/ishikawa-diagram-ontology#designPattern">design Pattern</a> <sup class="type-op" title="object property">op</sup>, <a href="#diagramType" title="https://w3id.org/ishikawa-diagram-ontology#diagramType">diagram Type</a> <sup class="type-op" title="object property">op</sup>, <a href="#enumerated" title="https://w3id.org/ishikawa-diagram-ontology#enumerated">enumerated</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#illustratedEvidence" title="https://w3id.org/ishikawa-diagram-ontology#illustratedEvidence">illustrated Evidence</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#illustratedFactorInfluence" title="https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence">illustrated Factor Influence</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#illustratedRoles" title="https://w3id.org/ishikawa-diagram-ontology#illustratedRoles">illustrated Roles</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#illustratedWeight" title="https://w3id.org/ishikawa-diagram-ontology#illustratedWeight">illustrated Weight</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#model" title="https://w3id.org/ishikawa-diagram-ontology#model">model</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -417,13 +430,13 @@ This section provides details for each class and property defined by Ishikawa Di
     is in domain of
    </dt>
    <dd>
-    <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">created</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#qualifiedCauseEffect" title="https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffect">qualified Cause Effect</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">created</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isFactorOf" title="https://w3id.org/ishikawa-diagram-ontology#isFactorOf">is Factor Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#qualifiedCauseEffect" title="https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffect">qualified Cause Effect</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#qualifiedCauseEffectOf" title="https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffectOf">qualified Cause Effect Of</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#factor" title="https://w3id.org/ishikawa-diagram-ontology#factor">factor</a> <sup class="type-op" title="object property">op</sup>, <a href="#qualifiedCauseEffectOf" title="https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffectOf">qualified Cause Effect Of</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -508,13 +521,13 @@ This section provides details for each class and property defined by Ishikawa Di
     is in domain of
    </dt>
    <dd>
-    <a href="#diagram" title="https://w3id.org/ishikawa-diagram-ontology#diagram">diagram</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#causeEffect" title="https://w3id.org/ishikawa-diagram-ontology#causeEffect">cause Effect</a> <sup class="type-op" title="object property">op</sup>, <a href="#diagram" title="https://w3id.org/ishikawa-diagram-ontology#diagram">diagram</a> <sup class="type-op" title="object property">op</sup>, <a href="#factor" title="https://w3id.org/ishikawa-diagram-ontology#factor">factor</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#model" title="https://w3id.org/ishikawa-diagram-ontology#model">model</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#isCauseEffectOf" title="https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf">is Cause Effect Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isFactorOf" title="https://w3id.org/ishikawa-diagram-ontology#isFactorOf">is Factor Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#model" title="https://w3id.org/ishikawa-diagram-ontology#model">model</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -725,19 +738,34 @@ This section provides details for each class and property defined by Ishikawa Di
    </dd>
   </dl>
  </div>
+ <div class="entity" id="Workshop">
+  <h3>Workshop<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#Workshop</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.co-ode.org/ontologies/ont.owl#ProcedureExecution" target="_blank" title="http://www.co-ode.org/ontologies/ont.owl#ProcedureExecution">Procedure Execution</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
   <li><a href="#http://www.w3.org/ns/prov#agent" title="http://www.w3.org/ns/prov#agent"> <span>agent</span> </a></li>
   <li><a href="#http://www.w3.org/ns/prov#alternateOf" title="http://www.w3.org/ns/prov#alternateOf"> <span>alternate Of</span> </a></li>
   <li><a href="#cause" title="https://w3id.org/ishikawa-diagram-ontology#cause"> <span>cause</span> </a></li>
+  <li><a href="#causeEffect" title="https://w3id.org/ishikawa-diagram-ontology#causeEffect"> <span>cause Effect</span> </a></li>
   <li><a href="#causeEffectType" title="https://w3id.org/ishikawa-diagram-ontology#causeEffectType"> <span>cause Effect Type</span> </a></li>
   <li><a href="#caused" title="https://w3id.org/ishikawa-diagram-ontology#caused"> <span>caused</span> </a></li>
   <li><a href="#http://www.w3.org/ns/prov#contributed" title="http://www.w3.org/ns/prov#contributed"> <span>contributed</span> </a></li>
+  <li><a href="#designPattern" title="https://w3id.org/ishikawa-diagram-ontology#designPattern"> <span>design Pattern</span> </a></li>
   <li><a href="#diagram" title="https://w3id.org/ishikawa-diagram-ontology#diagram"> <span>diagram</span> </a></li>
   <li><a href="#diagramType" title="https://w3id.org/ishikawa-diagram-ontology#diagramType"> <span>diagram Type</span> </a></li>
   <li><a href="#effect" title="https://w3id.org/ishikawa-diagram-ontology#effect"> <span>effect</span> </a></li>
   <li><a href="#evidenceType" title="https://w3id.org/ishikawa-diagram-ontology#evidenceType"> <span>evidence Type</span> </a></li>
+  <li><a href="#factor" title="https://w3id.org/ishikawa-diagram-ontology#factor"> <span>factor</span> </a></li>
   <li><a href="#http://www.w3.org/ns/ma-ont#format" title="http://www.w3.org/ns/ma-ont#format"> <span>format</span> </a></li>
   <li><a href="#http://www.w3.org/ns/prov#hadDerivation" title="http://www.w3.org/ns/prov#hadDerivation"> <span>had Derivation</span> </a></li>
   <li><a href="#http://www.w3.org/ns/prov#hadRole" title="http://www.w3.org/ns/prov#hadRole"> <span>had Role</span> </a></li>
@@ -754,6 +782,8 @@ This section provides details for each class and property defined by Ishikawa Di
   <li><a href="#hasWeightRange" title="https://w3id.org/ishikawa-diagram-ontology#hasWeightRange"> <span>has Weight Range</span> </a></li>
   <li><a href="#http://www.w3.org/ns/prov#influenced" title="http://www.w3.org/ns/prov#influenced"> <span>influenced</span> </a></li>
   <li><a href="#http://www.w3.org/ns/prov#influencer" title="http://www.w3.org/ns/prov#influencer"> <span>influencer</span> </a></li>
+  <li><a href="#isCauseEffectOf" title="https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf"> <span>is Cause Effect Of</span> </a></li>
+  <li><a href="#isFactorOf" title="https://w3id.org/ishikawa-diagram-ontology#isFactorOf"> <span>is Factor Of</span> </a></li>
   <li><a href="#http://www.w3.org/ns/ma-ont#locator" title="http://www.w3.org/ns/ma-ont#locator"> <span>locator</span> </a></li>
   <li><a href="#model" title="https://w3id.org/ishikawa-diagram-ontology#model"> <span>model</span> </a></li>
   <li><a href="#http://www.w3.org/ns/prov#qualifiedAssociation" title="http://www.w3.org/ns/prov#qualifiedAssociation"> <span>qualified Association</span> </a></li>
@@ -765,7 +795,6 @@ This section provides details for each class and property defined by Ishikawa Di
   <li><a href="#http://www.w3.org/ns/prov#qualifiedInfluence" title="http://www.w3.org/ns/prov#qualifiedInfluence"> <span>qualified Influence</span> </a></li>
   <li><a href="#http://www.w3.org/ns/prov#qualifiedInfluenceOf" title="http://www.w3.org/ns/prov#qualifiedInfluenceOf"> <span>qualified Influence Of</span> </a></li>
   <li><a href="#scale" title="https://w3id.org/ishikawa-diagram-ontology#scale"> <span>scale</span> </a></li>
-  <li><a href="#http://www.w3.org/ns/ma-ont#title" title="http://www.w3.org/ns/ma-ont#title"> <span>title</span> </a></li>
   <li><a href="#http://www.w3.org/ns/prov#wasAssociatedFor" title="http://www.w3.org/ns/prov#wasAssociatedFor"> <span>was Associated For</span> </a></li>
   <li><a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith"> <span>was Associated With</span> </a></li>
   <li><a href="#http://www.w3.org/ns/prov#wasAttributedTo" title="http://www.w3.org/ns/prov#wasAttributedTo"> <span>was Attributed To</span> </a></li>
@@ -825,6 +854,32 @@ This section provides details for each class and property defined by Ishikawa Di
     </dt>
     <dd>
      <a href="#Cause" title="https://w3id.org/ishikawa-diagram-ontology#Cause">Cause</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="causeEffect">
+  <h3>cause Effect<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#causeEffect</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Model" title="https://w3id.org/ishikawa-diagram-ontology#Model">Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#CauseEffect" title="https://w3id.org/ishikawa-diagram-ontology#CauseEffect">Cause Effect</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#isCauseEffectOf" title="https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf">is Cause Effect Of</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -912,6 +967,26 @@ This section provides details for each class and property defined by Ishikawa Di
     </dt>
     <dd>
      <a href="#http://www.w3.org/ns/prov#wasAttributedTo" title="http://www.w3.org/ns/prov#wasAttributedTo">was Attributed To</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="designPattern">
+  <h3>design Pattern<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#designPattern</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Diagram" title="https://w3id.org/ishikawa-diagram-ontology#Diagram">Diagram</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#DesignPattern" title="https://w3id.org/ishikawa-diagram-ontology#DesignPattern">Design Pattern</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -1010,6 +1085,32 @@ This section provides details for each class and property defined by Ishikawa Di
     </dt>
     <dd>
      <a href="#EvidenceType" title="https://w3id.org/ishikawa-diagram-ontology#EvidenceType">Evidence Type</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="factor">
+  <h3>factor<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#factor</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Model" title="https://w3id.org/ishikawa-diagram-ontology#Model">Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Factor" title="https://w3id.org/ishikawa-diagram-ontology#Factor">Factor</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#isFactorOf" title="https://w3id.org/ishikawa-diagram-ontology#isFactorOf">is Factor Of</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -1250,16 +1351,6 @@ This section provides details for each class and property defined by Ishikawa Di
   <div class="comment">
    <span class="markdown">This property is used to link a WeightScale to the WeightRange which defines its total range.</span>
   </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-   </dl>
-  </div>
  </div>
  <div class="entity" id="http://www.w3.org/ns/prov#influenced">
   <h3>influenced<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
@@ -1289,6 +1380,58 @@ This section provides details for each class and property defined by Ishikawa Di
   <p><strong>IRI:</strong> http://www.w3.org/ns/prov#influencer</p>
   <div class="comment">
    <span class="markdown">This property is used as part of the qualified influence pattern. Subclasses of prov:Influence use these subproperties to reference the resource (Entity, Agent, or Activity) whose influence is being qualified.</span>
+  </div>
+ </div>
+ <div class="entity" id="isCauseEffectOf">
+  <h3>is Cause Effect Of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#CauseEffect" title="https://w3id.org/ishikawa-diagram-ontology#CauseEffect">Cause Effect</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Model" title="https://w3id.org/ishikawa-diagram-ontology#Model">Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#causeEffect" title="https://w3id.org/ishikawa-diagram-ontology#causeEffect">cause Effect</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isFactorOf">
+  <h3>is Factor Of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#isFactorOf</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Factor" title="https://w3id.org/ishikawa-diagram-ontology#Factor">Factor</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Model" title="https://w3id.org/ishikawa-diagram-ontology#Model">Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#factor" title="https://w3id.org/ishikawa-diagram-ontology#factor">factor</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
   </div>
  </div>
  <div class="entity" id="http://www.w3.org/ns/ma-ont#locator">
@@ -1365,13 +1508,13 @@ This section provides details for each class and property defined by Ishikawa Di
      has domain
     </dt>
     <dd>
-     <a href="#http://www.w3.org/ns/prov#Association" title="http://www.w3.org/ns/prov#Association">Association</a> <sup class="type-c" title="class">c</sup>
+     <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
     </dt>
     <dd>
-     <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+     <a href="#http://www.w3.org/ns/prov#Association" title="http://www.w3.org/ns/prov#Association">Association</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      is inverse of
@@ -1586,13 +1729,6 @@ This section provides details for each class and property defined by Ishikawa Di
      <a href="#WeightScale" title="https://w3id.org/ishikawa-diagram-ontology#WeightScale">Weight Scale</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
-  </div>
- </div>
- <div class="entity" id="http://www.w3.org/ns/ma-ont#title">
-  <h3>title<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://www.w3.org/ns/ma-ont#title</p>
-  <div class="comment">
-   <span class="markdown">A tuple that specifies the title or name given to the resource. The type can be used to optionally define the category of the title.</span>
   </div>
  </div>
  <div class="entity" id="http://www.w3.org/ns/prov#wasAssociatedFor">
@@ -1819,8 +1955,10 @@ This section provides details for each class and property defined by Ishikawa Di
  <h3 id="dataproperties-headline" class="list">Data Properties</h3>
  <ul class="hlist">
   <li><a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created"> <span>created</span> </a></li>
+  <li><a href="#depth" title="https://w3id.org/ishikawa-diagram-ontology#depth"> <span>depth</span> </a></li>
   <li><a href="#enumerated" title="https://w3id.org/ishikawa-diagram-ontology#enumerated"> <span>enumerated</span> </a></li>
   <li><a href="#illustratedEvidence" title="https://w3id.org/ishikawa-diagram-ontology#illustratedEvidence"> <span>illustrated Evidence</span> </a></li>
+  <li><a href="#illustratedFactorInfluence" title="https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence"> <span>illustrated Factor Influence</span> </a></li>
   <li><a href="#illustratedRoles" title="https://w3id.org/ishikawa-diagram-ontology#illustratedRoles"> <span>illustrated Roles</span> </a></li>
   <li><a href="#illustratedWeight" title="https://w3id.org/ishikawa-diagram-ontology#illustratedWeight"> <span>illustrated Weight</span> </a></li>
  </ul>
@@ -1843,6 +1981,26 @@ This section provides details for each class and property defined by Ishikawa Di
     </dt>
     <dd>
      <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="depth">
+  <h3>depth<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#depth</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Diagram" title="https://w3id.org/ishikawa-diagram-ontology#Diagram">Diagram</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
     </dd>
    </dl>
   </div>
@@ -1876,6 +2034,26 @@ This section provides details for each class and property defined by Ishikawa Di
   <div class="comment">
    <span class="markdown">This property is used to indicate, if the evidence basis was emphasized in the visual representation of the Ishikawa diagram.</span>
   </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Diagram" title="https://w3id.org/ishikawa-diagram-ontology#Diagram">Diagram</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="illustratedFactorInfluence">
+  <h3>illustrated Factor Influence<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence</p>
   <div class="description">
    <dl>
     <dt>
@@ -1942,7 +2120,7 @@ This section provides details for each class and property defined by Ishikawa Di
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
  <h3 id="namedindividuals" class="list">Named Individuals</h3>
  <ul class="hlist">
-  <li><a href="#5M&E" title="https://w3id.org/ishikawa-diagram-ontology#5M&amp;E">5M&amp;E structure</a></li>
+  <li><a href="#5MandE" title="https://w3id.org/ishikawa-diagram-ontology#5MandE">5M&amp;E structure</a></li>
   <li><a href="#Accountable" title="https://w3id.org/ishikawa-diagram-ontology#Accountable"> <span>Accountable</span> </a></li>
   <li><a href="#aggravating" title="https://w3id.org/ishikawa-diagram-ontology#aggravating"> <span>aggravating</span> </a></li>
   <li><a href="#causeEnumerationDiagram" title="https://w3id.org/ishikawa-diagram-ontology#causeEnumerationDiagram"> <span>cause Enumeration Diagram</span> </a></li>
@@ -1963,9 +2141,9 @@ This section provides details for each class and property defined by Ishikawa Di
   <li><a href="#Supporting" title="https://w3id.org/ishikawa-diagram-ontology#Supporting"> <span>Supporting</span> </a></li>
   <li><a href="#undecided" title="https://w3id.org/ishikawa-diagram-ontology#undecided"> <span>undecided</span> </a></li>
  </ul>
- <div class="entity" id="5M&E">
+ <div class="entity" id="5MandE">
   <h3>5M&amp;E structure<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#5M&amp;E</p>
+  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#5MandE</p>
   <div class="comment">
    <span class="markdown">The categories are "measurement", "materials", "methods", "manpower", and "environment"</span>
   </div>

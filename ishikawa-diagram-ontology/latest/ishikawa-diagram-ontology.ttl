@@ -12,6 +12,7 @@
                                                                                         "Duo Yang (KU Leuven)" ,
                                                                                         "Joost Vennekens (Vrije Universiteit Brussels)" ,
                                                                                         "Simon Vandevelde (KU Leuven)" ;
+                                              <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                               rdfs:comment """The Ishikawa ontology aims to provide a data and view model to manage data encoded in Ishikawa diagrams which are also known as fishbone or cause and effect diagram (CED).
 Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes the basic modelling of workshops to create Ishikawa diagrams."""@en ;
                                               rdfs:label "Ishikawa Diagram Ontology"@en .
@@ -28,6 +29,10 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 <http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Object Properties
 #################################################################
@@ -40,11 +45,6 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 ###  http://www.w3.org/ns/ma-ont#locator
 <http://www.w3.org/ns/ma-ont#locator> rdf:type owl:ObjectProperty ;
                                       rdfs:comment "The logical address at which the resource can be accessed (e.g. a URL, or a DVB URI)." .
-
-
-###  http://www.w3.org/ns/ma-ont#title
-<http://www.w3.org/ns/ma-ont#title> rdf:type owl:ObjectProperty ;
-                                    rdfs:comment "A tuple that specifies the title or name given to the resource. The type can be used to optionally define the category of the title." .
 
 
 ###  http://www.w3.org/ns/oa#hasBody
@@ -129,8 +129,8 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 ###  http://www.w3.org/ns/prov#qualifiedAssociationOf
 <http://www.w3.org/ns/prov#qualifiedAssociationOf> rdf:type owl:ObjectProperty ;
-                                                   rdfs:domain <http://www.w3.org/ns/prov#Association> ;
-                                                   rdfs:range <http://www.w3.org/ns/prov#Activity> .
+                                                   rdfs:domain <http://www.w3.org/ns/prov#Activity> ;
+                                                   rdfs:range <http://www.w3.org/ns/prov#Association> .
 
 
 ###  http://www.w3.org/ns/prov#qualifiedAttribution
@@ -207,6 +207,13 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
        rdfs:comment "This property is used to link a Cause to CauseEffect ." .
 
 
+###  https://w3id.org/ishikawa-diagram-ontology#causeEffect
+:causeEffect rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isCauseEffectOf ;
+             rdfs:domain :Model ;
+             rdfs:range :CauseEffect .
+
+
 ###  https://w3id.org/ishikawa-diagram-ontology#causeEffectType
 :causeEffectType rdf:type owl:ObjectProperty ;
                  rdfs:domain :CauseEffect ;
@@ -221,6 +228,12 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
         rdfs:domain :Cause ;
         rdfs:range :Effect ;
         rdfs:comment "This property is used to directly link a Cause to an Effect without further qualification. For qualified cause-effect relationships the CauseEffect class is used." .
+
+
+###  https://w3id.org/ishikawa-diagram-ontology#designPattern
+:designPattern rdf:type owl:ObjectProperty ;
+               rdfs:domain :Diagram ;
+               rdfs:range :DesignPattern .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#diagram
@@ -250,6 +263,13 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
               rdfs:domain :Evidence ;
               rdfs:range :EvidenceType ;
               rdfs:comment "This property is used to link the EvidenceType to an Evidence" .
+
+
+###  https://w3id.org/ishikawa-diagram-ontology#factor
+:factor rdf:type owl:ObjectProperty ;
+        owl:inverseOf :isFactorOf ;
+        rdfs:domain :Model ;
+        rdfs:range :Factor .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#hadRole
@@ -291,8 +311,19 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 ###  https://w3id.org/ishikawa-diagram-ontology#hasWeightRange
 :hasWeightRange rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf owl:topObjectProperty ;
                 rdfs:comment "This property is used to link a WeightScale to the WeightRange which defines its total range." .
+
+
+###  https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf
+:isCauseEffectOf rdf:type owl:ObjectProperty ;
+                 rdfs:domain :CauseEffect ;
+                 rdfs:range :Model .
+
+
+###  https://w3id.org/ishikawa-diagram-ontology#isFactorOf
+:isFactorOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :Factor ;
+            rdfs:range :Model .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#model
@@ -326,6 +357,10 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
        rdfs:comment "The property is used to link the WeigthScale to a Weight." .
 
 
+###  https://w3id.org/ishikawa-diagram-ontology#usedTechnique
+:usedTechnique rdf:type owl:ObjectProperty .
+
+
 ###  https://w3id.org/ishikawa-diagram-ontology#wasCausedBy
 :wasCausedBy rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasInfluencedBy> ;
@@ -352,6 +387,12 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                                    rdfs:comment "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty." .
 
 
+###  https://w3id.org/ishikawa-diagram-ontology#depth
+:depth rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Diagram ;
+       rdfs:range xsd:integer .
+
+
 ###  https://w3id.org/ishikawa-diagram-ontology#enumerated
 :enumerated rdf:type owl:DatatypeProperty ;
             rdfs:domain :Diagram ;
@@ -364,6 +405,12 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                      rdfs:domain :Diagram ;
                      rdfs:range xsd:boolean ;
                      rdfs:comment "This property is used to indicate, if the evidence basis was emphasized in the visual representation of the Ishikawa diagram." .
+
+
+###  https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence
+:illustratedFactorInfluence rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :Diagram ;
+                            rdfs:range xsd:boolean .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#illustratedRoles
@@ -384,6 +431,14 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 #    Classes
 #################################################################
 
+###  http://www.co-ode.org/ontologies/ont.owl#Procedure
+<http://www.co-ode.org/ontologies/ont.owl#Procedure> rdf:type owl:Class .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ProcedureExecution
+<http://www.co-ode.org/ontologies/ont.owl#ProcedureExecution> rdf:type owl:Class .
+
+
 ###  http://www.w3.org/ns/oa#Annotation
 <http://www.w3.org/ns/oa#Annotation> rdf:type owl:Class ;
                                      rdfs:comment "The class for Web Annotations." .
@@ -397,6 +452,10 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 ###  http://www.w3.org/ns/oa#Motivation
 <http://www.w3.org/ns/oa#Motivation> rdf:type owl:Class ;
                                      rdfs:comment "The Motivation class is used to record the user's intent or motivation for the creation of the Annotation, or the inclusion of the body or target, that it is associated with." .
+
+
+###  http://www.w3.org/ns/oa#SpecificResource
+<http://www.w3.org/ns/oa#SpecificResource> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/ns/oa#TextualBody
@@ -561,6 +620,10 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
            rdfs:comment "A root cause is a factor which is not influenced by any known factor in the context of an Ishikawa diagram." .
 
 
+###  https://w3id.org/ishikawa-diagram-ontology#Technique
+:Technique rdf:type owl:Class .
+
+
 ###  https://w3id.org/ishikawa-diagram-ontology#Weight
 :Weight rdf:type owl:Class ;
         rdfs:comment "The weight class is used to assign values to a cause-effect relationship for priorization. The intended meaning of the weight depends on the referenced WeightScale" .
@@ -574,6 +637,11 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 ###  https://w3id.org/ishikawa-diagram-ontology#WeightScale
 :WeightScale rdf:type owl:Class ;
              rdfs:comment "A class that specifies the min and max range of values for the weight of a cause-effect relationship." .
+
+
+###  https://w3id.org/ishikawa-diagram-ontology#Workshop
+:Workshop rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#ProcedureExecution> .
 
 
 #################################################################
@@ -677,11 +745,11 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                                                 rdfs:label "Service industry 4S method" .
 
 
-###  https://w3id.org/ishikawa-diagram-ontology#5M&E
-<https://w3id.org/ishikawa-diagram-ontology#5M&E> rdf:type owl:NamedIndividual ,
-                                                           :DesignPattern ;
-                                                  rdfs:comment "The categories are \"measurement\", \"materials\", \"methods\", \"manpower\", and \"environment\""@en ;
-                                                  rdfs:label "5M&E structure"@en .
+###  https://w3id.org/ishikawa-diagram-ontology#5MandE
+<https://w3id.org/ishikawa-diagram-ontology#5MandE> rdf:type owl:NamedIndividual ,
+                                                             :DesignPattern ;
+                                                    rdfs:comment "The categories are \"measurement\", \"materials\", \"methods\", \"manpower\", and \"environment\""@en ;
+                                                    rdfs:label "5M&E structure"@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#8P
