@@ -318,6 +318,16 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
     
 
 
+    <!-- https://w3id.org/ishikawa-diagram-ontology#causeEffect -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ishikawa-diagram-ontology#causeEffect">
+        <owl:inverseOf rdf:resource="https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Model"/>
+        <rdfs:range rdf:resource="https://w3id.org/ishikawa-diagram-ontology#CauseEffect"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ishikawa-diagram-ontology#causeEffectType -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ishikawa-diagram-ontology#causeEffectType">
@@ -336,6 +346,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
         <rdfs:domain rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Cause"/>
         <rdfs:range rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Effect"/>
         <rdfs:comment>This property is used to directly link a Cause to an Effect without further qualification. For qualified cause-effect relationships the CauseEffect class is used.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ishikawa-diagram-ontology#designPattern -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ishikawa-diagram-ontology#designPattern">
+        <rdfs:domain rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Diagram"/>
+        <rdfs:range rdf:resource="https://w3id.org/ishikawa-diagram-ontology#DesignPattern"/>
     </owl:ObjectProperty>
     
 
@@ -377,6 +396,16 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
         <rdfs:domain rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Evidence"/>
         <rdfs:range rdf:resource="https://w3id.org/ishikawa-diagram-ontology#EvidenceType"/>
         <rdfs:comment>This property is used to link the EvidenceType to an Evidence</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ishikawa-diagram-ontology#factor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ishikawa-diagram-ontology#factor">
+        <owl:inverseOf rdf:resource="https://w3id.org/ishikawa-diagram-ontology#isFactorOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Model"/>
+        <rdfs:range rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Factor"/>
     </owl:ObjectProperty>
     
 
@@ -438,6 +467,24 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
     <owl:ObjectProperty rdf:about="https://w3id.org/ishikawa-diagram-ontology#hasWeightRange">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:comment>This property is used to link a WeightScale to the WeightRange which defines its total range.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf">
+        <rdfs:domain rdf:resource="https://w3id.org/ishikawa-diagram-ontology#CauseEffect"/>
+        <rdfs:range rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Model"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ishikawa-diagram-ontology#isFactorOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ishikawa-diagram-ontology#isFactorOf">
+        <rdfs:domain rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Factor"/>
+        <rdfs:range rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Model"/>
     </owl:ObjectProperty>
     
 
@@ -527,6 +574,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
     
 
 
+    <!-- https://w3id.org/ishikawa-diagram-ontology#depth -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ishikawa-diagram-ontology#depth">
+        <rdfs:domain rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Diagram"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/ishikawa-diagram-ontology#enumerated -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ishikawa-diagram-ontology#enumerated">
@@ -543,6 +599,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
         <rdfs:domain rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Diagram"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment>This property is used to indicate, if the evidence basis was emphasized in the visual representation of the Ishikawa diagram.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence">
+        <rdfs:domain rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Diagram"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 

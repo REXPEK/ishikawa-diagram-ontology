@@ -1,8 +1,10 @@
-@prefix : <#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://example.org/rdfs/> .
+@prefix       : <https://w3id.org/ishikawa-diagram-ontology/example/sourCoffee-dispersion#> .
+@prefix   ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix    rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix   rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
-@prefix ishi: <http://example.org/ishi/> .
+
+<#> a ishi:model .
 
 ## BEGIN: WEIGHT DEFINITION  #################
 

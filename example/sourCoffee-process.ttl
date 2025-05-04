@@ -1,7 +1,9 @@
-@prefix : <#> .
-@prefix rdfs: <http://example.org/rdfs/> .
+@prefix     : <https://w3id.org/ishikawa-diagram-ontology/example/sourCoffee-process#> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix ishi: <http://example.org/ishi/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<#> a ishi:model .
 
 ## BEGIN: PROBLEM DEFINITION  #################
 

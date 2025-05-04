@@ -1,0 +1,114 @@
+@prefix      : <https://w3id.org/ishikawa-diagram-ontology/example/sourCoffee-diagram#> .
+@prefix  adms: <http://www.w3.org/ns/adms#> .
+@prefix  dcterms: <http://purl.org/dc/terms/> .
+@prefix    ex: <https://w3id.org/ishikawa-diagram-ontology/example/> .
+@prefix  isdi: <https://w3id.org/ishikawa-diagram-ontology/ishikawa-diagramming/ishikawa-diagramming#> .
+@prefix  ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix    ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix    oa: <http://www.w3.org/ns/oa#> .
+@prefix   pko: <https://w3id.org/pko#> .
+@prefix  prov: <http://www.w3.org/ns/prov#> .
+@prefix   rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix   xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix  causeEnum: <https://w3id.org/ishikawa-diagram-ontology/example/sourCoffee-causeEnum#> .
+@prefix  dispersion: <https://w3id.org/ishikawa-diagram-ontology/example/sourCoffee-dispersion#> .
+@prefix  process: <https://w3id.org/ishikawa-diagram-ontology/example/sourCoffee-process#> .
+
+# [Begin Workshop]
+:workshop a ishi:Workshop,
+    pko:ProcedureExecution ;
+    dcterms:title "Ishikawa Diagramming Workshop to resolve the problem of sour coffee" ;
+    pko:executesProcedure isdi:ishikawaDiagramming ;
+    adms:status pko:Completed ; 
+    pko:wasExecutedBy <https://w3id.org/ishikawa-diagram-ontology/example/sourCoffee-process#alessio> ,
+        <https://w3id.org/ishikawa-diagram-ontology/example/sourCoffee-process#bianca> ,
+        <https://w3id.org/ishikawa-diagram-ontology/example/sourCoffee-process#carlo> .
+
+:step4 pko:executesStep isdi:step4 ;
+    pko:isIncludedInProcedureExecution :workshop ;
+    prov:generated :diagram-process ,
+        :diagram-dispersion ,
+        :diagram-causeEnum .
+# [End Workshop]
+
+# [Begin Diagrams]
+:diagram-process a ishi:diagram ;
+    ishi:diagramType ishi:productProcessClassificiationDiagram ;
+    ishi:model ex:sourCoffee-process.ttl ;
+    ishi:enumerated 'true'^^xsd:boolean ;
+    ishi:illustratedEvidence 'false'^^xsd:boolean ;
+    ishi:illustratedRoles 'true'^^xsd:boolean ;
+    ishi:illustratedFactorInfluence 'false'^^xsd:boolean ;
+    ishi:illustratedWeight 'false'^^xsd:boolean ;
+    ishi:problem process:sour_coffee ;
+    ishi:depth "5"^^xsd:integer ;
+    ma:locator ex:sourCoffee-diagrams.svg ;
+    ma:format "image/svg+xml" .
+
+:diagram-dispersion a ishi:diagram ;
+    ishi:diagramType ishi:dispersionAnalysisDiagram ;
+    ishi:model ex:sourCoffee-dispersion.ttl ;
+    ishi:designPattern ishi:5MandE ;
+    ishi:enumerated 'false'^^xsd:boolean ;
+    ishi:illustratedEvidence 'false'^^xsd:boolean ;
+    ishi:illustratedRoles 'false'^^xsd:boolean ;
+    ishi:illustratedFactorInfluence 'false'^^xsd:boolean ;
+    ishi:illustratedWeight 'true'^^xsd:boolean ;
+    ishi:problem dispersion:sour_coffee ;
+    ishi:depth "5"^^xsd:integer ;
+    ma:locator ex:sourCoffee-diagrams.svg ;
+    ma:format "image/svg+xml" .
+
+:diagram-causeEnum a ishi:diagram ;
+    ishi:diagramType ishi:causeEnumerationDiagram ;
+    ishi:model ex:sourCoffee-causeEnum.ttl ;
+    ishi:enumerated 'false'^^xsd:boolean ;
+    ishi:illustratedEvidence 'true'^^xsd:boolean ;
+    ishi:illustratedRoles 'false'^^xsd:boolean ;
+    ishi:illustratedFactorInfluence 'true'^^xsd:boolean ;
+    ishi:illustratedWeight 'false'^^xsd:boolean ;
+    ishi:problem causeEnum:sour_coffee ;
+    ishi:depth "5"^^xsd:integer ;
+    ma:locator ex:sourCoffee-diagrams.svg ;
+    ma:format "image/svg+xml" .
+# [End Diagrams]
+
+# [Begin Annotation]
+:identified_root_cause a oa:Annotation ;
+        oa:hasBody [
+            a oa:TextualBody ;
+            rdf:value '''The dirty sponge led to ineffective cleaning of the coffee reservoir
+                      where yeast grew as consequence making the coffee taste sour.  
+                      ''' ;
+            oa:purpose oa:highlighting
+        ] ;
+        oa:hasTarget [
+            a oa:SpecificResource ;
+            oa:hasSource  ex:sourCoffee-diagrams.svg ;
+            oa:hasSelector [ # points on "yeast growth"
+                a oa:FragmentSelector ;
+                rdf:value "xywh=1200,1250,200,50" ;
+                dcterms:conformsTo <http://www.w3.org/TR/media-frags/>
+            ];
+            oa:hasSelector [ # points on "dirty sponge"
+                a oa:FragmentSelector ;
+                rdf:value "xywh=1480,1420,150,30" ;
+                dcterms:conformsTo <http://www.w3.org/TR/media-frags/>
+            ]
+        ] ;
+        prov:hadDerivation dispersion:yeast_growth, dispersion:dirty_sponge .
+# [End Annotation]
+
+
+            
+
+
+
+
+
+
+
+
+

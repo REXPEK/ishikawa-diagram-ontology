@@ -1,7 +1,8 @@
-@prefix : <#> .
-@prefix rdfs: <http://example.org/rdfs/>.
-@prefix ishi: <http://example.org/ishi/> .
+@prefix     : <https://w3id.org/ishikawa-diagram-ontology/example/sourCoffee-causeEnum#> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 
+<#> a ishi:model .
 
 :sour_coffee a ishi:Factor ;
     rdfs:label "Coffee machine outputs coffee with an unexpected sour after-taste." ;
