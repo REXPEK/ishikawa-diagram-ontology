@@ -1,0 +1,121 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Kam Cheong Wong , Kai Zhi Woo , and Kai Hui Woo"^^xsd:string ;
+    dcterms:date "2016-06-18"^^xsd:date ;
+    dcterms:description """Fig. 9.7 Factors affecting one’s behaviour. Note: The dotted lines indicate relevance/connection
+between the advocated concepts"""^^xsd:string ;
+    dcterms:title "FactorsBehavior"^^xsd:string ;
+    ma:format "application/pdf"^^xsd:string ;
+    ma:locator "https://doi.org/10.1007/978-3-319-26209-3_9"^^xsd:anyURI ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#11> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Ivan Pavlov - classical conditioning (1927)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#12> a ishi:Cause,
+        ishi:Factor,
+        ishi:MajorCause,
+        ishi:RootCause ;
+    rdfs:label "B.F. Skinner - Operant conditioning (1930)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#2> a ishi:Cause,
+        ishi:Factor,
+        ishi:MajorCause,
+        ishi:RootCause ;
+    rdfs:label "B.F. Skinner - Genetic Predisposition (1957)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Edward Thorndike - Law of Effect (1898)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#3> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#6> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Edward Tolman - Cognitive behavior (1948)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:MajorCause,
+        ishi:RootCause ;
+    rdfs:label "Charles Darwin - evolutionary adaptions (1898)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "John B Watson - conditioned emotional response (1920)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#10> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "John B Watson - conditioned emotional response (1920)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#3> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Edward Tolman - Cognitive behavior (1948)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#4> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#5> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Edward Thorndike - Law of Effect (1898)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#8> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Ivan Pavlov - classical conditioning (1927)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Factors affecting one's behavior"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FactorsBehavior.ttl#8> .
+

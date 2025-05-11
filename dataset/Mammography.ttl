@@ -1,0 +1,441 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator """Gerald Gartlehner, Marie-Therese Schultes, Viktoria Titscher, Laura C. Morgan, Georgiy V. Bobashev,
+Peyton Williams and Suzanne L. West"""^^xsd:string ;
+    dcterms:date "2017-01-01"^^xsd:date ;
+    dcterms:description "Fig. 3 Fishbone diagram of benefits and risks of mammography screening vs. no screening"^^xsd:string ;
+    dcterms:subject "Healthcare"^^xsd:string ;
+    dcterms:title "Mammography"^^xsd:string ;
+    ma:format "application/pdf"^^xsd:string ;
+    ma:locator "https://doi.org/10.1186/s12874-017-0452-z"^^xsd:anyURI ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#24>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#26>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#27>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#28>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#29>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#30>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#31>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#32>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#33>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#34>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#35>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#36>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#37>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#38>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#39>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#40>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#41>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#42>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#43>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#44>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#45>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#46>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#47>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#48>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#49>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#50>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#51>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#52>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#12> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Fewer deaths with screening"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "1 to 2 fewer deaths per 1000 woman with screening (RR 0.79, 0.68-0.90)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#14> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "7 RCTs (N = 250,274)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#15> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Moderate certainty of evidence"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#17> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Fewer deaths with screening"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#18> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "1 to 3 fewer deaths per 1000 woman screened (RR 0.62, 0.56-0.69)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#19> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "20 Studies (N = not reported)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#20> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Low certainty of evidence"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#23> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "More mastectomies with screening"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#22> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#24> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "0  to 3 more mastectomies per 1000 women screend (RR 1.17, 0.94 - 1.44)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#22> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#25> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "7 RCTs (N = 81,891)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#22> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#26> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Very low certainty of evidence"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#22> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#28> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "More mastectomies with screening"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#27> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#29> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "1 to 3 more mastectomies per 1000 women screend (RR 1.31, 1.20 - 1.43)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#27> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#30> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "1 study (N = not reported)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#27> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#31> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Very low certainty of evidence"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#27> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#34> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "No evidence"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#33> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#36> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "No evidence"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#35> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#39> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "No evidence"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#38> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Similar risk of mortality"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#3> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#41> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Overdiagnosis occurs only with screening"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#40> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#42> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "1% to 52% of cancers detected by screening overdiagnosed"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#40> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#43> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "13 studies (N = not reported)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#40> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#44> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Very low certainty of evidence"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#40> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#47> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "No evidence"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#46> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#49> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "False positive findings occur only with screening"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#48> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "1 fewer to 6 more deaths per 1000 woman screened (RR 10.06, 0.96-1.18)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#3> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#50> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "16.8% of woman with 4 screenings had a false positive result"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#48> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#51> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "1 study (N = not reported)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#48> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#52> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Low certainty of evidence"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#48> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#6> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "1 RCT (N= 39,405)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#3> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Low certainty of evidence"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#3> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "No evidence"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#33> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "RCTs"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#32> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#34> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#35> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Observational Studies"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#32> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#36> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#38> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "RCTs"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#37> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#39> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#46> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "RCTs"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#45> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#47> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#8> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Observational Studies"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#2> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#10> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Breast Cancer-Specific Mortality (11 years)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "All-Cause Mortality (11 years)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#21> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Mastectomies (11-12 years)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#27> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#32> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Quality of life"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#33>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#35> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#37> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "(13 years) Overdiagnosis"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#38>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#40> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#45> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "(11 years) False Positive Mammography Results"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#46>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#48> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#11> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "RCTs"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#10> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#15> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#16> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Observational Studies"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#10> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#20> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#22> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "RCTs"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#21> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#24>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#26> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#27> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Observational Studies"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#21> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#28>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#29>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#30>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#31> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#3> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "RCTs"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#2> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#40> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Observational Studies"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#37> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#41>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#42>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#43>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#44> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#48> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Observational Studies"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#45> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#49>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#50>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#51>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#52> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Balance of Benefits and Risks of Mammography Screening vs No Screening"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#32>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#37>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/Mammography.ttl#45> .
+

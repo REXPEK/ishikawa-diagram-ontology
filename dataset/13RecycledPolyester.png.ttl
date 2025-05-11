@@ -1,0 +1,193 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Yoshida Rao"^^xsd:string ;
+    dcterms:date "2021-03-10"^^xsd:date ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:subject "Enviromental Engineering, Recycled Polyester, Textiles for Shoes"^^xsd:string ;
+    dcterms:title "13RecycledPolyester.png"^^xsd:string ;
+    ma:format "image/png"^^xsd:string ;
+    ma:locator "https://osf.io/3ajrn"^^xsd:anyURI ;
+    ishi:designPattern "(5ME)"^^xsd:string ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#10> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Thermoplastics"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#11> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Decrease in Molecular weight"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Decrease in viscosity"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#14> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Fiber properties depend on molecular weight and intrinsic viscosity"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#16> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Thermal and hydrolytic degradation"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#15> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#17> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Effect of resin additives"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#15> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#19> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Contamination causes deterioration"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#20> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Moisture content"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#21> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Flake washing process brings in moisture"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Seperation, extrusion, pelletization"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Flow rate, screw rotation rate"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Chemical recycling"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Recycled plastic made into thread used for weaving in shoes"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#8> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Heel linings, shoe laces, sock liner covers"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#12> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Properties"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#15> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MEASUREMENTS"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#6> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "METHOD"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#9> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MATERIAL"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#18> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "ENVIRONMENT"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#21> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MACHINE"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Recycled Polyester"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/13RecycledPolyester.png.ttl#9> .
+

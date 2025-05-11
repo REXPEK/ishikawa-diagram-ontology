@@ -1,0 +1,193 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Yoshida Rao"^^xsd:string ;
+    dcterms:date "2021-03-13"^^xsd:date ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:subject "Aromatic Amines"^^xsd:string ;
+    dcterms:title "16AromaticAmines.png"^^xsd:string ;
+    ma:format "image/png"^^xsd:string ;
+    ma:locator "https://osf.io/akzgs"^^xsd:anyURI ;
+    ishi:designPattern "(5ME)"^^xsd:string ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#10> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "dyestuff, rubber-processing, and drug-manufacturing industries"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#12> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Used in property improvements of Epoxy resins"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Oxidation by Fentons's agent for liquid water treatment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#15> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Cobalt and Zinc ferrocynides adsorb aromatic amines"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#16> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Occurs in heated meat and fish specially cooking temps above 150 deg C"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#17> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Improber plastic plates are a source"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#19> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Released by Azo dyes, banned in EU"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#20> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "In environmental water samples"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#21> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Suphonated aromatic amines are easily water soluble and are found in rivers"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lubricants, anti oxidants, and knock agents"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Concrete plasticizers"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#6> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "fabric dyes, brown and blond hair dyes, black shoe dye and black fountain-pen ink"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Electromigration methods using capillary electrophoresis (CE)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Shoe polishing source of aniline in indoor air in homes"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#11> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Properties"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MACHINE"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#4> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#5> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "METHOD"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#8> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MATERIAL"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#14> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MEASUREMENTS"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#18> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "ENVIRONMENT"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#21> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Aromatic Amines"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/16AromaticAmines.png.ttl#8> .
+

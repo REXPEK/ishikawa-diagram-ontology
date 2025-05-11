@@ -1,0 +1,530 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "A. Stewart, Rodney"^^xsd:string,
+        "Martinez-Marquez, Daniel"^^xsd:string,
+        "Mirnajafizadeh, Ali"^^xsd:string,
+        "P. Carty, Christopher"^^xsd:string ;
+    dcterms:date "2018-04-13"^^xsd:date ;
+    dcterms:description "Ishikawa diagram, summary of causes of non-conformity to the quality of custom 3D printed bone implants."^^xsd:string ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:title "LowQualityBone"^^xsd:string ;
+    ma:format "image/png"^^xsd:string ;
+    ma:locator "https://doi.org/10.1371/journal.pone.0195291.g007"^^xsd:anyURI ;
+    ishi:designPattern "(5ME)"^^xsd:string ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#24>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#26>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#27>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#28>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#29>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#30>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#31>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#32>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#33>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#34>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#35>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#36>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#37>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#38>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#39>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#40>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#41>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#42>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#43>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#44>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#45>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#46>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#47>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#48>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#49>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#50>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#51>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#52>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#53>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#54>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#55>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#56>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#57>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#58>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#59>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#60>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#61>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#62>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#63>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#10> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Tolerances"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#11> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "CAD parameters"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#12> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Part shrinkage"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Residual polymerization"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#14> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Cooling cycle"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#15> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Communication method"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#16> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Part cleaning"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#17> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Surface modification"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#18> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "CT protocol"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#19> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Granty tilt"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#20> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Patient movement in CT scanner"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#21> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Segmentation algorithm"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#22> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Files conversion"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#23> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Software"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#24> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Fabrication support structures"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#25> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Simulation results vs real"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#26> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Simulation parameters"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#27> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Incorrect fabrication"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#28> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Thermal warping or distortion"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#29> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Metallic artefacts in CT scanner"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Machine parameters"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#30> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Different professional terminologies"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#31> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Recycling"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#32> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Removal of support structures"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#33> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Quality measurement"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#35> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Machine Calibration"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#34> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#36> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Short of feed power"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#34> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#37> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Laser/print head failure"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#34> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#38> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Random errors"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#34> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#39> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Coater blade"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#34> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "DICOM compress file"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#40> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Misalignment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#34> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#41> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Machine maintenance"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#34> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#42> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Monitoring"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#34> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#43> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Localized heating and cooling"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#34> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#44> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Machine parameters"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#34> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#45> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Maintenance"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#34> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#46> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Speed variation"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#34> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#47> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Part movement"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#34> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#49> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Recycled material"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#48> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Incorrect thresholding"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#50> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Particle size"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#48> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#51> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Expiration"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#48> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#52> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Mix"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#48> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#53> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Material characteristics"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#48> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#54> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Storage"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#48> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#55> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Wrong material"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#48> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#57> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Poor communication"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#56> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#58> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Inexperience"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#56> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#59> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Suppliers"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#56> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#6> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Mesh generation"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#60> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Monitoring"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#56> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#61> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Training"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#56> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#62> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Patient's current health"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#56> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#63> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Knowledge interpretation"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#56> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Freeform approximation"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#8> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Design"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Fabrication orientation"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Low Quality"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#34>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#48>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#56> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#48> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Material"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#49>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#50>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#51>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#52>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#53>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#54>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#55> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#56> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Personnel"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#57>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#58>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#59>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#60>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#61>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#62>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#63> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#34> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Machine"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#35>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#36>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#37>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#38>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#39>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#40>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#41>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#42>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#43>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#44>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#45>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#46>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#47> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Method"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#24>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#26>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#27>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#28>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#29>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#30>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#31>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#32>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#33>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowQualityBone.ttl#9> .
+

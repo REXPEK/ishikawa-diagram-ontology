@@ -29,11 +29,14 @@ This section provides details for each class and property defined by Ishikawa Di
   <li><a href="#http://www.w3.org/ns/oa#Motivation" title="http://www.w3.org/ns/oa#Motivation"> <span>Motivation</span> </a></li>
   <li><a href="#ProbabilityScale" title="https://w3id.org/ishikawa-diagram-ontology#ProbabilityScale"> <span>Probability Scale</span> </a></li>
   <li><a href="#Problem" title="https://w3id.org/ishikawa-diagram-ontology#Problem"> <span>Problem</span> </a></li>
+  <li><a href="#https://w3id.org/pko#Procedure" title="https://w3id.org/pko#Procedure"> <span>Procedure</span> </a></li>
+  <li><a href="#https://w3id.org/pko#ProcedureExecution" title="https://w3id.org/pko#ProcedureExecution"> <span>Procedure Execution</span> </a></li>
   <li><a href="#RelevanceScale" title="https://w3id.org/ishikawa-diagram-ontology#RelevanceScale"> <span>Relevance Scale</span> </a></li>
   <li><a href="#RiskScale" title="https://w3id.org/ishikawa-diagram-ontology#RiskScale"> <span>Risk Scale</span> </a></li>
   <li><a href="#http://www.w3.org/ns/prov#Role" title="http://www.w3.org/ns/prov#Role"> <span>Role</span> </a></li>
   <li><a href="#Role" title="https://w3id.org/ishikawa-diagram-ontology#Role"> <span>Role</span> </a></li>
   <li><a href="#RootCause" title="https://w3id.org/ishikawa-diagram-ontology#RootCause"> <span>Root Cause</span> </a></li>
+  <li><a href="#Technique" title="https://w3id.org/ishikawa-diagram-ontology#Technique"> <span>Technique</span> </a></li>
   <li><a href="#Weight" title="https://w3id.org/ishikawa-diagram-ontology#Weight"> <span>Weight</span> </a></li>
   <li><a href="#WeightRange" title="https://w3id.org/ishikawa-diagram-ontology#WeightRange"> <span>Weight Range</span> </a></li>
   <li><a href="#WeightScale" title="https://w3id.org/ishikawa-diagram-ontology#WeightScale"> <span>Weight Scale</span> </a></li>
@@ -229,6 +232,9 @@ This section provides details for each class and property defined by Ishikawa Di
  <div class="entity" id="CertaintyScale">
   <h3>Certainty Scale<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#CertaintyScale</p>
+  <div class="comment">
+   <span class="markdown">A WeightScale where the numerical weight refers to the certainty.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -576,6 +582,36 @@ This section provides details for each class and property defined by Ishikawa Di
    </dd>
   </dl>
  </div>
+ <div class="entity" id="https://w3id.org/pko#Procedure">
+  <h3>Procedure<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pko#Procedure</p>
+  <div class="comment">
+   <span class="markdown">A Procedure represents a sequence of actions to be executed in order to achieve a desired outcome.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Technique" title="https://w3id.org/ishikawa-diagram-ontology#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/pko#ProcedureExecution">
+  <h3>Procedure Execution<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pko#ProcedureExecution</p>
+  <div class="comment">
+   <span class="markdown">A Procedure Execution is an Activity representing the execution of a certain Procedure, performed by one or more Agents, during a time interval.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Workshop" title="https://w3id.org/ishikawa-diagram-ontology#Workshop">Workshop</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="RelevanceScale">
   <h3>Relevance Scale<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#RelevanceScale</p>
@@ -675,6 +711,27 @@ This section provides details for each class and property defined by Ishikawa Di
    </dd>
   </dl>
  </div>
+ <div class="entity" id="Technique">
+  <h3>Technique<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#Technique</p>
+  <div class="comment">
+   <span class="markdown">An established activity with the goal of peperapring or creating an Ishikawa diagram</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/pko#Procedure" title="https://w3id.org/pko#Procedure">Procedure</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#usedTechnique" title="https://w3id.org/ishikawa-diagram-ontology#usedTechnique">used Technique</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="Weight">
   <h3>Weight<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#Weight</p>
@@ -707,7 +764,7 @@ This section provides details for each class and property defined by Ishikawa Di
     is in range of
    </dt>
    <dd>
-    <a href="#hasNamedRange" title="https://w3id.org/ishikawa-diagram-ontology#hasNamedRange">has Named Range</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasNamedRange" title="https://w3id.org/ishikawa-diagram-ontology#hasNamedRange">has Named Range</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasWeightRange" title="https://w3id.org/ishikawa-diagram-ontology#hasWeightRange">has Weight Range</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -728,7 +785,7 @@ This section provides details for each class and property defined by Ishikawa Di
     is in domain of
    </dt>
    <dd>
-    <a href="#hasNamedRange" title="https://w3id.org/ishikawa-diagram-ontology#hasNamedRange">has Named Range</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasNamedRange" title="https://w3id.org/ishikawa-diagram-ontology#hasNamedRange">has Named Range</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasWeightRange" title="https://w3id.org/ishikawa-diagram-ontology#hasWeightRange">has Weight Range</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -741,12 +798,21 @@ This section provides details for each class and property defined by Ishikawa Di
  <div class="entity" id="Workshop">
   <h3>Workshop<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#Workshop</p>
+  <div class="comment">
+   <span class="markdown">A structured or guided activity to create an Ishikawa diagram</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
    </dt>
    <dd>
-    <a href="http://www.co-ode.org/ontologies/ont.owl#ProcedureExecution" target="_blank" title="http://www.co-ode.org/ontologies/ont.owl#ProcedureExecution">Procedure Execution</a> <sup class="type-c" title="class">c</sup>
+    <a href="#https://w3id.org/pko#ProcedureExecution" title="https://w3id.org/pko#ProcedureExecution">Procedure Execution</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#usedTechnique" title="https://w3id.org/ishikawa-diagram-ontology#usedTechnique">used Technique</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -795,6 +861,7 @@ This section provides details for each class and property defined by Ishikawa Di
   <li><a href="#http://www.w3.org/ns/prov#qualifiedInfluence" title="http://www.w3.org/ns/prov#qualifiedInfluence"> <span>qualified Influence</span> </a></li>
   <li><a href="#http://www.w3.org/ns/prov#qualifiedInfluenceOf" title="http://www.w3.org/ns/prov#qualifiedInfluenceOf"> <span>qualified Influence Of</span> </a></li>
   <li><a href="#scale" title="https://w3id.org/ishikawa-diagram-ontology#scale"> <span>scale</span> </a></li>
+  <li><a href="#usedTechnique" title="https://w3id.org/ishikawa-diagram-ontology#usedTechnique"> <span>used Technique</span> </a></li>
   <li><a href="#http://www.w3.org/ns/prov#wasAssociatedFor" title="http://www.w3.org/ns/prov#wasAssociatedFor"> <span>was Associated For</span> </a></li>
   <li><a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith"> <span>was Associated With</span> </a></li>
   <li><a href="#http://www.w3.org/ns/prov#wasAttributedTo" title="http://www.w3.org/ns/prov#wasAttributedTo"> <span>was Attributed To</span> </a></li>
@@ -1351,6 +1418,22 @@ This section provides details for each class and property defined by Ishikawa Di
   <div class="comment">
    <span class="markdown">This property is used to link a WeightScale to the WeightRange which defines its total range.</span>
   </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#WeightScale" title="https://w3id.org/ishikawa-diagram-ontology#WeightScale">Weight Scale</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#WeightRange" title="https://w3id.org/ishikawa-diagram-ontology#WeightRange">Weight Range</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
  </div>
  <div class="entity" id="http://www.w3.org/ns/prov#influenced">
   <h3>influenced<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
@@ -1731,6 +1814,26 @@ This section provides details for each class and property defined by Ishikawa Di
    </dl>
   </div>
  </div>
+ <div class="entity" id="usedTechnique">
+  <h3>used Technique<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#usedTechnique</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Workshop" title="https://w3id.org/ishikawa-diagram-ontology#Workshop">Workshop</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Technique" title="https://w3id.org/ishikawa-diagram-ontology#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="http://www.w3.org/ns/prov#wasAssociatedFor">
   <h3>was Associated For<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/prov#wasAssociatedFor</p>
@@ -1988,6 +2091,9 @@ This section provides details for each class and property defined by Ishikawa Di
  <div class="entity" id="depth">
   <h3>depth<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#depth</p>
+  <div class="comment">
+   <span class="markdown">This property is used to indicate the maximal depth of the visual representation of an Ishikawa diagram.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
@@ -2054,6 +2160,9 @@ This section provides details for each class and property defined by Ishikawa Di
  <div class="entity" id="illustratedFactorInfluence">
   <h3>illustrated Factor Influence<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence</p>
+  <div class="comment">
+   <span class="markdown">This property is used to indicate, if the factors' influence on the problem were emphasized in the visual representation of the Ishikawa diagram.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>

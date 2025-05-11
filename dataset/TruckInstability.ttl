@@ -1,0 +1,237 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Li, Pingfei"^^xsd:string,
+        "Li, Yi"^^xsd:string,
+        "Liu, Yishan"^^xsd:string,
+        "Wang, Li"^^xsd:string,
+        "Zhang, Shibo"^^xsd:string,
+        "Zhou, Xixi"^^xsd:string,
+        "et al."^^xsd:string ;
+    dcterms:date "2023-03-08"^^xsd:date ;
+    dcterms:description "Fishbone diagram of cause mechanism of truck right turning instability accident at T-shaped intersection on long downhill."^^xsd:string ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:title "TruckInstability"^^xsd:string ;
+    ma:format "image/png"^^xsd:string ;
+    ma:locator "https://doi.org/10.1371/journal.pone.0282779.g016"^^xsd:anyURI ;
+    ishi:designPattern "free"^^xsd:string ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#24>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#26>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#11> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Weather"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#12> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Dim lighting"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Road landscape"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#15> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Drive over the speed limit"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#16> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Overload"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#17> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Insufficient braking capacity"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#18> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "mechanical failure"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#20> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Improper emergency operation"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#21> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Not familiar with the road"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#22> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Inattention"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#23> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Drunk driving"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#24> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Fatigue driving"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#25> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Overspeed driving"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#26> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Careless observation"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Small curve radius"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Incomplete marking"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Poor sight distance"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#6> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Low road adhesion coefficient"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Small cross slope on the right turning track"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#8> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Pavement damage"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Wet pavement"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#10> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Environment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Truck instability accident"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#14> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Truck"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#19> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Driver"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#24>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#26> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Road"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/TruckInstability.ttl#9> .
+

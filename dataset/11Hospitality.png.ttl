@@ -1,0 +1,209 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Yoshida Rao"^^xsd:string ;
+    dcterms:date "2021-03-18"^^xsd:date ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:subject "Hospitality sector, Tourism"^^xsd:string ;
+    dcterms:title "11Hospitality.png"^^xsd:string ;
+    ma:format "image/png"^^xsd:string ;
+    ma:locator "https://osf.io/dzjhe"^^xsd:anyURI ;
+    ishi:designPattern "5ME"^^xsd:string ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#11> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Food items, beverages and water are not of standard or superior quality"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#12> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Materials used in kitchen for cooking purposes are not cleaned properly"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#14> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Less recruitment in hotels"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#15> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Too much responsibility to a single person"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#16> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Dissatisfied overworked and low paid employess"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#18> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Constant dip in the point of sale"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#19> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Inaccuracy in maintaining Hotel inventory details"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#20> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Problems in managing huge data bases"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#22> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Work culture and environment is not friendly"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#21> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#23> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Presence of too many competitors"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#21> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "No CRM Software in the Hotel Management"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Absence of Hotel Automation through a Computerized system"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Non-availbility of Room due to technical glitches"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Attractive offers not made by the salesperson"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#8> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lack of Managerial skills and Leadership qualities in the owner of the hotel"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Preferences and the behaviour of the customer not analyzed properly"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#10> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MATERIAL"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#21> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "ENVIRONMENT"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#23> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#13> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MANPOWER"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#17> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MEASUREMENTS"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#20> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MACHINE"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#6> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "METHOD"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Customer dissatisfaction in Hospitality Sector"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/11Hospitality.png.ttl#6> .
+

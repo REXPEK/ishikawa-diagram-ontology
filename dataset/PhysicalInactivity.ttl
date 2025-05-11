@@ -1,0 +1,354 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Buelo, Audrey"^^xsd:string,
+        "Jepson, Ruth"^^xsd:string,
+        "Kirk, Alison"^^xsd:string ;
+    dcterms:date "2020-11-03"^^xsd:date ;
+    dcterms:description "A fishbone diagram demonstrating barriers to physical activity."^^xsd:string ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:title "PhysicalInactivity"^^xsd:string ;
+    ma:format "image/jpeg"^^xsd:string ;
+    ma:locator "https://doi.org/10.6084/m9.figshare.13181452.v1"^^xsd:anyURI ;
+    ishi:designPattern "free"^^xsd:string ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#24>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#26>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#27>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#28>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#29>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#30>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#31>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#32>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#33>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#34>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#35>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#36>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#37>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#38>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#39>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#40>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#41>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#11> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lack of child-friendly LC classes or non-baby classes"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#12> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Clothes fit differently postpartum (don't fit into old exercise clothes)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Exercise clothes aren't suited to plus-size women"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#14> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lower maternity leave pay"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#15> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "No affordable creches in LCs"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#16> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Working part/full time (guilt associated)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#17> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lack of chilcare help (and norm of accepting childcare)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#19> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Feeling judged by others when exercising"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#20> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Hard to plan with partner's schedule"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#21> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Don't have active social circle, partner, family"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#22> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Gyms don't feel approachable"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#23> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "PA class times are not good for mums"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#26> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lack of time/too busy"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#25> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#27> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lack of sleep"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#25> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#28> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Unsure how to prevent it"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#25> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Winter darkness"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#30> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lack of motivation"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#29> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#31> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "In denial or unconcerned"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#29> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#32> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Inconsistent exercise"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#29> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#33> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Don't enjoy PA - boring, hard"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#29> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#34> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lack of confidence"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#29> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#35> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "I'm just lazy"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#29> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#37> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Breastfeeding"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#36> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#38> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Asthma"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#36> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#39> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Injuries"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#36> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lack of access to green space"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#40> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Urine incontinence"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#36> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#41> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Menstruation"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#36> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Grew up with unhealthy lifestyle"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#6> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Guilt for self-care"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Driving everywhere"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#8> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Leisure facilities are unsuitable"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Not a priority in your own life"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#24> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Individual factors"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#29> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#25> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Practical"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#24> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#26>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#27>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#28> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Physical Inactivity"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#24>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#36> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#18> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Social and community factors"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#23> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#36> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Biological factors"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#37>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#38>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#39>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#40>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#41> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#29> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Psychological"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#24> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#30>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#31>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#32>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#33>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#34>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#35> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#10> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Living and working conditions"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "General socio-economic conditions"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/PhysicalInactivity.ttl#9> .
+

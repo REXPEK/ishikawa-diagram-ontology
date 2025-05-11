@@ -1,0 +1,241 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Yoshida Rao"^^xsd:string ;
+    dcterms:date "2021-03-06"^^xsd:date ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:subject "Healthcare"^^xsd:string ;
+    dcterms:title "15DifficultiesInCovidHospitalMa"^^xsd:string ;
+    ma:format "image/png"^^xsd:string ;
+    ma:locator "https://osf.io/z95sf"^^xsd:anyURI ;
+    ishi:designPattern "5ME"^^xsd:string ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#24>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#26>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#27>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#10> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Government funds"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#11> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Increase in bed capacity"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Sanitizers"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#14> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Effective medicines"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#15> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Autoclaves"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#17> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Doctors"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#18> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Paramedical staff"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#19> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Nurses"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#20> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lab technician"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#21> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Cleaning staff"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#23> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Calculation of high risk"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#22> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#24> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Allotment of number of beds"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#22> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#26> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Proper sanitation"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#25> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#27> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Isolation of beds"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#25> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Provision of ECG, EKG and Defibrillators"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Fire extinguishers"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "PPE Kits"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#6> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Testing Equipments"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Computerized entry of patient records"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Social Service grants"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#22> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MEASUREMENTS"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#24> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#25> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "ENVIRONMENT"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#26>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#27> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#12> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MATERIAL"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#15> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#8> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "METHOD"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#16> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MANPOWER"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#21> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MACHINE"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Difficulties in Covid Hospital Management"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/15DifficultiesInCovidHospitalMa.ttl#8> .
+

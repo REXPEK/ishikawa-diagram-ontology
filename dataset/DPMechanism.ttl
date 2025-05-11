@@ -1,0 +1,125 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "A.Yu. Yurin, A.F. Berman, N.O. Dorodnykh, O.A. Nikolaychuk, and N.Yu Pavlov"^^xsd:string ;
+    dcterms:date "2018-05-21"^^xsd:date ;
+    dcterms:description "Figure 2. The fishbone diagram template with main cause categories of degradation processes"^^xsd:string ;
+    dcterms:title "DPMechanism"^^xsd:string ;
+    ma:format "application/pdf"^^xsd:string ;
+    ma:locator "https:/doi.org/10.23919/MIPRO.2018.8400177"^^xsd:anyURI ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#10> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Hurricane [CF]"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#12> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Agent [CF]"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Load [CF]"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Operator errors [CF]"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Preventing actions [CF]"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "name - value"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Earthquake [CF]"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#5> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Technical object properties"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#6> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Material [CF]"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#5> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#11> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Operational factors"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Controls"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#4> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#8> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Natural effects"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "DP mechanism [CF]"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DPMechanism.ttl#8> .
+

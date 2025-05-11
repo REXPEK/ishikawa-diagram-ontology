@@ -1,0 +1,212 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "B Hickson, Gerald"^^xsd:string,
+        "D Hain, Paul"^^xsd:string,
+        "H Bledsoe, Sandra"^^xsd:string,
+        "Hamming, David"^^xsd:string,
+        "Hathaway, Jacob"^^xsd:string,
+        "W Pichert, James"^^xsd:string,
+        "et al. (2011). A hypothetical 6 month old female weighing 15 1/2 pounds was admitted with a diagnosis of seizures. figshare. Figure."^^xsd:string ;
+    dcterms:date "2011-12-31"^^xsd:date ;
+    dcterms:description "A hypothetical 6 month old female weighing 15 1/2 pounds was admitted with a diagnosis of seizures"^^xsd:string ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:title "RespiratoryArrest"^^xsd:string ;
+    ma:format "image/png"^^xsd:string ;
+    ma:locator "https://doi.org/10.6084/m9.figshare.80128.v1"^^xsd:anyURI ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#10> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Jousting: inappropriate reaction to RN questions (Communication)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#11> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Parents complained about treatment delays starting with ED (Communication)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Resuscitation delayed: No ambu bag in room (Equipment)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#16> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Not clear why"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#15> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#18> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "4 interns involved: 1 ED, 1 on admit to floor, 1 with new on call team. 1 on resuscitation team (Fragmentation of care)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#20> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Child seizing, then not breathing, not clear why, and no one talking to parents"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#23> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Policy: no parents in PICU until pt stabilized (Policy)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#22> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Child admitted to floor from ED with new onset seizures, given too much Phenobarbital (Prescribing/dispensing)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Dosing is 20mg/kg; child weight was recorded in kg, but .. in pounds, so dose was miscalculated (Documentation)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#4> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "System always signals error for loading dose (Equipment)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#12> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Equipment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#15> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "MD was unprofessional toward RN & RN did not go up Chain of Command (Communication)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#14> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#17> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "4 Interns involved, but none recognized the medication error (Supervision)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#14> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#19> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Parents were anxious, angry, complaining to MD (Communication)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#14> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#20> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#21> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Policies"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#22> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#22> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Parents angry, untrusting: wanted to accompany child to PICU"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#21> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#23> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#4> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Too much Phenobarbital: Intern gave overdose"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#2> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#6> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Computer error message for high dose was overridden"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#2> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#8> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "RN noted problem, quesioned MD, failed to press the concern (Communication)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#2> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#9> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Covering MD ordered RN to proceed, RN did"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#8> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#14> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "People"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Respiratory arrest and delayed resuscitation"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#21> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Procedures"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RespiratoryArrest.ttl#8> .
+

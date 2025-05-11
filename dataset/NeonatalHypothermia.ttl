@@ -1,0 +1,205 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Chen, Yin-Ting"^^xsd:string,
+        "Chen, Yu-Lien"^^xsd:string,
+        "Chiu, Wei-Tse"^^xsd:string,
+        "Lin, Yi-Chieh"^^xsd:string,
+        "Lu, Yi-Hsuan"^^xsd:string,
+        "Tan, Yin Ling"^^xsd:string,
+        "et al."^^xsd:string ;
+    dcterms:date "2022-09-02"^^xsd:date ;
+    dcterms:description "Fishbone diagram for potential factors of neonatal hypothermia."^^xsd:string ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:title "NeonatalHypothermia"^^xsd:string ;
+    ma:format "image/png"^^xsd:string ;
+    ma:locator "https://doi.org/10.1371/journal.pone.0273946.g001"^^xsd:anyURI ;
+    ishi:designPattern "free"^^xsd:string ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#10> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "No unified timing of BT measurement"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#11> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Insufficient education on the importance of preventing preterm hypothermia"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lack of inservice education of related topics"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#14> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lack of algorithm or SOP"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#16> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Long distance between DR and NICU"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#15> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#18> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Low room temperature rise rate"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#19> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "No independent air conditioner"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#21> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lack of items to prevent heat loss"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#20> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#22> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lack of equipment to elevate temperature"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#20> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lack of awareness about hypothermia effect on preterm infants"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#3> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Uncertainty of correct practice by medical staff"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#3> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#6> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Poor coordination"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#3> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#8> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Could not elevate DR room temperate immediately"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#7> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Staff of engineering affairs office"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#2> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#12> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Inconsistent practices by various neonatal staff"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#9> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#15> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Environment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#17> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Low room temperature of DR"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#15> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Staff"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#20> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Equipment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#22> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#3> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Doctors and nurses"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#2> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#9> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Policy"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Neonatal Hypothermia"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/NeonatalHypothermia.ttl#9> .
+

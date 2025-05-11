@@ -267,6 +267,8 @@
 # 
 # https://w3id.org/ishikawa-diagram-ontology#hasWeightRange
 <https://w3id.org/ishikawa-diagram-ontology#hasWeightRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ishikawa-diagram-ontology#hasWeightRange> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#WeightScale> .
+<https://w3id.org/ishikawa-diagram-ontology#hasWeightRange> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#WeightRange> .
 <https://w3id.org/ishikawa-diagram-ontology#hasWeightRange> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link a WeightScale to the WeightRange which defines its total range." .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf
@@ -308,6 +310,8 @@
 # 
 # https://w3id.org/ishikawa-diagram-ontology#usedTechnique
 <https://w3id.org/ishikawa-diagram-ontology#usedTechnique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ishikawa-diagram-ontology#usedTechnique> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Workshop> .
+<https://w3id.org/ishikawa-diagram-ontology#usedTechnique> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#Technique> .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#wasCausedBy
 <https://w3id.org/ishikawa-diagram-ontology#wasCausedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -341,6 +345,7 @@
 <https://w3id.org/ishikawa-diagram-ontology#depth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#depth> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Diagram> .
 <https://w3id.org/ishikawa-diagram-ontology#depth> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/ishikawa-diagram-ontology#depth> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to indicate the maximal depth of the visual representation of an Ishikawa diagram." .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#enumerated
 <https://w3id.org/ishikawa-diagram-ontology#enumerated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -358,6 +363,7 @@
 <https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Diagram> .
 <https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to indicate, if the factors' influence on the problem were emphasized in the visual representation of the Ishikawa diagram." .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#illustratedRoles
 <https://w3id.org/ishikawa-diagram-ontology#illustratedRoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -379,12 +385,6 @@
 # #
 # #################################################################
 # 
-# 
-# http://www.co-ode.org/ontologies/ont.owl#Procedure
-<http://www.co-ode.org/ontologies/ont.owl#Procedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://www.co-ode.org/ontologies/ont.owl#ProcedureExecution
-<http://www.co-ode.org/ontologies/ont.owl#ProcedureExecution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/ns/oa#Annotation
 <http://www.w3.org/ns/oa#Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -453,6 +453,7 @@
 # https://w3id.org/ishikawa-diagram-ontology#CertaintyScale
 <https://w3id.org/ishikawa-diagram-ontology#CertaintyScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#CertaintyScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ishikawa-diagram-ontology#WeightScale> .
+<https://w3id.org/ishikawa-diagram-ontology#CertaintyScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A WeightScale where the numerical weight refers to the certainty." .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#DesignPattern
 <https://w3id.org/ishikawa-diagram-ontology#DesignPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -540,6 +541,8 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/ishikawa-diagram-ontology#Technique
 <https://w3id.org/ishikawa-diagram-ontology#Technique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ishikawa-diagram-ontology#Technique> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pko#Procedure> .
+<https://w3id.org/ishikawa-diagram-ontology#Technique> <http://www.w3.org/2000/01/rdf-schema#comment> "An established activity with the goal of peperapring or creating an Ishikawa diagram" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#Weight
 <https://w3id.org/ishikawa-diagram-ontology#Weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -555,7 +558,16 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/ishikawa-diagram-ontology#Workshop
 <https://w3id.org/ishikawa-diagram-ontology#Workshop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ishikawa-diagram-ontology#Workshop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/ont.owl#ProcedureExecution> .
+<https://w3id.org/ishikawa-diagram-ontology#Workshop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pko#ProcedureExecution> .
+<https://w3id.org/ishikawa-diagram-ontology#Workshop> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured or guided activity to create an Ishikawa diagram" .
+# 
+# https://w3id.org/pko#Procedure
+<https://w3id.org/pko#Procedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pko#Procedure> <http://www.w3.org/2000/01/rdf-schema#comment> "A Procedure represents a sequence of actions to be executed in order to achieve a desired outcome." .
+# 
+# https://w3id.org/pko#ProcedureExecution
+<https://w3id.org/pko#ProcedureExecution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pko#ProcedureExecution> <http://www.w3.org/2000/01/rdf-schema#comment> "A Procedure Execution is an Activity representing the execution of a certain Procedure, performed by one or more Agents, during a time interval." .
 # 
 # 
 # 

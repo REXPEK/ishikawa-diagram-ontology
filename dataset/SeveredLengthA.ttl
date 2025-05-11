@@ -1,0 +1,190 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Kaoru Ishikawa"^^xsd:string ;
+    dcterms:date "1986-02-01"^^xsd:date ;
+    dcterms:description "Figure 9.1 (A) Cause-and-effect diagram with possible causes listed"^^xsd:string ;
+    dcterms:subject "Manufacturing"^^xsd:string ;
+    dcterms:title "SeveredLengthA"^^xsd:string ;
+    ma:format "application/x-book"^^xsd:string ;
+    ma:locator "ISBN-10: 9283310365"^^xsd:string ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#10> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Adhesiveness"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#12> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Set"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#14> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Terminal"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#16> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Cutter"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#15> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#18> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Pull"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#20> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Looseness"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#21> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Clutch"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Speed"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Bumbs"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#4> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#8> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Width"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Thickness"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#13> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Detection section"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#11> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#17> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Fitting position"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#15> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#4> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Belt surface"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#2> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#6> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Material"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#11> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Monitoring instruments"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#19> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Driving system"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#15> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#21> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Conveyor"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#4> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#15> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Cutting System"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#7> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Feed amount"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#6> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Severed length"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SeveredLengthA.ttl#6> .
+

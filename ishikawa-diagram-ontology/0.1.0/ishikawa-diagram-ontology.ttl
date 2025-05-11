@@ -311,6 +311,8 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 ###  https://w3id.org/ishikawa-diagram-ontology#hasWeightRange
 :hasWeightRange rdf:type owl:ObjectProperty ;
+                rdfs:domain :WeightScale ;
+                rdfs:range :WeightRange ;
                 rdfs:comment "This property is used to link a WeightScale to the WeightRange which defines its total range." .
 
 
@@ -358,7 +360,9 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#usedTechnique
-:usedTechnique rdf:type owl:ObjectProperty .
+:usedTechnique rdf:type owl:ObjectProperty ;
+               rdfs:domain :Workshop ;
+               rdfs:range :Technique .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#wasCausedBy
@@ -390,7 +394,8 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 ###  https://w3id.org/ishikawa-diagram-ontology#depth
 :depth rdf:type owl:DatatypeProperty ;
        rdfs:domain :Diagram ;
-       rdfs:range xsd:integer .
+       rdfs:range xsd:integer ;
+       rdfs:comment "This property is used to indicate the maximal depth of the visual representation of an Ishikawa diagram." .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#enumerated
@@ -410,7 +415,8 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 ###  https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence
 :illustratedFactorInfluence rdf:type owl:DatatypeProperty ;
                             rdfs:domain :Diagram ;
-                            rdfs:range xsd:boolean .
+                            rdfs:range xsd:boolean ;
+                            rdfs:comment "This property is used to indicate, if the factors' influence on the problem were emphasized in the visual representation of the Ishikawa diagram." .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#illustratedRoles
@@ -430,14 +436,6 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 #################################################################
 #    Classes
 #################################################################
-
-###  http://www.co-ode.org/ontologies/ont.owl#Procedure
-<http://www.co-ode.org/ontologies/ont.owl#Procedure> rdf:type owl:Class .
-
-
-###  http://www.co-ode.org/ontologies/ont.owl#ProcedureExecution
-<http://www.co-ode.org/ontologies/ont.owl#ProcedureExecution> rdf:type owl:Class .
-
 
 ###  http://www.w3.org/ns/oa#Annotation
 <http://www.w3.org/ns/oa#Annotation> rdf:type owl:Class ;
@@ -521,7 +519,8 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 ###  https://w3id.org/ishikawa-diagram-ontology#CertaintyScale
 :CertaintyScale rdf:type owl:Class ;
-                rdfs:subClassOf :WeightScale .
+                rdfs:subClassOf :WeightScale ;
+                rdfs:comment "A WeightScale where the numerical weight refers to the certainty." .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#DesignPattern
@@ -621,7 +620,9 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Technique
-:Technique rdf:type owl:Class .
+:Technique rdf:type owl:Class ;
+           rdfs:subClassOf <https://w3id.org/pko#Procedure> ;
+           rdfs:comment "An established activity with the goal of peperapring or creating an Ishikawa diagram" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Weight
@@ -641,7 +642,18 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Workshop
 :Workshop rdf:type owl:Class ;
-          rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#ProcedureExecution> .
+          rdfs:subClassOf <https://w3id.org/pko#ProcedureExecution> ;
+          rdfs:comment "A structured or guided activity to create an Ishikawa diagram" .
+
+
+###  https://w3id.org/pko#Procedure
+<https://w3id.org/pko#Procedure> rdf:type owl:Class ;
+                                 rdfs:comment "A Procedure represents a sequence of actions to be executed in order to achieve a desired outcome." .
+
+
+###  https://w3id.org/pko#ProcedureExecution
+<https://w3id.org/pko#ProcedureExecution> rdf:type owl:Class ;
+                                          rdfs:comment "A Procedure Execution is an Activity representing the execution of a certain Procedure, performed by one or more Agents, during a time interval." .
 
 
 #################################################################

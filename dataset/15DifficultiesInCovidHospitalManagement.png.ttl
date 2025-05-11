@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset#3> a ishi:diagram ;
+    dcterms:creator "Yoshida Rao"^^xsd:string ;
+    dcterms:date "2021-03-06"^^xsd:date ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:subject "Healthcare"^^xsd:string ;
+    dcterms:title "15DifficultiesInCovidHospitalManagement.png"^^xsd:string ;
+    ma:format "image/png"^^xsd:string ;
+    ma:locator "https://osf.io/z95sf"^^xsd:anyURI ;
+    ishi:designPattern "5ME"^^xsd:string .
+

@@ -1,0 +1,358 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Hirai, Flávio E."^^xsd:string,
+        "Lira, Luis Henrique"^^xsd:string,
+        "Nakano, Eliane Mayumi"^^xsd:string,
+        "Oliveira, Marivaldo"^^xsd:string,
+        "Portellinha, Waldir"^^xsd:string ;
+    dcterms:date "2017-10-01"^^xsd:date ;
+    dcterms:description "Use of the Ishikawa diagram in a case-control analysis to assess the causes of a diffuse lamellar keratitis outbreak"^^xsd:string ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:title "DLK"^^xsd:string ;
+    ma:format "image/jpeg"^^xsd:string ;
+    ma:locator "https://doi.org/10.6084/m9.figshare.5666359.v1"^^xsd:anyURI ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#24>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#26>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#27>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#28>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#29>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#30>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#31>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#32>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#33>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#34>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#35>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#36>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#37>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#38>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#39>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#40>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#41>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#11> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Glove"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#12> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Irrigation cannula"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Sponge"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#14> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Ganban violet marker"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#15> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Drape"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#16> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Air filter"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#17> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Microkeratome blade"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#19> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "MKT"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#20> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "EC 500"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#21> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Autoclaves"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#22> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Steemer"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#24> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Age"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#23> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#25> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Gender"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#23> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#26> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Immunologic conditions"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#23> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#27> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Preoperative antibiotics or eyedrops"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#23> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#29> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Air conditioning system"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#28> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Time period"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#30> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Terminal cleaning touring"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#28> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#31> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Laser refilling gas"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#28> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#32> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Weather"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#28> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#34> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Eyedrops"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#33> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#35> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "BSS"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#33> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#36> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Iode face degermation"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#33> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#37> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Hand scrup soap"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#33> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#38> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Distilled water source"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#33> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#39> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Instrumental cleaning solution"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#33> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Percentage of cases"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#41> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "INstrument kit identification"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#40> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Occurrence pattern"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Physician"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#8> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Technician"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Room assistance"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#40> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Instruments"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#41> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Other"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#6> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Staff personnel"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#18> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Equipment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#22> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#23> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Patients"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#24>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#26>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#27> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#28> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Environment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#29>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#30>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#31>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#32> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#33> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Solutions"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#34>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#35>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#36>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#37>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#38>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#39> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#10> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Materials"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "DLK"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#28>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#33>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#40>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/DLK.ttl#6> .
+

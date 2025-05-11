@@ -1,0 +1,249 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Yoshida Rao"^^xsd:string ;
+    dcterms:date "2021-03-19"^^xsd:date ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:subject "Paragliding, Tourism"^^xsd:string ;
+    dcterms:title "12Paragliding.png"^^xsd:string ;
+    ma:format "image/png"^^xsd:string ;
+    ma:locator "https://osf.io/qw8mz"^^xsd:anyURI ;
+    ishi:designPattern "5ME"^^xsd:string ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#24>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#26>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#27>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#28>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#10> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Safety measures are not taken"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#11> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Difficulties due to improper postures"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "The material used for paragliding wing is not analyzed properly"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#14> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Respirator gas is not checked"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#15> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "The material used for brake handles is not strong enough"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#17> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "An untrained pilot for paragliding"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#18> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Paraglider not following intructions"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#20> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Measurement of wind speed is not done correctly"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#21> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "measurement of height is not done correctly"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#22> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Velocity of free fall is not calculated"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#24> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "No wind during flight"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#23> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#25> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Cloudy weather"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#23> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#26> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "No visibility in the sky"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#23> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#27> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Heavy rainfall / hurrican or strong wind"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#23> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#28> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "No flat surface for land"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#23> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "The helmet used is unsafe"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Altimeter is faulty"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Radio equipment or wireless phone not working"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#6> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "GPS not working"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Not using respirators at high altitude"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "The hardness is not done properly"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#16> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MANPOWER"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#12> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MATERIAL"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#15> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#19> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MEASUREMENTS"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#22> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#8> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "METHOD"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MACHINE"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#23> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "ENVIRONMENT"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#24>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#26>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#27>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#28> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Errors in Paragliding process"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/12Paragliding.png.ttl#8> .
+

@@ -1,0 +1,177 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Fialho, Isabelle Cristine Tavares Silva"^^xsd:string,
+        "Fuly, Patrícia dos Santos Claro"^^xsd:string,
+        "Monteiro, Debora Esteves"^^xsd:string,
+        "Passos, Patrícia Martins"^^xsd:string ;
+    dcterms:date "2021-05-01"^^xsd:date ;
+    dcterms:description "Management of coping with the risks of COVID-19 in an onco-hematological outpatient clinic: an experience report"^^xsd:string ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:title "COVID19Contamination"^^xsd:string ;
+    ma:format "image/png"^^xsd:string ;
+    ma:locator "https://doi.org/10.6084/m9.figshare.19928482.v1"^^xsd:anyURI ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#11> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Closed environments"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#12> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Too many people circulating and working in the units"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Absence of control of people entering the units"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#14> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Possible agglomeration"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#15> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Fear of possible contamination by SARS-VOC-2"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#17> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Absence of distance and physical barriers with other people during work"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#18> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Absence of adequate guidance on the routine use of personal protective equipment due to the pandemic"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#19> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Routine use of masks and other personal protective equipment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Fear of possible contamination by SARS-VOC-2"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Need for treatment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Need for monitoring with an assistance team"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Routine non-use of masks by the team, patients, and companions"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#8> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Routine non-use of cloaks and face shields by assistance teams"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Use of 70% gel alcohol in greater quantity by the team and by patients and visitors"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#16> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "TEAM"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "PATIENTS"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#6> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MATERIAL"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "CONTAMINATION BY SARS-COV-2"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#10> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "ENVIRONMENT"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Contamination.ttl#15> .
+

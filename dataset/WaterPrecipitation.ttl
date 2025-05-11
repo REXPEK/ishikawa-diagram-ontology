@@ -1,0 +1,162 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Chen, Huali"^^xsd:string,
+        "Chen, Teng"^^xsd:string,
+        "Gong, Xingchu"^^xsd:string,
+        "Qu, Haibin"^^xsd:string ;
+    dcterms:date "2014-08-07"^^xsd:date ;
+    dcterms:description "Ishikawa diagram of water precipitation process."^^xsd:string ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:title "WaterPrecipitation"^^xsd:string ;
+    ma:format "image/png"^^xsd:string ;
+    ma:locator "https://doi.org/10.1371/journal.pone.0104493.g002"^^xsd:anyURI ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#11> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Temperature"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Style of mixing"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#14> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Style of addition"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#16> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Setting time"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#15> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#17> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Setting temperature"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#15> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Temperature"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Dry matter content"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "pH value"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Water consumption"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#8> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Flow rate"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Stirring speed"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#10> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Environment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#12> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Equipment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#15> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Refrigeration"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Concentrated extract"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#6> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Water addition"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Performance of water precipitation"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/WaterPrecipitation.ttl#6> .
+

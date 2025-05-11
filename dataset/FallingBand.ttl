@@ -1,0 +1,230 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Dziuba, Szymon, Natalia Gołębecka, and Małgorzata A. Jarossova."^^xsd:string ;
+    dcterms:date "2013-01-01"^^xsd:date ;
+    dcterms:description "Fig. 2.5. Ishikawa Diagram."^^xsd:string ;
+    dcterms:title "FallingBand"^^xsd:string ;
+    ma:format "application/pdf"^^xsd:string ;
+    ma:locator "https://open.icm.edu.pl/handle/123456789/17159"^^xsd:anyURI ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#24>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#26>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#10> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Unsuitable housing"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#11> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Measurements of the housing are not within the norm"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#12> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Unsuitable housing was mounted"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#14> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Choosing the wrong program while changing the reference"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#15> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Calibration was not carried out"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#17> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Failure of pneumatic pliers"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#18> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Pressure in the pneumatic system is too low"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#19> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Error of the housing applying station"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#21> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Incorrect position of the band on the housing"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#20> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#22> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Incorrect position of the housing on the shaft"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#20> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#23> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Incorrectly performed re-fit"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#20> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#25> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Unsuitable work conditions"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#24> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#26> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Improper placement of the unit on the hall's floor"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#24> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Measurements of the band are not within the norm"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#3> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Unsuitable band was mounted"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#3> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Measurements of the shaft are not"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#8> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Installation of the wrong shaft"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "The power coating is not within the"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#13> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Man (operator)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#15> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#24> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Management"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#26> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#3> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Unsuitable band"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#2> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#16> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Machine"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#20> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Process"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#23> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#6> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Unsuitable shaft"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#2> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Falling band located on the side of the wheel"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#24> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Material"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/FallingBand.ttl#6> .
+

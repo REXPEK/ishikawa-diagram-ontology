@@ -1,0 +1,153 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Menezes, Rejane Maria Paiva de"^^xsd:string,
+        "Pinto, Érika Simone Galvão"^^xsd:string,
+        "Silva, Bruno Neves da"^^xsd:string,
+        "Silva, Valéria Gomes Fernandes da"^^xsd:string ;
+    dcterms:date "2021-03-01"^^xsd:date ;
+    dcterms:description "The nurse’s work in the context of COVID-19 pandemic"^^xsd:string ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:title "COVID19Nurse"^^xsd:string ;
+    ma:format "image/png"^^xsd:string ;
+    ma:locator "https://doi.org/10.6084/m9.figshare.14276734.v1"^^xsd:anyURI ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#11> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Strenuous working hours"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#12> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Incompatible financial payoff"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Paternalistic social recognition"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#15> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Autocratic Head of Nursing"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#16> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Wear out in the relationship between professionals of the nursing team"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Deficiencies in basic imputs and PPEs"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Insufficient human resources"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Inadequate physical structure to provide assistance"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Fear of self-contamination"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#8> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Confronting death and dying on a large scale"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Concern about contaminating loved ones"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#14> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "DAMAGED INTERPERSONAL RELATIONSHIP"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#10> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "LACK OF PROFESSIONAL RECOGNITION"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "DEFICIENCIES IN HEALTH  SERVICES"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#6> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "WEAKENED PSYCHO-SOCIAL ASPECTS"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "BARRIERS OF THE NURSE'S WORK IN THE FACE OF THE COVID PANDEMIC - 19"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Nurse.ttl#6> .
+

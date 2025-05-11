@@ -30,12 +30,6 @@
   "@id" : "http://purl.org/dc/terms/license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.co-ode.org/ontologies/ont.owl#Procedure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.co-ode.org/ontologies/ont.owl#ProcedureExecution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://www.w3.org/ns/ma-ont#format",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -465,6 +459,9 @@
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#CertaintyScale",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A WeightScale where the numerical weight refers to the certainty."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#WeightScale"
   } ]
@@ -654,7 +651,13 @@
   } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#Technique",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An established activity with the goal of peperapring or creating an Ishikawa diagram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/pko#Procedure"
+  } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#Weight",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -676,8 +679,11 @@
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#Workshop",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A structured or guided activity to create an Ishikawa diagram"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.co-ode.org/ontologies/ont.owl#ProcedureExecution"
+    "@id" : "https://w3id.org/pko#ProcedureExecution"
   } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#aggravating",
@@ -748,6 +754,9 @@
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#depth",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property is used to indicate the maximal depth of the visual representation of an Ishikawa diagram."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Diagram"
   } ],
@@ -915,6 +924,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "This property is used to link a WeightScale to the WeightRange which defines its total range."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ishikawa-diagram-ontology#WeightScale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ishikawa-diagram-ontology#WeightRange"
   } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#illustratedEvidence",
@@ -931,6 +946,9 @@
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property is used to indicate, if the factors' influence on the problem were emphasized in the visual representation of the Ishikawa diagram."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Diagram"
   } ],
@@ -1074,7 +1092,13 @@
   } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#usedTechnique",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ishikawa-diagram-ontology#Workshop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ishikawa-diagram-ontology#Technique"
+  } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#wasCausedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -1101,5 +1125,17 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Weight"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pko#Procedure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Procedure represents a sequence of actions to be executed in order to achieve a desired outcome."
+  } ]
+}, {
+  "@id" : "https://w3id.org/pko#ProcedureExecution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Procedure Execution is an Activity representing the execution of a certain Procedure, performed by one or more Agents, during a time interval."
   } ]
 } ]

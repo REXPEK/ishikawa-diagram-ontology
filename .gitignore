@@ -3,3 +3,6 @@
 base
 !*.gitkeep
 tools
+
+CREATE_DOCU.md
+old_ontology

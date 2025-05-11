@@ -1,0 +1,104 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Hosseinipour, Mina C."^^xsd:string,
+        "Kagura, Juliana"^^xsd:string,
+        "Kamwendo, Angella J."^^xsd:string ;
+    dcterms:date "2022-06-08"^^xsd:date ;
+    dcterms:description "Fishbone diagram of root causes of low VL testing coverage at Chilomoni health centre, Blantyre."^^xsd:string ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:title "LowViralLoad"^^xsd:string ;
+    ma:format "image/png"^^xsd:string ;
+    ma:locator "https://doi.org/10.1371/journal.pone.0269062.g001"^^xsd:anyURI ;
+    ishi:designPattern "free"^^xsd:string ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#10> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "lack inadequate capacity to update EMR by some ART providers"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Change of VL test eligibility from 6 and 24 months after ART intitiation and every other 24 months thereafter to 6 and 12 months after ART initiation and every other 12 months thereafter"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "VL testing only available to pregnant and lactacting women, children and those in need of targeted VL testing"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#6> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lack of commitment by health care providers at the ART clinic to screen and update EMR"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Inadequate healt care provides on some ART clinic days due to competing tasks"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Some ART providers are unaware of milestones i.e. when a patient is due for a VL test"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Policy"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#4> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#5> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Personnel"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#8> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Skills"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Low viral load coverage (27%) at Chilomoni Health Centre"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/LowViralLoad.ttl#8> .
+

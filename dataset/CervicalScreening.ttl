@@ -1,0 +1,200 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Mash, Bob"^^xsd:string,
+        "Matenge, Tjedza G."^^xsd:string ;
+    dcterms:date "2018-10-24"^^xsd:date ;
+    dcterms:description "Fishbone diagram of factors that delay women from undergoing cervical cancer screening."^^xsd:string ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:title "CervicalScreening"^^xsd:string ;
+    ma:format "image/png"^^xsd:string ;
+    ma:locator "https://doi.org/10.1371/journal.pone.0205425.g001"^^xsd:anyURI ;
+    ishi:designPattern "free"^^xsd:string ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#10> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Equipment shortages"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#12> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Failure to explain need to repeat tests"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Failure to explain abnormal results"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#14> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Negative staff attitudes"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#15> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Failure to explain importance of screening"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#17> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Anticipated pain of procedure"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#18> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lack of knowledge on risk factors and benefits"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#19> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Substance abuse"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#20> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Low perceived importance"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#21> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Fear of terminal illness"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#22> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Discomfort undressing"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Distance from clinic"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Work commitments"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Public transport challenges"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Poor access to or availability of results"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#8> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Inconsistencies in appointment systems"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Long queues limiting access"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Contextual factors"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Delay in cervical screening"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#11> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Healthcare worker related factors"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#15> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#6> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Health system related factors"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#16> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Patient related factors"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/CervicalScreening.ttl#22> .
+

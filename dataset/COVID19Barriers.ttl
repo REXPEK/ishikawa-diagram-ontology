@@ -1,0 +1,137 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Braga, Fabiana Aparecida Corrêa de Oliveira"^^xsd:string,
+        "Christovam, Bárbara Pompeu"^^xsd:string,
+        "Lins, Sílvia Maria de Sá Basilio"^^xsd:string,
+        "Souza, Odilon Adolfo Branco de"^^xsd:string ;
+    dcterms:date "2023-02-01"^^xsd:date ;
+    dcterms:description "Quality management in the COVID-19 pandemic: nursing action plan"^^xsd:string ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:title "COVID19Barriers"^^xsd:string ;
+    ma:format "image/png"^^xsd:string ;
+    ma:locator "https://doi.org/10.6084/m9.figshare.22010248.v1"^^xsd:anyURI ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#10> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Ineffective communication"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#12> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Professional burnout"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Fear of the unknown"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#14> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Deficiency of human resources"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "PPE deficit"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lack of medications and supplies"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#6> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Inadequacy of the physical structure"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#8> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Frequent protocol changes"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Inadequate flow of patiens and professionals"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#5> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Environment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Materials"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#4> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#11> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Human Resources"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#7> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Method"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Barriers to hospital administrative and care organization during the COVID-19 pandemic"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Barriers.ttl#7> .
+

@@ -1,0 +1,175 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Kam Cheong Wong , Kai Zhi Woo , and Kai Hui Woo"^^xsd:string ;
+    dcterms:date "2016-06-18"^^xsd:date ;
+    dcterms:description "Fig. 9.2 A simplified Ishikawa diagram for “rational use of a medication” (Ridge et al., 2010)"^^xsd:string ;
+    dcterms:title "RationalUse"^^xsd:string ;
+    ma:format "application/pdf"^^xsd:string ;
+    ma:locator "https://doi.org/10.1007/978-3-319-26209-3_9"^^xsd:anyURI ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#10> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Local protocol"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#12> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Awareness to seek help"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Means to access"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#15> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Trained staff"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#16> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Staff availability"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#18> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Equipment & supplies to diagnose"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#19> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Equipment & supplies to deliver"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Diagnose condition needing \"medication X\""^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Aware of the protocol"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#6> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Licenced to procure"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Local procurement & distribution"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "National policy"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#11> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Patient's access"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#14> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Staff to administer"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#17> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Equipment/facilities"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Health prfessional's awareness"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#4> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#5> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Availability of the medication"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#8> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Government endorsement"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Rational use of \"medication X\""^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RationalUse.ttl#8> .
+

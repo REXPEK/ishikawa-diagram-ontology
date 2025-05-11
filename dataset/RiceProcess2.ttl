@@ -1,0 +1,431 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Kaoru Ishikawa"^^xsd:string ;
+    dcterms:date "1986-02-01"^^xsd:date ;
+    dcterms:description "Figure 13.3 Process classification type"^^xsd:string ;
+    dcterms:subject "Manufacturing"^^xsd:string ;
+    dcterms:title "RiceProcess2"^^xsd:string ;
+    ma:format "application/x-book"^^xsd:string ;
+    ma:locator "ISBN-10: 9283310365"^^xsd:string ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#24>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#26>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#27>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#28>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#29>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#30>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#31>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#32>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#33>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#34>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#35>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#36>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#37>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#38>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#39>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#40>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#41>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#42>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#43>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#44>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#45>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#46>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#47>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#48>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#49>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#50>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#51>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#11> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Old or new"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#10> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Special"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#14> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Ordinary"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#17> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Time"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#18> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Amount of water"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#20> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "By machine"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#21> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "By hand"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#26> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Chemical treatment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#25> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#27> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Well"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#24> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#30> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "By eye"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#29> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#31> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "By cup"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#29> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#32> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Ratio to rice"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#28> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#35> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Adjustment dial"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#34> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#38> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Position of hole"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#37> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Domestic"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#3> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#40> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Valve position"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#39> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#41> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Structure"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#33> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#43> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Checking"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#42> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#44> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Position of inner pot"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#33> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#48> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Adjustment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#47> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Imported"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#3> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#50> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Dial"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#49> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#51> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Time left to sit"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#49> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#8> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Type"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#10> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Type"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#9> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#15> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Washing (pretreatment)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#22> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Washing to Pot"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#23> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#25> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Pipe"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#24> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#26> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#37> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Amount of air"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#36> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#38> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#39> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Fuel"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#36> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#40> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#42> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Where placed"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#33> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#43> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#46> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Heat"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#45> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#47> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#47> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Weak flame"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#46> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#48> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#7> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Peddler"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#6> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#12> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Class"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#9> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#19> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Stirring"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#16> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#21> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Rice (raw material)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#23> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Water"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#22> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#24>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#28> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#24> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Water type, quality"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#23> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#27> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#28> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Amount"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#23> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#29>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#32> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#29> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Measurin method"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#28> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#30>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#31> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#3> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Area where produced"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#2> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#34> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Heat strength"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#33> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#35>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#36> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#36> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Strength"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#34> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#37>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#39> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#45> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Steaming (second treatment)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#46>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#49> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#49> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Temperature adjustment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#45> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#50>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#51> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#6> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Purchasing method"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#2> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#9> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Retail rice store"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#6> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#16> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Washing method"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#15> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#33> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Pot (heating)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#34>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#41>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#42>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#44> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Delicious rice"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#33>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/RiceProcess2.ttl#45> .
+

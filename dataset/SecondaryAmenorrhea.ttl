@@ -1,0 +1,176 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Kam Cheong Wong , Kai Zhi Woo , and Kai Hui Woo"^^xsd:string ;
+    dcterms:date "2016-06-18"^^xsd:date ;
+    dcterms:description """Fig. 9.4 Ishikawa diagram for a clinical presentation called “secondary amenorrhea”. [Permission
+granted from the Journal of Medical Case Reports. Wong: Using an Ishikawa diagram as a tool to
+assist memory and retrieval of relevant medical cases from the medical literature. Journal of
+Medical Case Reports 2011, 5:120.]"""^^xsd:string ;
+    dcterms:title "SecondaryAmenorrhea"^^xsd:string ;
+    ma:format "application/pdf"^^xsd:string ;
+    ma:locator "https://doi.org/10.1007/978-3-319-26209-3_9"^^xsd:anyURI ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#10> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Ovarian tumor"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#12> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Autoimmune oophoritis"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Chemo & radiotherapy"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#15> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Excessive stress"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#16> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Excessive physical exercise"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#18> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Prolonged use of drugs e.g. antipsychotic"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#19> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Post oral contraceptive/ depot medroxyprogesterone"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Hypothyroidism"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Cushing syndrome"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Hyperprolactinaemia"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#6> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Eating disorder (e.g. Anorexia nervosa)"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#8> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Pregnant"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Polycystic ovary syndrome"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#11> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Ovarian failure"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#7> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#14> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Psycho-social"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#16> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#17> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Miscellaneous"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Secondary Amenorrhea"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#7> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Other systems in the body"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#7> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Woman reproductive system"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/SecondaryAmenorrhea.ttl#9> .
+

@@ -1,7 +1,43 @@
 <h2 id="desc" class="list">Ishikawa Diagram Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
 <span class="markdown">
-In Progress.
+The ontology addresses the three major concepts of the domain: the Ishikawa diagram as visual artifact, its data model, and its creation process.
+
+The <code>Diagram</code> class is used to describe an Ishikawa diagram as visual artifact. As Ishikawa diagrams are either created analogue (e.g. on whiteboard) or by using modelling software (e.g. <a href="https://app.diagrams.net/", target="_blank">diagrams.net</a>), the visual artifact is treated as media resource and is further described using the Ontology for Media Resources where <code>ma:locator</code> and <code>ma:format</code> are used in specific to provide minimal media annotation. The media annotation is kept to a minimal as required to be interoperable with exploratory approaches. For instance, innovative user interfaces using Augmented Reality or tangibles would produce more complex artifacts.The class inherits additional data properties to highlight best practice annotations which includes:
+<ul>
+    <li> <code>enumerated</code> to indicate, if factors were enumerated in the visual representation of the Ishikawa diagram</li>
+
+    <li> <code>illustratedEvidence</code>  to indicate, if the evidence basis was emphasized in the visual representation of the Ishikawa diagram.</li>
+    
+    <li> <code>illustratedFactorInfluence</code> to indicate if the influence type (aggravating or neutralizing) of a cause-effect relationship is depcited in the visual representation of the Ishikawa diagram.</li>
+
+    <li> <code>illustratedRoles</code> to indicate, if responsibilities or roles towards factors were included in the visual representation of the Ishikawa diagram. </li>
+
+   <li> <code>illustratedWeight</code> to indicate, if weight differences were emphasized in the visual representation of the Ishikawa diagram. </li>
+</ul>
+
+The type of the depicted Ishikawa diagram can be specified by using one of the instances of <code>DiagramType</code>: <code>causeEnumerationDiagram</code>, \\ <code>dispersionAnalysisDiagram</code>, and <code>productProcessClassificationDiagram</code>. 
+
+The <code>Model</code> class is used to record factors and their cause-effect relationships. A <code>Factor</code> is any activity or entity with identified cause-effect relationships in the context of a root-cause analysis. The <code>CauseEffect</code> is the capacity of a factor to have an effect on the character of another. The class is used to record qualified cause-effect relationships. <code>Cause</code> and <code>Effect</code> inherit from <code>Factor</code> and represent comfort classes to adhere to the terminology used for Ishikaw diagrams where a cause is a factor with characteristics that has direct influence on the characteristics of another factor. The influenced factor is consequently the effect. <code>Problem</code>, <code>MajorCause</code>, and <code>RootCause</code> are specialized classes inheriting from either <code>Cause</code> or <code>Effect</code>. <code>Factor</code> inherits from <code>prov:Entity</code> and <code>prov:Activity</code> and can be treated in the same way. It must be emphasized that <code>Factor</code> does not inherit from <code>prov:Agent</code> and consequently a person can never be identified as the problem (or as any other factor) in a root cause analysis in contrast to the person's behavior or characteristics.
+
+As the objective of a root cause analysis is to formulate problem-solving actions which consequently address certain factors and someone who must execute those actions, it is helpful to annotate the responsibilities of factors. While the description of responsibilities and roles can be quite extensive (e.g. by using the <a href="http://www.sparontologies.net/ontologies/pro", target="_blank">PRO ontology</a>, short and concise role descriptions are preferred. Thus, the ontology contains a formalization of the RASCI method which can be used in combination with <code>prov:Association</code> to assign agents' roles to factors.
+ 
+A RASCI matrix is an established standard to constitute task responsibilities among groups, roles, or individuals. RASCI refers to the first letter of each responsibility category:
+<ul>
+    <li> <i>Responsible</i> describes the role who executes the task.</li>
+    <li> <i>Accountable</i> describes the role who controls resources and oversees the task completion.</li>
+    <li> <i>Supporting</i> describes the role who directly contributes to the task execution in supporting the responsible group. The supporting role is commonly excluded from decision-making and relies on the instructions of the responsible role. </li>
+    <li> <i>Consulted</i> describes the role who indirectly contributes to the task execution by providing information, guidance or advice. </li>
+    <li> <i>Informed</i> describes the role who is updated on the execution progress, but is not foreseen to contribute in any way to the task execution. A typical use case is that the informed role is expected to intervene when the process execution does greatly deviate from expectations.   </li>
+</ul>
+
+While factors and their direct relationships with each other are enough to model an Ishikawa diagram, it is recommended to describe cause-effect relationships in detail to prevent confusion and misinterpretations. The <code>CauseEffect</code> class inherits from <code>prov:Influence</code> and provides miscellaneous object properties to make cause-effect relationships explicit. Cause-effect relationships are often weighted in the course of prioritizing problem-solving actions. The <code>Weight</code> class in combination with <code>Weightscale</code> allows a precise weight quantification. In the aspect that the weight type depends on the problem under investigation, the ontology contains <code>Weightscale</code> subclasses to address certainty, impact, probability, relevance and risk as weighting category. Named <code>WeightRange</code>s can be defined to simplify the weight quantification which is highly recommended for domain experts who struggle to work with numbers.
+
+Typical Ishikawa diagrams only consider cause-effect relationships that actively contribute to the existence of the problem. In complex scenarios where some cause-effect relationships cannot be isolated, it is helpful to describe if a cause-effect relationship contributes to the problem or the problem's neutralization using instances of <code>CauseEffectType</code>. Those claims should be backed by linking to qualitative or quantitative evidence where the ontology only provides the generic <code>Evidence</code> class to allow easy integration with existing knowledge graphs.
+
+The translation from the visual artifact (which is a media resource) to the data model is done using the Web Annotation Ontology. The <code>oa:Annotation</code> class contains object properties to identify and frame factors and cause-effect relationships. The ontology specifically names the <code>oa:FragmentSelector</code> as the most versatile selector, but depending on the existing architecture another selector might be preferred. The <code>oa:Motivation</code> class can be used to differentiate the purpose of annotations. For instance, annotations can be used to simply link the data model to the visual artifact, but also annotations can be used to highlight important aspects like the identified (prioritized) root causes.
+
+The quality of Ishikawa diagrams highly depends on their creation process. Ishikawa diagrams are results from Ishikawa diagramming workshops where several techniques qualify to be used. The formalization of action sequences and their actual execution is addressed by the Procedural Knowledge Ontology. Consequently, <code>Workshop</code> inherits from <code>pko:ProcedureExecution</code> and <code>Technique</code> inherits from <code>pko:Procedure</code>. The Procedural Knowledge Ontology provides additional useful semantics like the description of required tools (e.g. a text marker when drawing on a whiteboard). In the context of the creation process, it is highly relevant to link workshop participants (as the domain experts/knowledge source) and previous workshop iterations or prior diagram versions which both can be achieved by using the Procedural Knowledge Ontology or PROV-O.  
 </span>
 
-<p align="center"><img src="./sections/media/ishikawa-diagram-ontology.png" alt="diagram representing the Ishikawa diagram ontology using the Chowlk notation" height="800"></p>
+<p align="center"><img src="./sections/media/ishikawa-diagram-ontology.svg" alt="diagram representing the Ishikawa diagram ontology using the Chowlk notation" height="800"></p>

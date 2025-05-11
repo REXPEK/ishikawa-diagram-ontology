@@ -1,0 +1,193 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Yoshida Rao"^^xsd:string ;
+    dcterms:date "2021-03-11"^^xsd:date ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:subject "Organic Cotton, Sports Shoes, Textiles"^^xsd:string ;
+    dcterms:title "14OrganicCotton.png"^^xsd:string ;
+    ma:format "image/png"^^xsd:string ;
+    ma:locator "https://osf.io/gpc73"^^xsd:anyURI ;
+    ishi:designPattern "(5ME)"^^xsd:string ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#10> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Better moisture absorbent"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#11> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Feel of linen but less weight, and presence of natural wax"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#13> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Anti-allergenic"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#12> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#15> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Fair trade workers are paid properly"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#16> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Renewable, it can be replenished for reuse"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#17> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Eco-friendliness - less release of chemicals"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#14> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#19> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "No toxic wastes into environment which can ultimately go into food chain"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#20> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Replenish soil fertility"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#21> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Less Ecological footprint - in terms of land and resources"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#18> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Supports small scale farmers in Africa"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#4> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "No chlorine bleaches or synthetic dyes"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Eco-friendly remazol reactive dyes"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "No use of pesticides or fertilizers"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#8> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "No use of bleaches"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#6> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#12> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "PROPERTIES"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#6> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "METHOD"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#9> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MATERIAL"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#11> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#14> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MEASUREMENTS"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#18> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "ENVIRONMENT"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#21> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "MACHINE"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#5> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "Organic Cotton"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/14OrganicCotton.png.ttl#9> .
+

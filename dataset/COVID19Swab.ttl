@@ -1,0 +1,389 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ishi: <https://w3id.org/ishikawa-diagram-ontology#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#diagram> a ishi:Diagram ;
+    dcterms:creator "Brodie, Louise"^^xsd:string,
+        "Clements, Suzanne"^^xsd:string,
+        "Cowie, Alistair"^^xsd:string,
+        "Muir, Zoe"^^xsd:string,
+        "Okoliegbe, Ijeoma"^^xsd:string,
+        "Tan, Brandon"^^xsd:string,
+        "et al."^^xsd:string ;
+    dcterms:date "2024-01-02"^^xsd:date ;
+    dcterms:description "A fishbone diagram illustrating the major obstacles to early SARS-CoV-2 test results in the frailty ward."^^xsd:string ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:title "COVID19Swab"^^xsd:string ;
+    ma:format "image/png"^^xsd:string ;
+    ma:locator "https://doi.org/10.1371/journal.pone.0296294.g001"^^xsd:string ;
+    ishi:designPattern "(5ME)"^^xsd:string ;
+    ishi:model <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#model> ;
+    ishi:problem <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#1> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#model> a ishi:Model ;
+    ishi:diagram <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#diagram> ;
+    ishi:factor <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#1>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#19>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#22>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#24>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#26>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#27>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#28>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#29>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#30>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#31>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#32>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#33>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#34>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#35>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#36>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#37>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#38>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#39>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#40>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#41>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#42>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#43>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#44>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#45>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#8>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#10> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Patients refusing swabbing"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#11> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Applicable care pathways"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#12> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Partners in care & Stakeholder agreements"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#14> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Ward placement reliant on timely result"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#15> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Daily huddle identification of individuals for swabbing"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#16> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Overnight swabs analysed next day"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#18> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Requires swab with suitable transport"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#19> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Swabs get 'batched' before transportation"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#17> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#20> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Document & communication of result"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#21> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Requires 2 swabbing protocol"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#22> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Scottish government care home policy / governance requirements"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#13> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#25> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Staffing"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#24> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#26> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Equipment capacity"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#24> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#27> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Increased & competing workload"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#24> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#29> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Competent users"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#28> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#3> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Infection control team Liaison"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#30> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Regulated access"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#28> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#31> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Maintenance and calibration"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#23> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#32> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Waste disposal"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#23> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#33> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Results interface"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#23> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#37> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Clerking"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#36> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#38> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Collateral history"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#36> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#39> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Tests & investigations"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#36> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#40> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Unwell patients"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#35> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#42> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Core Discharge Documentation"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#41> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#43> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Downstream liaison & communication"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#41> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#44> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "POCT station"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#34> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#45> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Multi-bedded vs Single room"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#34> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#5> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Doctors"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#4> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#6> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Nurses"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#4> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#7> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "HCAs"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#4> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#8> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Porters"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#4> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#9> a ishi:Cause,
+        ishi:Factor,
+        ishi:RootCause ;
+    rdfs:label "Lack of training in patient swabbing"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#2> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#17> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Sample collection and transportation to the laboratory"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#13> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#18>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#19> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#28> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Availability of reliable POCT equipment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#23> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#29>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#30> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#41> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Multiple discharges"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#35> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#42>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#43> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#24> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Laboratory SARS-CoV-2 TAT"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#23> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#25>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#26>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#27> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#34> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Environment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#35>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#44>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#45> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#35> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Competing workload priorities"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#34> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#36>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#40>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#41> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#36> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Multiple admissions"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#35> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#37>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#38>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#39> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#1> a ishi:Effect,
+        ishi:Factor,
+        ishi:Problem ;
+    rdfs:label "COVID-19 Swab result time impacting on patient 'flow'"^^xsd:string ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#13>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#2>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#23>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#34> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#4> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor ;
+    rdfs:label "Inadequate availability of staff"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#2> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#5>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#6>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#7>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#8> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#23> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Equipment"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#24>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#28>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#31>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#32>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#33> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#2> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "People"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#10>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#11>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#12>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#3>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#4>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#9> .
+
+<https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#13> a ishi:Cause,
+        ishi:Effect,
+        ishi:Factor,
+        ishi:MajorCause ;
+    rdfs:label "Process"^^xsd:string ;
+    ishi:caused <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#1> ;
+    ishi:wasCausedBy <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#14>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#15>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#16>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#17>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#20>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#21>,
+        <https://w3id.org/ishikawa-diagram-ontology/dataset/COVID19Swab.ttl#22> .
+
