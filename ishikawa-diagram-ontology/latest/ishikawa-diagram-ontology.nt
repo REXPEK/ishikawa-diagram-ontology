@@ -2,11 +2,16 @@
 <https://w3id.org/ishikawa-diagram-ontology> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/ishikawa-diagram-ontology/0.1.0> .
 <https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/elements/1.1/creator> "Christian Fleiner (KU Leuven)" .
 <https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/elements/1.1/creator> "Duo Yang (KU Leuven)" .
-<https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/elements/1.1/creator> "Joost Vennekens (Vrije Universiteit Brussels)" .
+<https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/elements/1.1/creator> "Joost Vennekens (Vrije Universiteit Brussel)" .
 <https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/elements/1.1/creator> "Simon Vandevelde (KU Leuven)" .
+<https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/elements/1.1/title> "Ishikawa diagram ontology" .
+<https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/terms/issued> "2025-05-13T00:00:00" .
 <https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ishi" .
+<https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ishikawa-diagram-ontology" .
+<https://w3id.org/ishikawa-diagram-ontology> <http://schema.org/citation> "Cite this vocabulary as: Fleiner, C., Yang, D., Vandevelde, S., and Vennekens, J. (2025). Ishikawa diagram ontology 0.1.0. https://w3id.org/ishikawa-diagram-ontology/0.1.0" .
 <https://w3id.org/ishikawa-diagram-ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "The Ishikawa ontology aims to provide a data and view model to manage data encoded in Ishikawa diagrams which are also known as fishbone or cause and effect diagram (CED).\nIshikawa diagrams result from (iterative) workshops. Thus, the ontology includes the basic modelling of workshops to create Ishikawa diagrams."@en .
-<https://w3id.org/ishikawa-diagram-ontology> <http://www.w3.org/2000/01/rdf-schema#label> "Ishikawa Diagram Ontology"@en .
+<https://w3id.org/ishikawa-diagram-ontology> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
 # 
 # 
 # #################################################################
@@ -22,8 +27,23 @@
 # http://purl.org/dc/elements/1.1/creator
 <http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/citation
+<http://schema.org/citation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -37,42 +57,42 @@
 # http://www.w3.org/ns/ma-ont#format
 <http://www.w3.org/ns/ma-ont#format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/ma-ont#format> <http://www.w3.org/2000/01/rdf-schema#comment> "The MIME type of the resource (e.g., wrapper or bucket media types, container types), ideally including as much information as possible about the resource such as media type parameters, for example, using the \"codecs\" parameter [RFC 4281]." .
+<http://www.w3.org/ns/ma-ont#format> <http://www.w3.org/2000/01/rdf-schema#label> "format" .
 # 
 # http://www.w3.org/ns/ma-ont#locator
 <http://www.w3.org/ns/ma-ont#locator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/ma-ont#locator> <http://www.w3.org/2000/01/rdf-schema#comment> "The logical address at which the resource can be accessed (e.g. a URL, or a DVB URI)." .
+<http://www.w3.org/ns/ma-ont#locator> <http://www.w3.org/2000/01/rdf-schema#label> "locator" .
 # 
 # http://www.w3.org/ns/oa#hasBody
 <http://www.w3.org/ns/oa#hasBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/oa#hasBody> <http://www.w3.org/2000/01/rdf-schema#comment> "The object of the relationship is a resource that is a body of the Annotation." .
+<http://www.w3.org/ns/oa#hasBody> <http://www.w3.org/2000/01/rdf-schema#label> "hasBody" .
 # 
 # http://www.w3.org/ns/oa#hasPurpose
 <http://www.w3.org/ns/oa#hasPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/oa#hasPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "The purpose served by the resource in the Annotation." .
+<http://www.w3.org/ns/oa#hasPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "hasPurpose" .
 # 
 # http://www.w3.org/ns/oa#hasSelector
 <http://www.w3.org/ns/oa#hasSelector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/oa#hasSelector> <http://www.w3.org/2000/01/rdf-schema#comment> "The object of the relationship is a Selector that describes the segment or region of interest within the source resource. Please note that the domain (oa:ResourceSelection) is not used directly in the Web Annotation model." .
+<http://www.w3.org/ns/oa#hasSelector> <http://www.w3.org/2000/01/rdf-schema#label> "hasSelector" .
 # 
 # http://www.w3.org/ns/oa#hasSource
 <http://www.w3.org/ns/oa#hasSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/oa#hasSource> <http://www.w3.org/2000/01/rdf-schema#comment> "The resource that the ResourceSelection, or its subclass SpecificResource, is refined from, or more specific than. Please note that the domain (oa:ResourceSelection) is not used directly in the Web Annotation model." .
+<http://www.w3.org/ns/oa#hasSource> <http://www.w3.org/2000/01/rdf-schema#label> "hasSource" .
 # 
 # http://www.w3.org/ns/oa#hasTarget
 <http://www.w3.org/ns/oa#hasTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/oa#hasTarget> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between an Annotation and its Target." .
+<http://www.w3.org/ns/oa#hasTarget> <http://www.w3.org/2000/01/rdf-schema#label> "hasTarget" .
 # 
 # http://www.w3.org/ns/prov#agent
 <http://www.w3.org/ns/prov#agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#agent> <http://www.w3.org/2000/01/rdf-schema#comment> "The prov:agent property references an prov:Agent which influenced a resource. This property applies to an prov:AgentInfluence, which is given by a subproperty of prov:qualifiedInfluence from the influenced prov:Entity, prov:Activity or prov:Agent." .
-# 
-# http://www.w3.org/ns/prov#alternateOf
-<http://www.w3.org/ns/prov#alternateOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/prov#alternateOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
-<http://www.w3.org/ns/prov#alternateOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
-<http://www.w3.org/ns/prov#alternateOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Entity> .
-<http://www.w3.org/ns/prov#alternateOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
-<http://www.w3.org/ns/prov#alternateOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Two alternate entities present aspects of the same thing. These aspects may be the same or different, and the alternate entities may or may not overlap in time." .
+<http://www.w3.org/ns/prov#agent> <http://www.w3.org/2000/01/rdf-schema#label> "agent" .
 # 
 # http://www.w3.org/ns/prov#contributed
 <http://www.w3.org/ns/prov#contributed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -80,27 +100,33 @@
 <http://www.w3.org/ns/prov#contributed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Agent> .
 <http://www.w3.org/ns/prov#contributed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
 <http://www.w3.org/ns/prov#contributed> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribution is the ascribing of an entity to an agent." .
+<http://www.w3.org/ns/prov#contributed> <http://www.w3.org/2000/01/rdf-schema#label> "contributed" .
 # 
 # http://www.w3.org/ns/prov#hadDerivation
 <http://www.w3.org/ns/prov#hadDerivation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#hadDerivation> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/prov#wasDerivedFrom> .
 <http://www.w3.org/ns/prov#hadDerivation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Entity> .
 <http://www.w3.org/ns/prov#hadDerivation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#hadDerivation> <http://www.w3.org/2000/01/rdf-schema#comment> "inverse property of wasDerivedFrom" .
+<http://www.w3.org/ns/prov#hadDerivation> <http://www.w3.org/2000/01/rdf-schema#label> "hadDerivation" .
 # 
 # http://www.w3.org/ns/prov#hadRole
 <http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/prov#wasRoleIn> .
 <http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Role> .
 <http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/2000/01/rdf-schema#comment> "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end." .
+<http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/2000/01/rdf-schema#label> "hadRole" .
 # 
 # http://www.w3.org/ns/prov#influenced
 <http://www.w3.org/ns/prov#influenced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#influenced> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
 <http://www.w3.org/ns/prov#influenced> <http://www.w3.org/2000/01/rdf-schema#comment> "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation." .
+<http://www.w3.org/ns/prov#influenced> <http://www.w3.org/2000/01/rdf-schema#label> "influenced" .
 # 
 # http://www.w3.org/ns/prov#influencer
 <http://www.w3.org/ns/prov#influencer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#influencer> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used as part of the qualified influence pattern. Subclasses of prov:Influence use these subproperties to reference the resource (Entity, Agent, or Activity) whose influence is being qualified." .
+<http://www.w3.org/ns/prov#influencer> <http://www.w3.org/2000/01/rdf-schema#label> "influencer" .
 # 
 # http://www.w3.org/ns/prov#qualifiedAssociation
 <http://www.w3.org/ns/prov#qualifiedAssociation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -108,11 +134,13 @@
 <http://www.w3.org/ns/prov#qualifiedAssociation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Association> .
 <http://www.w3.org/ns/prov#qualifiedAssociation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Activity> .
 <http://www.w3.org/ns/prov#qualifiedAssociation> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity." .
+<http://www.w3.org/ns/prov#qualifiedAssociation> <http://www.w3.org/2000/01/rdf-schema#label> "qualifiedAssociation" .
 # 
 # http://www.w3.org/ns/prov#qualifiedAssociationOf
 <http://www.w3.org/ns/prov#qualifiedAssociationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#qualifiedAssociationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Activity> .
 <http://www.w3.org/ns/prov#qualifiedAssociationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Association> .
+<http://www.w3.org/ns/prov#qualifiedAssociationOf> <http://www.w3.org/2000/01/rdf-schema#label> "qualifiedAssociationOf" .
 # 
 # http://www.w3.org/ns/prov#qualifiedAttribution
 <http://www.w3.org/ns/prov#qualifiedAttribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -120,22 +148,26 @@
 <http://www.w3.org/ns/prov#qualifiedAttribution> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Entity> .
 <http://www.w3.org/ns/prov#qualifiedAttribution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Attribution> .
 <http://www.w3.org/ns/prov#qualifiedAttribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribution is the ascribing of an entity to an agent. When an entity e is attributed to agent ag, entity e was generated by some unspecified activity that in turn was associated to agent ag. Thus, this relation is useful when the activity is not known, or irrelevant." .
+<http://www.w3.org/ns/prov#qualifiedAttribution> <http://www.w3.org/2000/01/rdf-schema#label> "qualifiedAttribution" .
 # 
 # http://www.w3.org/ns/prov#qualifiedAttributionOf
 <http://www.w3.org/ns/prov#qualifiedAttributionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#qualifiedAttributionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Attribution> .
 <http://www.w3.org/ns/prov#qualifiedAttributionOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#qualifiedAttributionOf> <http://www.w3.org/2000/01/rdf-schema#label> "qualifiedAttributionOf" .
 # 
 # http://www.w3.org/ns/prov#qualifiedInfluence
 <http://www.w3.org/ns/prov#qualifiedInfluence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#qualifiedInfluence> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/prov#qualifiedInfluenceOf> .
 <http://www.w3.org/ns/prov#qualifiedInfluence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Influence> .
 <http://www.w3.org/ns/prov#qualifiedInfluence> <http://www.w3.org/2000/01/rdf-schema#comment> "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation." .
+<http://www.w3.org/ns/prov#qualifiedInfluence> <http://www.w3.org/2000/01/rdf-schema#label> "qualifiedInfluence" .
 # 
 # http://www.w3.org/ns/prov#qualifiedInfluenceOf
 <http://www.w3.org/ns/prov#qualifiedInfluenceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#qualifiedInfluenceOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Influence> .
 <http://www.w3.org/ns/prov#qualifiedInfluenceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation." .
+<http://www.w3.org/ns/prov#qualifiedInfluenceOf> <http://www.w3.org/2000/01/rdf-schema#label> "qualifiedInfluenceOf" .
 # 
 # http://www.w3.org/ns/prov#wasAssociatedFor
 <http://www.w3.org/ns/prov#wasAssociatedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -143,51 +175,61 @@
 <http://www.w3.org/ns/prov#wasAssociatedFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Agent> .
 <http://www.w3.org/ns/prov#wasAssociatedFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Activity> .
 <http://www.w3.org/ns/prov#wasAssociatedFor> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity." .
+<http://www.w3.org/ns/prov#wasAssociatedFor> <http://www.w3.org/2000/01/rdf-schema#label> "wasAssociatedFor" .
 # 
 # http://www.w3.org/ns/prov#wasAssociatedWith
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Activity> .
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Agent> .
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity." .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "wasAssociatedWith" .
 # 
 # http://www.w3.org/ns/prov#wasAttributedTo
 <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Entity> .
 <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Agent> .
 <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribution is the ascribing of an entity to an agent." .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#label> "wasAttributedTo" .
 # 
 # http://www.w3.org/ns/prov#wasDerivedFrom
 <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Entity> .
 <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
 <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity." .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "wasDerivedFrom" .
 # 
 # http://www.w3.org/ns/prov#wasInfluencedBy
 <http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation." .
+<http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasInfluencedBy" .
 # 
 # http://www.w3.org/ns/prov#wasRoleIn
 <http://www.w3.org/ns/prov#wasRoleIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#wasRoleIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Role> .
 <http://www.w3.org/ns/prov#wasRoleIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end." .
+<http://www.w3.org/ns/prov#wasRoleIn> <http://www.w3.org/2000/01/rdf-schema#label> "wasRoleIn" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#cause
 <https://w3id.org/ishikawa-diagram-ontology#cause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#cause> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#CauseEffect> .
 <https://w3id.org/ishikawa-diagram-ontology#cause> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#Cause> .
 <https://w3id.org/ishikawa-diagram-ontology#cause> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link a Cause to CauseEffect ." .
+<https://w3id.org/ishikawa-diagram-ontology#cause> <http://www.w3.org/2000/01/rdf-schema#label> "cause" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#causeEffect
 <https://w3id.org/ishikawa-diagram-ontology#causeEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#causeEffect> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf> .
 <https://w3id.org/ishikawa-diagram-ontology#causeEffect> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Model> .
 <https://w3id.org/ishikawa-diagram-ontology#causeEffect> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#CauseEffect> .
+<https://w3id.org/ishikawa-diagram-ontology#causeEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "Property links CauseEffects to their Model." .
+<https://w3id.org/ishikawa-diagram-ontology#causeEffect> <http://www.w3.org/2000/01/rdf-schema#label> "causeEffect" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#causeEffectType
 <https://w3id.org/ishikawa-diagram-ontology#causeEffectType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#causeEffectType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#CauseEffect> .
 <https://w3id.org/ishikawa-diagram-ontology#causeEffectType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#CauseEffectType> .
 <https://w3id.org/ishikawa-diagram-ontology#causeEffectType> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link the CauseEffectType to a CauseEffect" .
+<https://w3id.org/ishikawa-diagram-ontology#causeEffectType> <http://www.w3.org/2000/01/rdf-schema#label> "causeEffectType" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#caused
 <https://w3id.org/ishikawa-diagram-ontology#caused> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -196,11 +238,14 @@
 <https://w3id.org/ishikawa-diagram-ontology#caused> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Cause> .
 <https://w3id.org/ishikawa-diagram-ontology#caused> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#Effect> .
 <https://w3id.org/ishikawa-diagram-ontology#caused> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to directly link a Cause to an Effect without further qualification. For qualified cause-effect relationships the CauseEffect class is used." .
+<https://w3id.org/ishikawa-diagram-ontology#caused> <http://www.w3.org/2000/01/rdf-schema#label> "caused" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#designPattern
 <https://w3id.org/ishikawa-diagram-ontology#designPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#designPattern> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Diagram> .
 <https://w3id.org/ishikawa-diagram-ontology#designPattern> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#DesignPattern> .
+<https://w3id.org/ishikawa-diagram-ontology#designPattern> <http://www.w3.org/2000/01/rdf-schema#comment> "Property specifies which DesignPattern was used in an Ishikawa diagram." .
+<https://w3id.org/ishikawa-diagram-ontology#designPattern> <http://www.w3.org/2000/01/rdf-schema#label> "designPattern" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#diagram
 <https://w3id.org/ishikawa-diagram-ontology#diagram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -208,48 +253,57 @@
 <https://w3id.org/ishikawa-diagram-ontology#diagram> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Model> .
 <https://w3id.org/ishikawa-diagram-ontology#diagram> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#Diagram> .
 <https://w3id.org/ishikawa-diagram-ontology#diagram> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link the (data) model of an Ishikawa diagram to its visual representation." .
+<https://w3id.org/ishikawa-diagram-ontology#diagram> <http://www.w3.org/2000/01/rdf-schema#label> "diagram" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#diagramType
 <https://w3id.org/ishikawa-diagram-ontology#diagramType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#diagramType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Diagram> .
 <https://w3id.org/ishikawa-diagram-ontology#diagramType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#DiagramType> .
 <https://w3id.org/ishikawa-diagram-ontology#diagramType> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to linke the DiagramType to Diagram." .
+<https://w3id.org/ishikawa-diagram-ontology#diagramType> <http://www.w3.org/2000/01/rdf-schema#label> "diagramType" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#effect
 <https://w3id.org/ishikawa-diagram-ontology#effect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#effect> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#CauseEffect> .
 <https://w3id.org/ishikawa-diagram-ontology#effect> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#Effect> .
 <https://w3id.org/ishikawa-diagram-ontology#effect> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link an Effect to CauseEffect ." .
+<https://w3id.org/ishikawa-diagram-ontology#effect> <http://www.w3.org/2000/01/rdf-schema#label> "effect" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#evidenceType
 <https://w3id.org/ishikawa-diagram-ontology#evidenceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#evidenceType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Evidence> .
 <https://w3id.org/ishikawa-diagram-ontology#evidenceType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#EvidenceType> .
 <https://w3id.org/ishikawa-diagram-ontology#evidenceType> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link the EvidenceType to an Evidence" .
+<https://w3id.org/ishikawa-diagram-ontology#evidenceType> <http://www.w3.org/2000/01/rdf-schema#label> "evidenceType" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#factor
 <https://w3id.org/ishikawa-diagram-ontology#factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#factor> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ishikawa-diagram-ontology#isFactorOf> .
 <https://w3id.org/ishikawa-diagram-ontology#factor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Model> .
 <https://w3id.org/ishikawa-diagram-ontology#factor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#Factor> .
+<https://w3id.org/ishikawa-diagram-ontology#factor> <http://www.w3.org/2000/01/rdf-schema#comment> "Property links Factors to their Model." .
+<https://w3id.org/ishikawa-diagram-ontology#factor> <http://www.w3.org/2000/01/rdf-schema#label> "factor" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#hadRole
 <https://w3id.org/ishikawa-diagram-ontology#hadRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#hadRole> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#hadRole> .
 <https://w3id.org/ishikawa-diagram-ontology#hadRole> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#Role> .
 <https://w3id.org/ishikawa-diagram-ontology#hadRole> <http://www.w3.org/2000/01/rdf-schema#comment> "In the context of the Ishikawa ontology, this property is used to assign roles according to the RASCI model." .
+<https://w3id.org/ishikawa-diagram-ontology#hadRole> <http://www.w3.org/2000/01/rdf-schema#label> "hadRole" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#hasEvidence
 <https://w3id.org/ishikawa-diagram-ontology#hasEvidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#hasEvidence> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#CauseEffect> .
 <https://w3id.org/ishikawa-diagram-ontology#hasEvidence> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#Evidence> .
 <https://w3id.org/ishikawa-diagram-ontology#hasEvidence> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link a CauseEffect to any Evidence." .
+<https://w3id.org/ishikawa-diagram-ontology#hasEvidence> <http://www.w3.org/2000/01/rdf-schema#label> "hasEvidence" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#hasNamedRange
 <https://w3id.org/ishikawa-diagram-ontology#hasNamedRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#hasNamedRange> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#WeightScale> .
 <https://w3id.org/ishikawa-diagram-ontology#hasNamedRange> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#WeightRange> .
 <https://w3id.org/ishikawa-diagram-ontology#hasNamedRange> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link a WeightRange to a WeightScale." .
+<https://w3id.org/ishikawa-diagram-ontology#hasNamedRange> <http://www.w3.org/2000/01/rdf-schema#label> "hasNamedRange" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#hasQualitativeEvidence
 <https://w3id.org/ishikawa-diagram-ontology#hasQualitativeEvidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -257,6 +311,7 @@
 <https://w3id.org/ishikawa-diagram-ontology#hasQualitativeEvidence> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#CauseEffect> .
 <https://w3id.org/ishikawa-diagram-ontology#hasQualitativeEvidence> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#Evidence> .
 <https://w3id.org/ishikawa-diagram-ontology#hasQualitativeEvidence> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link a CauseEffect to any Evidence with the assumption that the evidence is qualitative.." .
+<https://w3id.org/ishikawa-diagram-ontology#hasQualitativeEvidence> <http://www.w3.org/2000/01/rdf-schema#label> "hasQualitativeEvidence" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#hasQuantitativeEvidence
 <https://w3id.org/ishikawa-diagram-ontology#hasQuantitativeEvidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -264,28 +319,35 @@
 <https://w3id.org/ishikawa-diagram-ontology#hasQuantitativeEvidence> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#CauseEffect> .
 <https://w3id.org/ishikawa-diagram-ontology#hasQuantitativeEvidence> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#Evidence> .
 <https://w3id.org/ishikawa-diagram-ontology#hasQuantitativeEvidence> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link a CauseEffect to any Evidence with the assumption that the evidence is quantitative" .
+<https://w3id.org/ishikawa-diagram-ontology#hasQuantitativeEvidence> <http://www.w3.org/2000/01/rdf-schema#label> "hasQuantitativeEvidence" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#hasWeightRange
 <https://w3id.org/ishikawa-diagram-ontology#hasWeightRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#hasWeightRange> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#WeightScale> .
 <https://w3id.org/ishikawa-diagram-ontology#hasWeightRange> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#WeightRange> .
 <https://w3id.org/ishikawa-diagram-ontology#hasWeightRange> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link a WeightScale to the WeightRange which defines its total range." .
+<https://w3id.org/ishikawa-diagram-ontology#hasWeightRange> <http://www.w3.org/2000/01/rdf-schema#label> "hasWeightRange" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf
 <https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#CauseEffect> .
 <https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#Model> .
+<https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf> <http://www.w3.org/2000/01/rdf-schema#comment> "inverse property to causeEffect" .
+<https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf> <http://www.w3.org/2000/01/rdf-schema#label> "isCauseEffectOf" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#isFactorOf
 <https://w3id.org/ishikawa-diagram-ontology#isFactorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#isFactorOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Factor> .
 <https://w3id.org/ishikawa-diagram-ontology#isFactorOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#Model> .
+<https://w3id.org/ishikawa-diagram-ontology#isFactorOf> <http://www.w3.org/2000/01/rdf-schema#comment> "inverse property to factor" .
+<https://w3id.org/ishikawa-diagram-ontology#isFactorOf> <http://www.w3.org/2000/01/rdf-schema#label> "isFactorOf" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#model
 <https://w3id.org/ishikawa-diagram-ontology#model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#model> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Diagram> .
 <https://w3id.org/ishikawa-diagram-ontology#model> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#Model> .
 <https://w3id.org/ishikawa-diagram-ontology#model> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link the visual representation of an Ishikawa diagram to its data model." .
+<https://w3id.org/ishikawa-diagram-ontology#model> <http://www.w3.org/2000/01/rdf-schema#label> "model" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffect
 <https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -294,6 +356,7 @@
 <https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffect> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Factor> .
 <https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffect> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#CauseEffect> .
 <https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link a qualified CauseEffect to a Factor." .
+<https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffect> <http://www.w3.org/2000/01/rdf-schema#label> "qualifiedCauseEffect" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffectOf
 <https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffectOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -301,17 +364,21 @@
 <https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffectOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#CauseEffect> .
 <https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffectOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#Factor> .
 <https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffectOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link a qualified CauseEffect to a Factor." .
+<https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffectOf> <http://www.w3.org/2000/01/rdf-schema#label> "qualifiedCauseEffectOf" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#scale
 <https://w3id.org/ishikawa-diagram-ontology#scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#scale> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Weight> .
 <https://w3id.org/ishikawa-diagram-ontology#scale> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#WeightScale> .
 <https://w3id.org/ishikawa-diagram-ontology#scale> <http://www.w3.org/2000/01/rdf-schema#comment> "The property is used to link the WeigthScale to a Weight." .
+<https://w3id.org/ishikawa-diagram-ontology#scale> <http://www.w3.org/2000/01/rdf-schema#label> "scale" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#usedTechnique
 <https://w3id.org/ishikawa-diagram-ontology#usedTechnique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#usedTechnique> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Workshop> .
 <https://w3id.org/ishikawa-diagram-ontology#usedTechnique> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#Technique> .
+<https://w3id.org/ishikawa-diagram-ontology#usedTechnique> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to indicate which Technique was used in the Workshop" .
+<https://w3id.org/ishikawa-diagram-ontology#usedTechnique> <http://www.w3.org/2000/01/rdf-schema#label> "usedTechnique" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#wasCausedBy
 <https://w3id.org/ishikawa-diagram-ontology#wasCausedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -319,12 +386,14 @@
 <https://w3id.org/ishikawa-diagram-ontology#wasCausedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Effect> .
 <https://w3id.org/ishikawa-diagram-ontology#wasCausedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#Cause> .
 <https://w3id.org/ishikawa-diagram-ontology#wasCausedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to directly link an Effect to a Cause without further qualification. For qualified cause-effect relationships the CauseEffect class is used." .
+<https://w3id.org/ishikawa-diagram-ontology#wasCausedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasCausedBy" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#weight
 <https://w3id.org/ishikawa-diagram-ontology#weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#weight> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#CauseEffect> .
 <https://w3id.org/ishikawa-diagram-ontology#weight> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#Weight> .
 <https://w3id.org/ishikawa-diagram-ontology#weight> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link a Weight to a CauseEffect" .
+<https://w3id.org/ishikawa-diagram-ontology#weight> <http://www.w3.org/2000/01/rdf-schema#comment> "weight" .
 # 
 # 
 # 
@@ -335,47 +404,47 @@
 # #################################################################
 # 
 # 
-# http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Factor> .
-<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#comment> "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty." .
-# 
 # https://w3id.org/ishikawa-diagram-ontology#depth
 <https://w3id.org/ishikawa-diagram-ontology#depth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#depth> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Diagram> .
 <https://w3id.org/ishikawa-diagram-ontology#depth> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <https://w3id.org/ishikawa-diagram-ontology#depth> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to indicate the maximal depth of the visual representation of an Ishikawa diagram." .
+<https://w3id.org/ishikawa-diagram-ontology#depth> <http://www.w3.org/2000/01/rdf-schema#label> "depth" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#enumerated
 <https://w3id.org/ishikawa-diagram-ontology#enumerated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#enumerated> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Diagram> .
 <https://w3id.org/ishikawa-diagram-ontology#enumerated> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://w3id.org/ishikawa-diagram-ontology#enumerated> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to indicate, if factors were enumerated in the visual representation of the Ishikawa diagram." .
+<https://w3id.org/ishikawa-diagram-ontology#enumerated> <http://www.w3.org/2000/01/rdf-schema#label> "enumerated" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#illustratedEvidence
 <https://w3id.org/ishikawa-diagram-ontology#illustratedEvidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#illustratedEvidence> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Diagram> .
 <https://w3id.org/ishikawa-diagram-ontology#illustratedEvidence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://w3id.org/ishikawa-diagram-ontology#illustratedEvidence> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to indicate, if the evidence basis was emphasized in the visual representation of the Ishikawa diagram." .
+<https://w3id.org/ishikawa-diagram-ontology#illustratedEvidence> <http://www.w3.org/2000/01/rdf-schema#label> "illustratedEvidence" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence
 <https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Diagram> .
 <https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to indicate, if the factors' influence on the problem were emphasized in the visual representation of the Ishikawa diagram." .
+<https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence> <http://www.w3.org/2000/01/rdf-schema#label> "illustratedFactorInfluence" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#illustratedRoles
 <https://w3id.org/ishikawa-diagram-ontology#illustratedRoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#illustratedRoles> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Diagram> .
 <https://w3id.org/ishikawa-diagram-ontology#illustratedRoles> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://w3id.org/ishikawa-diagram-ontology#illustratedRoles> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to indicate, if responsibilities or roles towards factors were included in the visual representation of the Ishikawa diagram." .
+<https://w3id.org/ishikawa-diagram-ontology#illustratedRoles> <http://www.w3.org/2000/01/rdf-schema#label> "illustratedRoles" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#illustratedWeight
 <https://w3id.org/ishikawa-diagram-ontology#illustratedWeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/ishikawa-diagram-ontology#illustratedWeight> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#Diagram> .
 <https://w3id.org/ishikawa-diagram-ontology#illustratedWeight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://w3id.org/ishikawa-diagram-ontology#illustratedWeight> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to indicate, if weight differences were emphasized in the visual representation of the Ishikawa diagram." .
+<https://w3id.org/ishikawa-diagram-ontology#illustratedWeight> <http://www.w3.org/2000/01/rdf-schema#label> "illustratedWeight" .
 # 
 # 
 # 
@@ -389,97 +458,122 @@
 # http://www.w3.org/ns/oa#Annotation
 <http://www.w3.org/ns/oa#Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/oa#Annotation> <http://www.w3.org/2000/01/rdf-schema#comment> "The class for Web Annotations." .
+<http://www.w3.org/ns/oa#Annotation> <http://www.w3.org/2000/01/rdf-schema#label> "Annotation" .
 # 
 # http://www.w3.org/ns/oa#FragmentSelector
 <http://www.w3.org/ns/oa#FragmentSelector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/oa#FragmentSelector> <http://www.w3.org/2000/01/rdf-schema#comment> "The FragmentSelector class is used to record the segment of a representation using the IRI fragment specification defined by the representation's media type." .
+<http://www.w3.org/ns/oa#FragmentSelector> <http://www.w3.org/2000/01/rdf-schema#label> "FragmentSelector" .
 # 
 # http://www.w3.org/ns/oa#Motivation
 <http://www.w3.org/ns/oa#Motivation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/oa#Motivation> <http://www.w3.org/2000/01/rdf-schema#comment> "The Motivation class is used to record the user's intent or motivation for the creation of the Annotation, or the inclusion of the body or target, that it is associated with." .
+<http://www.w3.org/ns/oa#Motivation> <http://www.w3.org/2000/01/rdf-schema#label> "Motivation" .
 # 
 # http://www.w3.org/ns/oa#SpecificResource
 <http://www.w3.org/ns/oa#SpecificResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/oa#SpecificResource> <http://www.w3.org/2000/01/rdf-schema#comment> "The SpecificResource refers to the source resource and the constraints that make it more specific." .
+<http://www.w3.org/ns/oa#SpecificResource> <http://www.w3.org/2000/01/rdf-schema#label> "SpecificResource" .
 # 
 # http://www.w3.org/ns/oa#TextualBody
 <http://www.w3.org/ns/oa#TextualBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/oa#TextualBody> <http://www.w3.org/2000/01/rdf-schema#comment> "In many situations, the Body of the Annotation will be in a text format, and created at the same time as the Annotation without a separate IRI. In these cases, the Body's text can be included as part of the Annotation to avoid having to interact with multiple systems. The Body may also have the features of External Web Resources, including especially the language of the text and the format that it is conveyed in." .
+<http://www.w3.org/ns/oa#TextualBody> <http://www.w3.org/2000/01/rdf-schema#label> "TextualBody" .
 # 
 # http://www.w3.org/ns/prov#Activity
 <http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/prov#Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities." .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activity" .
 # 
 # http://www.w3.org/ns/prov#Agent
 <http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity." .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
 # 
 # http://www.w3.org/ns/prov#Association
 <http://www.w3.org/ns/prov#Association> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/prov#Association> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity." .
+<http://www.w3.org/ns/prov#Association> <http://www.w3.org/2000/01/rdf-schema#label> "Association" .
 # 
 # http://www.w3.org/ns/prov#Attribution
 <http://www.w3.org/ns/prov#Attribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/prov#Attribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribution is the ascribing of an entity to an agent. When an entity e is attributed to agent ag, entity e was generated by some unspecified activity that in turn was associated to agent ag. Thus, this relation is useful when the activity is not known, or irrelevant." .
+<http://www.w3.org/ns/prov#Attribution> <http://www.w3.org/2000/01/rdf-schema#label> "Attribution" .
 # 
 # http://www.w3.org/ns/prov#Bundle
 <http://www.w3.org/ns/prov#Bundle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/prov#Bundle> <http://www.w3.org/2000/01/rdf-schema#comment> "A bundle is a named set of provenance descriptions, and is itself an Entity, so allowing provenance of provenance to be expressed." .
+<http://www.w3.org/ns/prov#Bundle> <http://www.w3.org/2000/01/rdf-schema#label> "Bundle" .
 # 
 # http://www.w3.org/ns/prov#Entity
 <http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/prov#Entity> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary." .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Entity" .
 # 
 # http://www.w3.org/ns/prov#Influence
 <http://www.w3.org/ns/prov#Influence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/prov#Influence> <http://www.w3.org/2000/01/rdf-schema#comment> "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation." .
+<http://www.w3.org/ns/prov#Influence> <http://www.w3.org/2000/01/rdf-schema#label> "Influence" .
 # 
 # http://www.w3.org/ns/prov#Role
 <http://www.w3.org/ns/prov#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/prov#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end." .
+<http://www.w3.org/ns/prov#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#Cause
 <https://w3id.org/ishikawa-diagram-ontology#Cause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#Cause> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ishikawa-diagram-ontology#Factor> .
 <https://w3id.org/ishikawa-diagram-ontology#Cause> <http://www.w3.org/2000/01/rdf-schema#comment> "A cause is a factor where its characteristics has direct influence on the characteristics of another factor." .
+<https://w3id.org/ishikawa-diagram-ontology#Cause> <http://www.w3.org/2000/01/rdf-schema#label> "Cause" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#CauseEffect
 <https://w3id.org/ishikawa-diagram-ontology#CauseEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#CauseEffect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Influence> .
 <https://w3id.org/ishikawa-diagram-ontology#CauseEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "CauseEffect is the capacity of a factor to have an effect on the character of another. The class is used to record qualified cause-effect relationships." .
+<https://w3id.org/ishikawa-diagram-ontology#CauseEffect> <http://www.w3.org/2000/01/rdf-schema#label> "CauseEffect" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#CauseEffectType
 <https://w3id.org/ishikawa-diagram-ontology#CauseEffectType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#CauseEffectType> <http://www.w3.org/2000/01/rdf-schema#comment> "The class is used to record the type of cause-effect relationship that exists between at least one cause and at least one effect." .
+<https://w3id.org/ishikawa-diagram-ontology#CauseEffectType> <http://www.w3.org/2000/01/rdf-schema#label> "CauseEffectType" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#CertaintyScale
 <https://w3id.org/ishikawa-diagram-ontology#CertaintyScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#CertaintyScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ishikawa-diagram-ontology#WeightScale> .
 <https://w3id.org/ishikawa-diagram-ontology#CertaintyScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A WeightScale where the numerical weight refers to the certainty." .
+<https://w3id.org/ishikawa-diagram-ontology#CertaintyScale> <http://www.w3.org/2000/01/rdf-schema#label> "CertaintyScale" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#DesignPattern
 <https://w3id.org/ishikawa-diagram-ontology#DesignPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#DesignPattern> <http://www.w3.org/2000/01/rdf-schema#comment> "The class is used to record the design pattern which was applied in the course of the Ishikawa diagram creation. Instances of the class refer to best practices." .
+<https://w3id.org/ishikawa-diagram-ontology#DesignPattern> <http://www.w3.org/2000/01/rdf-schema#label> "DesignPattern" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#Diagram
 <https://w3id.org/ishikawa-diagram-ontology#Diagram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#Diagram> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
 <https://w3id.org/ishikawa-diagram-ontology#Diagram> <http://www.w3.org/2000/01/rdf-schema#comment> "A visual representation of an Ishikawa diagram model or of a portion of it." .
+<https://w3id.org/ishikawa-diagram-ontology#Diagram> <http://www.w3.org/2000/01/rdf-schema#label> "Diagram" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#DiagramType
 <https://w3id.org/ishikawa-diagram-ontology#DiagramType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#DiagramType> <http://www.w3.org/2000/01/rdf-schema#comment> "The class is used to record the type of the Ishikawa diagram" .
+<https://w3id.org/ishikawa-diagram-ontology#DiagramType> <http://www.w3.org/2000/01/rdf-schema#label> "DiagramType" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#Effect
 <https://w3id.org/ishikawa-diagram-ontology#Effect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#Effect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ishikawa-diagram-ontology#Factor> .
 <https://w3id.org/ishikawa-diagram-ontology#Effect> <http://www.w3.org/2000/01/rdf-schema#comment> "An effect is a factor where its characteristics are directly influenced by the characteristics of another factor." .
+<https://w3id.org/ishikawa-diagram-ontology#Effect> <http://www.w3.org/2000/01/rdf-schema#label> "Effect" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#Evidence
 <https://w3id.org/ishikawa-diagram-ontology#Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#Evidence> <http://www.w3.org/2000/01/rdf-schema#comment> "Evidence refers to all resources that (partially) validate a cause-effeect relationship." .
+<https://w3id.org/ishikawa-diagram-ontology#Evidence> <http://www.w3.org/2000/01/rdf-schema#label> "Evidence" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#EvidenceType
 <https://w3id.org/ishikawa-diagram-ontology#EvidenceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#EvidenceType> <http://www.w3.org/2000/01/rdf-schema#comment> "The class is used to specify Evidence resources." .
+<https://w3id.org/ishikawa-diagram-ontology#EvidenceType> <http://www.w3.org/2000/01/rdf-schema#label> "EvidenceType" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#Factor
 <https://w3id.org/ishikawa-diagram-ontology#Factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -493,81 +587,98 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/n
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#Factor> <http://www.w3.org/2000/01/rdf-schema#comment> "A factor is any activity or entity with identified cause-effect relationships in the context of root-cause analysis" .
+<https://w3id.org/ishikawa-diagram-ontology#Factor> <http://www.w3.org/2000/01/rdf-schema#label> "Factor" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#ImpactScale
 <https://w3id.org/ishikawa-diagram-ontology#ImpactScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#ImpactScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ishikawa-diagram-ontology#WeightScale> .
 <https://w3id.org/ishikawa-diagram-ontology#ImpactScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A WeightScale where the numerical weight refers to an imact value. Impact describes the estimated and quantified effect an occurence of a cause-effect relationship might have." .
+<https://w3id.org/ishikawa-diagram-ontology#ImpactScale> <http://www.w3.org/2000/01/rdf-schema#label> "ImpactScale" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#MajorCause
 <https://w3id.org/ishikawa-diagram-ontology#MajorCause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#MajorCause> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ishikawa-diagram-ontology#Cause> .
 <https://w3id.org/ishikawa-diagram-ontology#MajorCause> <http://www.w3.org/2000/01/rdf-schema#comment> "A major cause has a direct cause-effect relationship with the root cause in the context of an Ishikawa diagram. When design patterns are used, major causes are abstract causes which are commonly referred to as categories." .
+<https://w3id.org/ishikawa-diagram-ontology#MajorCause> <http://www.w3.org/2000/01/rdf-schema#label> "MajorCause" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#Model
 <https://w3id.org/ishikawa-diagram-ontology#Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Bundle> .
 <https://w3id.org/ishikawa-diagram-ontology#Model> <http://www.w3.org/2000/01/rdf-schema#comment> "The Model class is used to record factors and their cause-effect relationships. It can be seen as the data model of an Ishikawa diagram." .
+<https://w3id.org/ishikawa-diagram-ontology#Model> <http://www.w3.org/2000/01/rdf-schema#label> "Model" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#ProbabilityScale
 <https://w3id.org/ishikawa-diagram-ontology#ProbabilityScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#ProbabilityScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ishikawa-diagram-ontology#WeightScale> .
 <https://w3id.org/ishikawa-diagram-ontology#ProbabilityScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A WeightScale where the numerical weight refers to a probability value. Probability describes the likelihood of occurence of a cause-effect relationship." .
+<https://w3id.org/ishikawa-diagram-ontology#ProbabilityScale> <http://www.w3.org/2000/01/rdf-schema#label> "ProbabilityScale" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#Problem
 <https://w3id.org/ishikawa-diagram-ontology#Problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#Problem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ishikawa-diagram-ontology#Effect> .
 <https://w3id.org/ishikawa-diagram-ontology#Problem> <http://www.w3.org/2000/01/rdf-schema#comment> "A problem is a factor which does not influence any known factor in the context of an Ishikawa diagram." .
+<https://w3id.org/ishikawa-diagram-ontology#Problem> <http://www.w3.org/2000/01/rdf-schema#label> "Problem" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#RelevanceScale
 <https://w3id.org/ishikawa-diagram-ontology#RelevanceScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#RelevanceScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ishikawa-diagram-ontology#WeightScale> .
 <https://w3id.org/ishikawa-diagram-ontology#RelevanceScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A WeightScale where the numerical weight refers to a relevance value. Relevance describes the importance a cause-effect relationship has in the context of a root-cause analysis." .
+<https://w3id.org/ishikawa-diagram-ontology#RelevanceScale> <http://www.w3.org/2000/01/rdf-schema#label> "RelevanceScale" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#RiskScale
 <https://w3id.org/ishikawa-diagram-ontology#RiskScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#RiskScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ishikawa-diagram-ontology#WeightScale> .
 <https://w3id.org/ishikawa-diagram-ontology#RiskScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A WeightScale where the numerical weight refers to a risk value. Risk describes the estimated potential damage the occurence of a cause-effect relationship might have. Risk is often calculated as the product of probability and impact." .
+<https://w3id.org/ishikawa-diagram-ontology#RiskScale> <http://www.w3.org/2000/01/rdf-schema#label> "RiskScale" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#Role
 <https://w3id.org/ishikawa-diagram-ontology#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#Role> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Role> .
 <https://w3id.org/ishikawa-diagram-ontology#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "A role is the function of an agent with respect to a factor. The ontology incorporates role instances adhering to the RASCI model." .
+<https://w3id.org/ishikawa-diagram-ontology#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#RootCause
 <https://w3id.org/ishikawa-diagram-ontology#RootCause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#RootCause> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ishikawa-diagram-ontology#Cause> .
 <https://w3id.org/ishikawa-diagram-ontology#RootCause> <http://www.w3.org/2000/01/rdf-schema#comment> "A root cause is a factor which is not influenced by any known factor in the context of an Ishikawa diagram." .
+<https://w3id.org/ishikawa-diagram-ontology#RootCause> <http://www.w3.org/2000/01/rdf-schema#label> "RootCause" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#Technique
 <https://w3id.org/ishikawa-diagram-ontology#Technique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#Technique> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pko#Procedure> .
 <https://w3id.org/ishikawa-diagram-ontology#Technique> <http://www.w3.org/2000/01/rdf-schema#comment> "An established activity with the goal of peperapring or creating an Ishikawa diagram" .
+<https://w3id.org/ishikawa-diagram-ontology#Technique> <http://www.w3.org/2000/01/rdf-schema#label> "Technique" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#Weight
 <https://w3id.org/ishikawa-diagram-ontology#Weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#Weight> <http://www.w3.org/2000/01/rdf-schema#comment> "The weight class is used to assign values to a cause-effect relationship for priorization. The intended meaning of the weight depends on the referenced WeightScale" .
+<https://w3id.org/ishikawa-diagram-ontology#Weight> <http://www.w3.org/2000/01/rdf-schema#label> "Weight" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#WeightRange
 <https://w3id.org/ishikawa-diagram-ontology#WeightRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#WeightRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The WeightRange class is used to specify and name subranges." .
+<https://w3id.org/ishikawa-diagram-ontology#WeightRange> <http://www.w3.org/2000/01/rdf-schema#label> "WeightRange" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#WeightScale
 <https://w3id.org/ishikawa-diagram-ontology#WeightScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#WeightScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A class that specifies the min and max range of values for the weight of a cause-effect relationship." .
+<https://w3id.org/ishikawa-diagram-ontology#WeightScale> <http://www.w3.org/2000/01/rdf-schema#label> "WeightScale" .
 # 
 # https://w3id.org/ishikawa-diagram-ontology#Workshop
 <https://w3id.org/ishikawa-diagram-ontology#Workshop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ishikawa-diagram-ontology#Workshop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pko#ProcedureExecution> .
 <https://w3id.org/ishikawa-diagram-ontology#Workshop> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured or guided activity to create an Ishikawa diagram" .
+<https://w3id.org/ishikawa-diagram-ontology#Workshop> <http://www.w3.org/2000/01/rdf-schema#label> "Workshop" .
 # 
 # https://w3id.org/pko#Procedure
 <https://w3id.org/pko#Procedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/pko#Procedure> <http://www.w3.org/2000/01/rdf-schema#comment> "A Procedure represents a sequence of actions to be executed in order to achieve a desired outcome." .
+<https://w3id.org/pko#Procedure> <http://www.w3.org/2000/01/rdf-schema#label> "Procedure" .
 # 
 # https://w3id.org/pko#ProcedureExecution
 <https://w3id.org/pko#ProcedureExecution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/pko#ProcedureExecution> <http://www.w3.org/2000/01/rdf-schema#comment> "A Procedure Execution is an Activity representing the execution of a certain Procedure, performed by one or more Agents, during a time interval." .
+<https://w3id.org/pko#ProcedureExecution> <http://www.w3.org/2000/01/rdf-schema#label> "ProcedureExecution" .
 # 
 # 
 # 

@@ -10,12 +10,17 @@
                                               owl:versionIRI <https://w3id.org/ishikawa-diagram-ontology/0.1.0> ;
                                               <http://purl.org/dc/elements/1.1/creator> "Christian Fleiner (KU Leuven)" ,
                                                                                         "Duo Yang (KU Leuven)" ,
-                                                                                        "Joost Vennekens (Vrije Universiteit Brussels)" ,
+                                                                                        "Joost Vennekens (Vrije Universiteit Brussel)" ,
                                                                                         "Simon Vandevelde (KU Leuven)" ;
+                                              <http://purl.org/dc/elements/1.1/title> "Ishikawa diagram ontology" ;
+                                              <http://purl.org/dc/terms/issued> "2025-05-13T00:00:00" ;
                                               <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "ishi" ;
+                                              <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ishikawa-diagram-ontology" ;
+                                              <http://schema.org/citation> "Cite this vocabulary as: Fleiner, C., Yang, D., Vandevelde, S., and Vennekens, J. (2025). Ishikawa diagram ontology 0.1.0. https://w3id.org/ishikawa-diagram-ontology/0.1.0" ;
                                               rdfs:comment """The Ishikawa ontology aims to provide a data and view model to manage data encoded in Ishikawa diagrams which are also known as fishbone or cause and effect diagram (CED).
 Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes the basic modelling of workshops to create Ishikawa diagrams."""@en ;
-                                              rdfs:label "Ishikawa Diagram Ontology"@en .
+                                              owl:versionInfo "0.1.0" .
 
 #################################################################
 #    Annotation properties
@@ -29,8 +34,28 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 <http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/citation
+<http://schema.org/citation> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -39,51 +64,50 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 ###  http://www.w3.org/ns/ma-ont#format
 <http://www.w3.org/ns/ma-ont#format> rdf:type owl:ObjectProperty ;
-                                     rdfs:comment "The MIME type of the resource (e.g., wrapper or bucket media types, container types), ideally including as much information as possible about the resource such as media type parameters, for example, using the \"codecs\" parameter [RFC 4281]." .
+                                     rdfs:comment "The MIME type of the resource (e.g., wrapper or bucket media types, container types), ideally including as much information as possible about the resource such as media type parameters, for example, using the \"codecs\" parameter [RFC 4281]." ;
+                                     rdfs:label "format" .
 
 
 ###  http://www.w3.org/ns/ma-ont#locator
 <http://www.w3.org/ns/ma-ont#locator> rdf:type owl:ObjectProperty ;
-                                      rdfs:comment "The logical address at which the resource can be accessed (e.g. a URL, or a DVB URI)." .
+                                      rdfs:comment "The logical address at which the resource can be accessed (e.g. a URL, or a DVB URI)." ;
+                                      rdfs:label "locator" .
 
 
 ###  http://www.w3.org/ns/oa#hasBody
 <http://www.w3.org/ns/oa#hasBody> rdf:type owl:ObjectProperty ;
-                                  rdfs:comment "The object of the relationship is a resource that is a body of the Annotation." .
+                                  rdfs:comment "The object of the relationship is a resource that is a body of the Annotation." ;
+                                  rdfs:label "hasBody" .
 
 
 ###  http://www.w3.org/ns/oa#hasPurpose
 <http://www.w3.org/ns/oa#hasPurpose> rdf:type owl:ObjectProperty ;
-                                     rdfs:comment "The purpose served by the resource in the Annotation." .
+                                     rdfs:comment "The purpose served by the resource in the Annotation." ;
+                                     rdfs:label "hasPurpose" .
 
 
 ###  http://www.w3.org/ns/oa#hasSelector
 <http://www.w3.org/ns/oa#hasSelector> rdf:type owl:ObjectProperty ;
-                                      rdfs:comment "The object of the relationship is a Selector that describes the segment or region of interest within the source resource. Please note that the domain (oa:ResourceSelection) is not used directly in the Web Annotation model." .
+                                      rdfs:comment "The object of the relationship is a Selector that describes the segment or region of interest within the source resource. Please note that the domain (oa:ResourceSelection) is not used directly in the Web Annotation model." ;
+                                      rdfs:label "hasSelector" .
 
 
 ###  http://www.w3.org/ns/oa#hasSource
 <http://www.w3.org/ns/oa#hasSource> rdf:type owl:ObjectProperty ;
-                                    rdfs:comment "The resource that the ResourceSelection, or its subclass SpecificResource, is refined from, or more specific than. Please note that the domain (oa:ResourceSelection) is not used directly in the Web Annotation model." .
+                                    rdfs:comment "The resource that the ResourceSelection, or its subclass SpecificResource, is refined from, or more specific than. Please note that the domain (oa:ResourceSelection) is not used directly in the Web Annotation model." ;
+                                    rdfs:label "hasSource" .
 
 
 ###  http://www.w3.org/ns/oa#hasTarget
 <http://www.w3.org/ns/oa#hasTarget> rdf:type owl:ObjectProperty ;
-                                    rdfs:comment "The relationship between an Annotation and its Target." .
+                                    rdfs:comment "The relationship between an Annotation and its Target." ;
+                                    rdfs:label "hasTarget" .
 
 
 ###  http://www.w3.org/ns/prov#agent
 <http://www.w3.org/ns/prov#agent> rdf:type owl:ObjectProperty ;
-                                  rdfs:comment "The prov:agent property references an prov:Agent which influenced a resource. This property applies to an prov:AgentInfluence, which is given by a subproperty of prov:qualifiedInfluence from the influenced prov:Entity, prov:Activity or prov:Agent." .
-
-
-###  http://www.w3.org/ns/prov#alternateOf
-<http://www.w3.org/ns/prov#alternateOf> rdf:type owl:ObjectProperty ,
-                                                 owl:SymmetricProperty ,
-                                                 owl:TransitiveProperty ;
-                                        rdfs:domain <http://www.w3.org/ns/prov#Entity> ;
-                                        rdfs:range <http://www.w3.org/ns/prov#Entity> ;
-                                        rdfs:comment "Two alternate entities present aspects of the same thing. These aspects may be the same or different, and the alternate entities may or may not overlap in time." .
+                                  rdfs:comment "The prov:agent property references an prov:Agent which influenced a resource. This property applies to an prov:AgentInfluence, which is given by a subproperty of prov:qualifiedInfluence from the influenced prov:Entity, prov:Activity or prov:Agent." ;
+                                  rdfs:label "agent" .
 
 
 ###  http://www.w3.org/ns/prov#contributed
@@ -91,32 +115,38 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                                         owl:inverseOf <http://www.w3.org/ns/prov#wasAttributedTo> ;
                                         rdfs:domain <http://www.w3.org/ns/prov#Agent> ;
                                         rdfs:range <http://www.w3.org/ns/prov#Entity> ;
-                                        rdfs:comment "Attribution is the ascribing of an entity to an agent." .
+                                        rdfs:comment "Attribution is the ascribing of an entity to an agent." ;
+                                        rdfs:label "contributed" .
 
 
 ###  http://www.w3.org/ns/prov#hadDerivation
 <http://www.w3.org/ns/prov#hadDerivation> rdf:type owl:ObjectProperty ;
                                           owl:inverseOf <http://www.w3.org/ns/prov#wasDerivedFrom> ;
                                           rdfs:domain <http://www.w3.org/ns/prov#Entity> ;
-                                          rdfs:range <http://www.w3.org/ns/prov#Entity> .
+                                          rdfs:range <http://www.w3.org/ns/prov#Entity> ;
+                                          rdfs:comment "inverse property of wasDerivedFrom" ;
+                                          rdfs:label "hadDerivation" .
 
 
 ###  http://www.w3.org/ns/prov#hadRole
 <http://www.w3.org/ns/prov#hadRole> rdf:type owl:ObjectProperty ;
                                     owl:inverseOf <http://www.w3.org/ns/prov#wasRoleIn> ;
                                     rdfs:range <http://www.w3.org/ns/prov#Role> ;
-                                    rdfs:comment "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end." .
+                                    rdfs:comment "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end." ;
+                                    rdfs:label "hadRole" .
 
 
 ###  http://www.w3.org/ns/prov#influenced
 <http://www.w3.org/ns/prov#influenced> rdf:type owl:ObjectProperty ;
                                        owl:inverseOf <http://www.w3.org/ns/prov#wasInfluencedBy> ;
-                                       rdfs:comment "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation." .
+                                       rdfs:comment "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation." ;
+                                       rdfs:label "influenced" .
 
 
 ###  http://www.w3.org/ns/prov#influencer
 <http://www.w3.org/ns/prov#influencer> rdf:type owl:ObjectProperty ;
-                                       rdfs:comment "This property is used as part of the qualified influence pattern. Subclasses of prov:Influence use these subproperties to reference the resource (Entity, Agent, or Activity) whose influence is being qualified." .
+                                       rdfs:comment "This property is used as part of the qualified influence pattern. Subclasses of prov:Influence use these subproperties to reference the resource (Entity, Agent, or Activity) whose influence is being qualified." ;
+                                       rdfs:label "influencer" .
 
 
 ###  http://www.w3.org/ns/prov#qualifiedAssociation
@@ -124,13 +154,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                                                  owl:inverseOf <http://www.w3.org/ns/prov#qualifiedAssociationOf> ;
                                                  rdfs:domain <http://www.w3.org/ns/prov#Association> ;
                                                  rdfs:range <http://www.w3.org/ns/prov#Activity> ;
-                                                 rdfs:comment "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity." .
+                                                 rdfs:comment "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity." ;
+                                                 rdfs:label "qualifiedAssociation" .
 
 
 ###  http://www.w3.org/ns/prov#qualifiedAssociationOf
 <http://www.w3.org/ns/prov#qualifiedAssociationOf> rdf:type owl:ObjectProperty ;
                                                    rdfs:domain <http://www.w3.org/ns/prov#Activity> ;
-                                                   rdfs:range <http://www.w3.org/ns/prov#Association> .
+                                                   rdfs:range <http://www.w3.org/ns/prov#Association> ;
+                                                   rdfs:label "qualifiedAssociationOf" .
 
 
 ###  http://www.w3.org/ns/prov#qualifiedAttribution
@@ -138,26 +170,30 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                                                  owl:inverseOf <http://www.w3.org/ns/prov#qualifiedAttributionOf> ;
                                                  rdfs:domain <http://www.w3.org/ns/prov#Entity> ;
                                                  rdfs:range <http://www.w3.org/ns/prov#Attribution> ;
-                                                 rdfs:comment "Attribution is the ascribing of an entity to an agent. When an entity e is attributed to agent ag, entity e was generated by some unspecified activity that in turn was associated to agent ag. Thus, this relation is useful when the activity is not known, or irrelevant." .
+                                                 rdfs:comment "Attribution is the ascribing of an entity to an agent. When an entity e is attributed to agent ag, entity e was generated by some unspecified activity that in turn was associated to agent ag. Thus, this relation is useful when the activity is not known, or irrelevant." ;
+                                                 rdfs:label "qualifiedAttribution" .
 
 
 ###  http://www.w3.org/ns/prov#qualifiedAttributionOf
 <http://www.w3.org/ns/prov#qualifiedAttributionOf> rdf:type owl:ObjectProperty ;
                                                    rdfs:domain <http://www.w3.org/ns/prov#Attribution> ;
-                                                   rdfs:range <http://www.w3.org/ns/prov#Entity> .
+                                                   rdfs:range <http://www.w3.org/ns/prov#Entity> ;
+                                                   rdfs:label "qualifiedAttributionOf" .
 
 
 ###  http://www.w3.org/ns/prov#qualifiedInfluence
 <http://www.w3.org/ns/prov#qualifiedInfluence> rdf:type owl:ObjectProperty ;
                                                owl:inverseOf <http://www.w3.org/ns/prov#qualifiedInfluenceOf> ;
                                                rdfs:range <http://www.w3.org/ns/prov#Influence> ;
-                                               rdfs:comment "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation." .
+                                               rdfs:comment "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation." ;
+                                               rdfs:label "qualifiedInfluence" .
 
 
 ###  http://www.w3.org/ns/prov#qualifiedInfluenceOf
 <http://www.w3.org/ns/prov#qualifiedInfluenceOf> rdf:type owl:ObjectProperty ;
                                                  rdfs:domain <http://www.w3.org/ns/prov#Influence> ;
-                                                 rdfs:comment "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation." .
+                                                 rdfs:comment "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation." ;
+                                                 rdfs:label "qualifiedInfluenceOf" .
 
 
 ###  http://www.w3.org/ns/prov#wasAssociatedFor
@@ -165,60 +201,70 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                                              owl:inverseOf <http://www.w3.org/ns/prov#wasAssociatedWith> ;
                                              rdfs:domain <http://www.w3.org/ns/prov#Agent> ;
                                              rdfs:range <http://www.w3.org/ns/prov#Activity> ;
-                                             rdfs:comment "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity." .
+                                             rdfs:comment "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity." ;
+                                             rdfs:label "wasAssociatedFor" .
 
 
 ###  http://www.w3.org/ns/prov#wasAssociatedWith
 <http://www.w3.org/ns/prov#wasAssociatedWith> rdf:type owl:ObjectProperty ;
                                               rdfs:domain <http://www.w3.org/ns/prov#Activity> ;
                                               rdfs:range <http://www.w3.org/ns/prov#Agent> ;
-                                              rdfs:comment "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity." .
+                                              rdfs:comment "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity." ;
+                                              rdfs:label "wasAssociatedWith" .
 
 
 ###  http://www.w3.org/ns/prov#wasAttributedTo
 <http://www.w3.org/ns/prov#wasAttributedTo> rdf:type owl:ObjectProperty ;
                                             rdfs:domain <http://www.w3.org/ns/prov#Entity> ;
                                             rdfs:range <http://www.w3.org/ns/prov#Agent> ;
-                                            rdfs:comment "Attribution is the ascribing of an entity to an agent." .
+                                            rdfs:comment "Attribution is the ascribing of an entity to an agent." ;
+                                            rdfs:label "wasAttributedTo" .
 
 
 ###  http://www.w3.org/ns/prov#wasDerivedFrom
 <http://www.w3.org/ns/prov#wasDerivedFrom> rdf:type owl:ObjectProperty ;
                                            rdfs:domain <http://www.w3.org/ns/prov#Entity> ;
                                            rdfs:range <http://www.w3.org/ns/prov#Entity> ;
-                                           rdfs:comment "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity." .
+                                           rdfs:comment "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity." ;
+                                           rdfs:label "wasDerivedFrom" .
 
 
 ###  http://www.w3.org/ns/prov#wasInfluencedBy
 <http://www.w3.org/ns/prov#wasInfluencedBy> rdf:type owl:ObjectProperty ;
-                                            rdfs:comment "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation." .
+                                            rdfs:comment "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation." ;
+                                            rdfs:label "wasInfluencedBy" .
 
 
 ###  http://www.w3.org/ns/prov#wasRoleIn
 <http://www.w3.org/ns/prov#wasRoleIn> rdf:type owl:ObjectProperty ;
                                       rdfs:domain <http://www.w3.org/ns/prov#Role> ;
-                                      rdfs:comment "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end." .
+                                      rdfs:comment "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end." ;
+                                      rdfs:label "wasRoleIn" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#cause
 :cause rdf:type owl:ObjectProperty ;
        rdfs:domain :CauseEffect ;
        rdfs:range :Cause ;
-       rdfs:comment "This property is used to link a Cause to CauseEffect ." .
+       rdfs:comment "This property is used to link a Cause to CauseEffect ." ;
+       rdfs:label "cause" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#causeEffect
 :causeEffect rdf:type owl:ObjectProperty ;
              owl:inverseOf :isCauseEffectOf ;
              rdfs:domain :Model ;
-             rdfs:range :CauseEffect .
+             rdfs:range :CauseEffect ;
+             rdfs:comment "Property links CauseEffects to their Model." ;
+             rdfs:label "causeEffect" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#causeEffectType
 :causeEffectType rdf:type owl:ObjectProperty ;
                  rdfs:domain :CauseEffect ;
                  rdfs:range :CauseEffectType ;
-                 rdfs:comment "This property is used to link the CauseEffectType to a CauseEffect" .
+                 rdfs:comment "This property is used to link the CauseEffectType to a CauseEffect" ;
+                 rdfs:label "causeEffectType" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#caused
@@ -227,13 +273,16 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
         owl:inverseOf :wasCausedBy ;
         rdfs:domain :Cause ;
         rdfs:range :Effect ;
-        rdfs:comment "This property is used to directly link a Cause to an Effect without further qualification. For qualified cause-effect relationships the CauseEffect class is used." .
+        rdfs:comment "This property is used to directly link a Cause to an Effect without further qualification. For qualified cause-effect relationships the CauseEffect class is used." ;
+        rdfs:label "caused" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#designPattern
 :designPattern rdf:type owl:ObjectProperty ;
                rdfs:domain :Diagram ;
-               rdfs:range :DesignPattern .
+               rdfs:range :DesignPattern ;
+               rdfs:comment "Property specifies which DesignPattern was used in an Ishikawa diagram." ;
+               rdfs:label "designPattern" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#diagram
@@ -241,56 +290,65 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
          owl:inverseOf :model ;
          rdfs:domain :Model ;
          rdfs:range :Diagram ;
-         rdfs:comment "This property is used to link the (data) model of an Ishikawa diagram to its visual representation." .
+         rdfs:comment "This property is used to link the (data) model of an Ishikawa diagram to its visual representation." ;
+         rdfs:label "diagram" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#diagramType
 :diagramType rdf:type owl:ObjectProperty ;
              rdfs:domain :Diagram ;
              rdfs:range :DiagramType ;
-             rdfs:comment "This property is used to linke the DiagramType to Diagram." .
+             rdfs:comment "This property is used to linke the DiagramType to Diagram." ;
+             rdfs:label "diagramType" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#effect
 :effect rdf:type owl:ObjectProperty ;
         rdfs:domain :CauseEffect ;
         rdfs:range :Effect ;
-        rdfs:comment "This property is used to link an Effect to CauseEffect ." .
+        rdfs:comment "This property is used to link an Effect to CauseEffect ." ;
+        rdfs:label "effect" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#evidenceType
 :evidenceType rdf:type owl:ObjectProperty ;
               rdfs:domain :Evidence ;
               rdfs:range :EvidenceType ;
-              rdfs:comment "This property is used to link the EvidenceType to an Evidence" .
+              rdfs:comment "This property is used to link the EvidenceType to an Evidence" ;
+              rdfs:label "evidenceType" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#factor
 :factor rdf:type owl:ObjectProperty ;
         owl:inverseOf :isFactorOf ;
         rdfs:domain :Model ;
-        rdfs:range :Factor .
+        rdfs:range :Factor ;
+        rdfs:comment "Property links Factors to their Model." ;
+        rdfs:label "factor" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#hadRole
 :hadRole rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf <http://www.w3.org/ns/prov#hadRole> ;
          rdfs:range :Role ;
-         rdfs:comment "In the context of the Ishikawa ontology, this property is used to assign roles according to the RASCI model." .
+         rdfs:comment "In the context of the Ishikawa ontology, this property is used to assign roles according to the RASCI model." ;
+         rdfs:label "hadRole" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#hasEvidence
 :hasEvidence rdf:type owl:ObjectProperty ;
              rdfs:domain :CauseEffect ;
              rdfs:range :Evidence ;
-             rdfs:comment "This property is used to link a CauseEffect to any Evidence." .
+             rdfs:comment "This property is used to link a CauseEffect to any Evidence." ;
+             rdfs:label "hasEvidence" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#hasNamedRange
 :hasNamedRange rdf:type owl:ObjectProperty ;
                rdfs:domain :WeightScale ;
                rdfs:range :WeightRange ;
-               rdfs:comment "This property is used to link a WeightRange to a WeightScale." .
+               rdfs:comment "This property is used to link a WeightRange to a WeightScale." ;
+               rdfs:label "hasNamedRange" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#hasQualitativeEvidence
@@ -298,7 +356,8 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                         rdfs:subPropertyOf :hasEvidence ;
                         rdfs:domain :CauseEffect ;
                         rdfs:range :Evidence ;
-                        rdfs:comment "This property is used to link a CauseEffect to any Evidence with the assumption that the evidence is qualitative.." .
+                        rdfs:comment "This property is used to link a CauseEffect to any Evidence with the assumption that the evidence is qualitative.." ;
+                        rdfs:label "hasQualitativeEvidence" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#hasQuantitativeEvidence
@@ -306,33 +365,40 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                          rdfs:subPropertyOf :hasEvidence ;
                          rdfs:domain :CauseEffect ;
                          rdfs:range :Evidence ;
-                         rdfs:comment "This property is used to link a CauseEffect to any Evidence with the assumption that the evidence is quantitative" .
+                         rdfs:comment "This property is used to link a CauseEffect to any Evidence with the assumption that the evidence is quantitative" ;
+                         rdfs:label "hasQuantitativeEvidence" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#hasWeightRange
 :hasWeightRange rdf:type owl:ObjectProperty ;
                 rdfs:domain :WeightScale ;
                 rdfs:range :WeightRange ;
-                rdfs:comment "This property is used to link a WeightScale to the WeightRange which defines its total range." .
+                rdfs:comment "This property is used to link a WeightScale to the WeightRange which defines its total range." ;
+                rdfs:label "hasWeightRange" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf
 :isCauseEffectOf rdf:type owl:ObjectProperty ;
                  rdfs:domain :CauseEffect ;
-                 rdfs:range :Model .
+                 rdfs:range :Model ;
+                 rdfs:comment "inverse property to causeEffect" ;
+                 rdfs:label "isCauseEffectOf" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#isFactorOf
 :isFactorOf rdf:type owl:ObjectProperty ;
             rdfs:domain :Factor ;
-            rdfs:range :Model .
+            rdfs:range :Model ;
+            rdfs:comment "inverse property to factor" ;
+            rdfs:label "isFactorOf" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#model
 :model rdf:type owl:ObjectProperty ;
        rdfs:domain :Diagram ;
        rdfs:range :Model ;
-       rdfs:comment "This property is used to link the visual representation of an Ishikawa diagram to its data model." .
+       rdfs:comment "This property is used to link the visual representation of an Ishikawa diagram to its data model." ;
+       rdfs:label "model" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffect
@@ -341,7 +407,8 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                       owl:inverseOf :qualifiedCauseEffectOf ;
                       rdfs:domain :Factor ;
                       rdfs:range :CauseEffect ;
-                      rdfs:comment "This property is used to link a qualified CauseEffect to a Factor." .
+                      rdfs:comment "This property is used to link a qualified CauseEffect to a Factor." ;
+                      rdfs:label "qualifiedCauseEffect" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#qualifiedCauseEffectOf
@@ -349,20 +416,24 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                         rdfs:subPropertyOf <http://www.w3.org/ns/prov#qualifiedInfluenceOf> ;
                         rdfs:domain :CauseEffect ;
                         rdfs:range :Factor ;
-                        rdfs:comment "This property is used to link a qualified CauseEffect to a Factor." .
+                        rdfs:comment "This property is used to link a qualified CauseEffect to a Factor." ;
+                        rdfs:label "qualifiedCauseEffectOf" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#scale
 :scale rdf:type owl:ObjectProperty ;
        rdfs:domain :Weight ;
        rdfs:range :WeightScale ;
-       rdfs:comment "The property is used to link the WeigthScale to a Weight." .
+       rdfs:comment "The property is used to link the WeigthScale to a Weight." ;
+       rdfs:label "scale" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#usedTechnique
 :usedTechnique rdf:type owl:ObjectProperty ;
                rdfs:domain :Workshop ;
-               rdfs:range :Technique .
+               rdfs:range :Technique ;
+               rdfs:comment "Property to indicate which Technique was used in the Workshop" ;
+               rdfs:label "usedTechnique" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#wasCausedBy
@@ -370,67 +441,68 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
              rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasInfluencedBy> ;
              rdfs:domain :Effect ;
              rdfs:range :Cause ;
-             rdfs:comment "This property is used to directly link an Effect to a Cause without further qualification. For qualified cause-effect relationships the CauseEffect class is used." .
+             rdfs:comment "This property is used to directly link an Effect to a Cause without further qualification. For qualified cause-effect relationships the CauseEffect class is used." ;
+             rdfs:label "wasCausedBy" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#weight
 :weight rdf:type owl:ObjectProperty ;
         rdfs:domain :CauseEffect ;
         rdfs:range :Weight ;
-        rdfs:comment "This property is used to link a Weight to a CauseEffect" .
+        rdfs:comment "This property is used to link a Weight to a CauseEffect" ,
+                     "weight" .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> rdf:type owl:DatatypeProperty ;
-                                   rdfs:domain :Factor ;
-                                   rdfs:range xsd:dateTime ;
-                                   rdfs:comment "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty." .
-
-
 ###  https://w3id.org/ishikawa-diagram-ontology#depth
 :depth rdf:type owl:DatatypeProperty ;
        rdfs:domain :Diagram ;
        rdfs:range xsd:integer ;
-       rdfs:comment "This property is used to indicate the maximal depth of the visual representation of an Ishikawa diagram." .
+       rdfs:comment "This property is used to indicate the maximal depth of the visual representation of an Ishikawa diagram." ;
+       rdfs:label "depth" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#enumerated
 :enumerated rdf:type owl:DatatypeProperty ;
             rdfs:domain :Diagram ;
             rdfs:range xsd:boolean ;
-            rdfs:comment "This property is used to indicate, if factors were enumerated in the visual representation of the Ishikawa diagram." .
+            rdfs:comment "This property is used to indicate, if factors were enumerated in the visual representation of the Ishikawa diagram." ;
+            rdfs:label "enumerated" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#illustratedEvidence
 :illustratedEvidence rdf:type owl:DatatypeProperty ;
                      rdfs:domain :Diagram ;
                      rdfs:range xsd:boolean ;
-                     rdfs:comment "This property is used to indicate, if the evidence basis was emphasized in the visual representation of the Ishikawa diagram." .
+                     rdfs:comment "This property is used to indicate, if the evidence basis was emphasized in the visual representation of the Ishikawa diagram." ;
+                     rdfs:label "illustratedEvidence" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#illustratedFactorInfluence
 :illustratedFactorInfluence rdf:type owl:DatatypeProperty ;
                             rdfs:domain :Diagram ;
                             rdfs:range xsd:boolean ;
-                            rdfs:comment "This property is used to indicate, if the factors' influence on the problem were emphasized in the visual representation of the Ishikawa diagram." .
+                            rdfs:comment "This property is used to indicate, if the factors' influence on the problem were emphasized in the visual representation of the Ishikawa diagram." ;
+                            rdfs:label "illustratedFactorInfluence" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#illustratedRoles
 :illustratedRoles rdf:type owl:DatatypeProperty ;
                   rdfs:domain :Diagram ;
                   rdfs:range xsd:boolean ;
-                  rdfs:comment "This property is used to indicate, if responsibilities or roles towards factors were included in the visual representation of the Ishikawa diagram." .
+                  rdfs:comment "This property is used to indicate, if responsibilities or roles towards factors were included in the visual representation of the Ishikawa diagram." ;
+                  rdfs:label "illustratedRoles" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#illustratedWeight
 :illustratedWeight rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Diagram ;
                    rdfs:range xsd:boolean ;
-                   rdfs:comment "This property is used to indicate, if weight differences were emphasized in the visual representation of the Ishikawa diagram." .
+                   rdfs:comment "This property is used to indicate, if weight differences were emphasized in the visual representation of the Ishikawa diagram." ;
+                   rdfs:label "illustratedWeight" .
 
 
 #################################################################
@@ -439,120 +511,145 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 ###  http://www.w3.org/ns/oa#Annotation
 <http://www.w3.org/ns/oa#Annotation> rdf:type owl:Class ;
-                                     rdfs:comment "The class for Web Annotations." .
+                                     rdfs:comment "The class for Web Annotations." ;
+                                     rdfs:label "Annotation" .
 
 
 ###  http://www.w3.org/ns/oa#FragmentSelector
 <http://www.w3.org/ns/oa#FragmentSelector> rdf:type owl:Class ;
-                                           rdfs:comment "The FragmentSelector class is used to record the segment of a representation using the IRI fragment specification defined by the representation's media type." .
+                                           rdfs:comment "The FragmentSelector class is used to record the segment of a representation using the IRI fragment specification defined by the representation's media type." ;
+                                           rdfs:label "FragmentSelector" .
 
 
 ###  http://www.w3.org/ns/oa#Motivation
 <http://www.w3.org/ns/oa#Motivation> rdf:type owl:Class ;
-                                     rdfs:comment "The Motivation class is used to record the user's intent or motivation for the creation of the Annotation, or the inclusion of the body or target, that it is associated with." .
+                                     rdfs:comment "The Motivation class is used to record the user's intent or motivation for the creation of the Annotation, or the inclusion of the body or target, that it is associated with." ;
+                                     rdfs:label "Motivation" .
 
 
 ###  http://www.w3.org/ns/oa#SpecificResource
-<http://www.w3.org/ns/oa#SpecificResource> rdf:type owl:Class .
+<http://www.w3.org/ns/oa#SpecificResource> rdf:type owl:Class ;
+                                           rdfs:comment "The SpecificResource refers to the source resource and the constraints that make it more specific." ;
+                                           rdfs:label "SpecificResource" .
 
 
 ###  http://www.w3.org/ns/oa#TextualBody
-<http://www.w3.org/ns/oa#TextualBody> rdf:type owl:Class .
+<http://www.w3.org/ns/oa#TextualBody> rdf:type owl:Class ;
+                                      rdfs:comment "In many situations, the Body of the Annotation will be in a text format, and created at the same time as the Annotation without a separate IRI. In these cases, the Body's text can be included as part of the Annotation to avoid having to interact with multiple systems. The Body may also have the features of External Web Resources, including especially the language of the text and the format that it is conveyed in." ;
+                                      rdfs:label "TextualBody" .
 
 
 ###  http://www.w3.org/ns/prov#Activity
 <http://www.w3.org/ns/prov#Activity> rdf:type owl:Class ;
-                                     rdfs:comment "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities." .
+                                     rdfs:comment "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities." ;
+                                     rdfs:label "Activity" .
 
 
 ###  http://www.w3.org/ns/prov#Agent
 <http://www.w3.org/ns/prov#Agent> rdf:type owl:Class ;
-                                  rdfs:comment "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity." .
+                                  rdfs:comment "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity." ;
+                                  rdfs:label "Agent" .
 
 
 ###  http://www.w3.org/ns/prov#Association
 <http://www.w3.org/ns/prov#Association> rdf:type owl:Class ;
-                                        rdfs:comment "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity." .
+                                        rdfs:comment "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity." ;
+                                        rdfs:label "Association" .
 
 
 ###  http://www.w3.org/ns/prov#Attribution
 <http://www.w3.org/ns/prov#Attribution> rdf:type owl:Class ;
-                                        rdfs:comment "Attribution is the ascribing of an entity to an agent. When an entity e is attributed to agent ag, entity e was generated by some unspecified activity that in turn was associated to agent ag. Thus, this relation is useful when the activity is not known, or irrelevant." .
+                                        rdfs:comment "Attribution is the ascribing of an entity to an agent. When an entity e is attributed to agent ag, entity e was generated by some unspecified activity that in turn was associated to agent ag. Thus, this relation is useful when the activity is not known, or irrelevant." ;
+                                        rdfs:label "Attribution" .
 
 
 ###  http://www.w3.org/ns/prov#Bundle
 <http://www.w3.org/ns/prov#Bundle> rdf:type owl:Class ;
-                                   rdfs:comment "A bundle is a named set of provenance descriptions, and is itself an Entity, so allowing provenance of provenance to be expressed." .
+                                   rdfs:comment "A bundle is a named set of provenance descriptions, and is itself an Entity, so allowing provenance of provenance to be expressed." ;
+                                   rdfs:label "Bundle" .
 
 
 ###  http://www.w3.org/ns/prov#Entity
 <http://www.w3.org/ns/prov#Entity> rdf:type owl:Class ;
-                                   rdfs:comment "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary." .
+                                   rdfs:comment "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary." ;
+                                   rdfs:label "Entity" .
 
 
 ###  http://www.w3.org/ns/prov#Influence
 <http://www.w3.org/ns/prov#Influence> rdf:type owl:Class ;
-                                      rdfs:comment "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation." .
+                                      rdfs:comment "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation." ;
+                                      rdfs:label "Influence" .
 
 
 ###  http://www.w3.org/ns/prov#Role
 <http://www.w3.org/ns/prov#Role> rdf:type owl:Class ;
-                                 rdfs:comment "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end." .
+                                 rdfs:comment "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end." ;
+                                 rdfs:label "Role" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Cause
 :Cause rdf:type owl:Class ;
        rdfs:subClassOf :Factor ;
-       rdfs:comment "A cause is a factor where its characteristics has direct influence on the characteristics of another factor." .
+       rdfs:comment "A cause is a factor where its characteristics has direct influence on the characteristics of another factor." ;
+       rdfs:label "Cause" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#CauseEffect
 :CauseEffect rdf:type owl:Class ;
              rdfs:subClassOf <http://www.w3.org/ns/prov#Influence> ;
-             rdfs:comment "CauseEffect is the capacity of a factor to have an effect on the character of another. The class is used to record qualified cause-effect relationships." .
+             rdfs:comment "CauseEffect is the capacity of a factor to have an effect on the character of another. The class is used to record qualified cause-effect relationships." ;
+             rdfs:label "CauseEffect" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#CauseEffectType
 :CauseEffectType rdf:type owl:Class ;
-                 rdfs:comment "The class is used to record the type of cause-effect relationship that exists between at least one cause and at least one effect." .
+                 rdfs:comment "The class is used to record the type of cause-effect relationship that exists between at least one cause and at least one effect." ;
+                 rdfs:label "CauseEffectType" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#CertaintyScale
 :CertaintyScale rdf:type owl:Class ;
                 rdfs:subClassOf :WeightScale ;
-                rdfs:comment "A WeightScale where the numerical weight refers to the certainty." .
+                rdfs:comment "A WeightScale where the numerical weight refers to the certainty." ;
+                rdfs:label "CertaintyScale" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#DesignPattern
 :DesignPattern rdf:type owl:Class ;
-               rdfs:comment "The class is used to record the design pattern which was applied in the course of the Ishikawa diagram creation. Instances of the class refer to best practices." .
+               rdfs:comment "The class is used to record the design pattern which was applied in the course of the Ishikawa diagram creation. Instances of the class refer to best practices." ;
+               rdfs:label "DesignPattern" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Diagram
 :Diagram rdf:type owl:Class ;
          rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-         rdfs:comment "A visual representation of an Ishikawa diagram model or of a portion of it." .
+         rdfs:comment "A visual representation of an Ishikawa diagram model or of a portion of it." ;
+         rdfs:label "Diagram" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#DiagramType
 :DiagramType rdf:type owl:Class ;
-             rdfs:comment "The class is used to record the type of the Ishikawa diagram" .
+             rdfs:comment "The class is used to record the type of the Ishikawa diagram" ;
+             rdfs:label "DiagramType" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Effect
 :Effect rdf:type owl:Class ;
         rdfs:subClassOf :Factor ;
-        rdfs:comment "An effect is a factor where its characteristics are directly influenced by the characteristics of another factor." .
+        rdfs:comment "An effect is a factor where its characteristics are directly influenced by the characteristics of another factor." ;
+        rdfs:label "Effect" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Evidence
 :Evidence rdf:type owl:Class ;
-          rdfs:comment "Evidence refers to all resources that (partially) validate a cause-effeect relationship." .
+          rdfs:comment "Evidence refers to all resources that (partially) validate a cause-effeect relationship." ;
+          rdfs:label "Evidence" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#EvidenceType
 :EvidenceType rdf:type owl:Class ;
-              rdfs:comment "The class is used to specify Evidence resources." .
+              rdfs:comment "The class is used to specify Evidence resources." ;
+              rdfs:label "EvidenceType" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Factor
@@ -562,98 +659,115 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                                         <http://www.w3.org/ns/prov#Entity>
                                       )
                         ] ;
-        rdfs:comment "A factor is any activity or entity with identified cause-effect relationships in the context of root-cause analysis" .
+        rdfs:comment "A factor is any activity or entity with identified cause-effect relationships in the context of root-cause analysis" ;
+        rdfs:label "Factor" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#ImpactScale
 :ImpactScale rdf:type owl:Class ;
              rdfs:subClassOf :WeightScale ;
-             rdfs:comment "A WeightScale where the numerical weight refers to an imact value. Impact describes the estimated and quantified effect an occurence of a cause-effect relationship might have." .
+             rdfs:comment "A WeightScale where the numerical weight refers to an imact value. Impact describes the estimated and quantified effect an occurence of a cause-effect relationship might have." ;
+             rdfs:label "ImpactScale" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#MajorCause
 :MajorCause rdf:type owl:Class ;
             rdfs:subClassOf :Cause ;
-            rdfs:comment "A major cause has a direct cause-effect relationship with the root cause in the context of an Ishikawa diagram. When design patterns are used, major causes are abstract causes which are commonly referred to as categories." .
+            rdfs:comment "A major cause has a direct cause-effect relationship with the root cause in the context of an Ishikawa diagram. When design patterns are used, major causes are abstract causes which are commonly referred to as categories." ;
+            rdfs:label "MajorCause" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Model
 :Model rdf:type owl:Class ;
        rdfs:subClassOf <http://www.w3.org/ns/prov#Bundle> ;
-       rdfs:comment "The Model class is used to record factors and their cause-effect relationships. It can be seen as the data model of an Ishikawa diagram." .
+       rdfs:comment "The Model class is used to record factors and their cause-effect relationships. It can be seen as the data model of an Ishikawa diagram." ;
+       rdfs:label "Model" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#ProbabilityScale
 :ProbabilityScale rdf:type owl:Class ;
                   rdfs:subClassOf :WeightScale ;
-                  rdfs:comment "A WeightScale where the numerical weight refers to a probability value. Probability describes the likelihood of occurence of a cause-effect relationship." .
+                  rdfs:comment "A WeightScale where the numerical weight refers to a probability value. Probability describes the likelihood of occurence of a cause-effect relationship." ;
+                  rdfs:label "ProbabilityScale" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Problem
 :Problem rdf:type owl:Class ;
          rdfs:subClassOf :Effect ;
-         rdfs:comment "A problem is a factor which does not influence any known factor in the context of an Ishikawa diagram." .
+         rdfs:comment "A problem is a factor which does not influence any known factor in the context of an Ishikawa diagram." ;
+         rdfs:label "Problem" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#RelevanceScale
 :RelevanceScale rdf:type owl:Class ;
                 rdfs:subClassOf :WeightScale ;
-                rdfs:comment "A WeightScale where the numerical weight refers to a relevance value. Relevance describes the importance a cause-effect relationship has in the context of a root-cause analysis." .
+                rdfs:comment "A WeightScale where the numerical weight refers to a relevance value. Relevance describes the importance a cause-effect relationship has in the context of a root-cause analysis." ;
+                rdfs:label "RelevanceScale" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#RiskScale
 :RiskScale rdf:type owl:Class ;
            rdfs:subClassOf :WeightScale ;
-           rdfs:comment "A WeightScale where the numerical weight refers to a risk value. Risk describes the estimated potential damage the occurence of a cause-effect relationship might have. Risk is often calculated as the product of probability and impact." .
+           rdfs:comment "A WeightScale where the numerical weight refers to a risk value. Risk describes the estimated potential damage the occurence of a cause-effect relationship might have. Risk is often calculated as the product of probability and impact." ;
+           rdfs:label "RiskScale" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Role
 :Role rdf:type owl:Class ;
       rdfs:subClassOf <http://www.w3.org/ns/prov#Role> ;
-      rdfs:comment "A role is the function of an agent with respect to a factor. The ontology incorporates role instances adhering to the RASCI model." .
+      rdfs:comment "A role is the function of an agent with respect to a factor. The ontology incorporates role instances adhering to the RASCI model." ;
+      rdfs:label "Role" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#RootCause
 :RootCause rdf:type owl:Class ;
            rdfs:subClassOf :Cause ;
-           rdfs:comment "A root cause is a factor which is not influenced by any known factor in the context of an Ishikawa diagram." .
+           rdfs:comment "A root cause is a factor which is not influenced by any known factor in the context of an Ishikawa diagram." ;
+           rdfs:label "RootCause" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Technique
 :Technique rdf:type owl:Class ;
            rdfs:subClassOf <https://w3id.org/pko#Procedure> ;
-           rdfs:comment "An established activity with the goal of peperapring or creating an Ishikawa diagram" .
+           rdfs:comment "An established activity with the goal of peperapring or creating an Ishikawa diagram" ;
+           rdfs:label "Technique" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Weight
 :Weight rdf:type owl:Class ;
-        rdfs:comment "The weight class is used to assign values to a cause-effect relationship for priorization. The intended meaning of the weight depends on the referenced WeightScale" .
+        rdfs:comment "The weight class is used to assign values to a cause-effect relationship for priorization. The intended meaning of the weight depends on the referenced WeightScale" ;
+        rdfs:label "Weight" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#WeightRange
 :WeightRange rdf:type owl:Class ;
-             rdfs:comment "The WeightRange class is used to specify and name subranges." .
+             rdfs:comment "The WeightRange class is used to specify and name subranges." ;
+             rdfs:label "WeightRange" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#WeightScale
 :WeightScale rdf:type owl:Class ;
-             rdfs:comment "A class that specifies the min and max range of values for the weight of a cause-effect relationship." .
+             rdfs:comment "A class that specifies the min and max range of values for the weight of a cause-effect relationship." ;
+             rdfs:label "WeightScale" .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Workshop
 :Workshop rdf:type owl:Class ;
           rdfs:subClassOf <https://w3id.org/pko#ProcedureExecution> ;
-          rdfs:comment "A structured or guided activity to create an Ishikawa diagram" .
+          rdfs:comment "A structured or guided activity to create an Ishikawa diagram" ;
+          rdfs:label "Workshop" .
 
 
 ###  https://w3id.org/pko#Procedure
 <https://w3id.org/pko#Procedure> rdf:type owl:Class ;
-                                 rdfs:comment "A Procedure represents a sequence of actions to be executed in order to achieve a desired outcome." .
+                                 rdfs:comment "A Procedure represents a sequence of actions to be executed in order to achieve a desired outcome." ;
+                                 rdfs:label "Procedure" .
 
 
 ###  https://w3id.org/pko#ProcedureExecution
 <https://w3id.org/pko#ProcedureExecution> rdf:type owl:Class ;
-                                          rdfs:comment "A Procedure Execution is an Activity representing the execution of a certain Procedure, performed by one or more Agents, during a time interval." .
+                                          rdfs:comment "A Procedure Execution is an Activity representing the execution of a certain Procedure, performed by one or more Agents, during a time interval." ;
+                                          rdfs:label "ProcedureExecution" .
 
 
 #################################################################

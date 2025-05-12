@@ -3,6 +3,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
 <https://w3id.org/ishikawa-diagram-ontology/0.1.0> a prov:Entity;
+	 dc:title "Ishikawa diagram ontology";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo :agent2;
@@ -11,5 +12,5 @@
 .
 :agent0 a prov:Agent; foaf:name "Christian Fleiner (KU Leuven)".
 :agent1 a prov:Agent; foaf:name "Duo Yang (KU Leuven)".
-:agent2 a prov:Agent; foaf:name "Joost Vennekens (Vrije Universiteit Brussels)".
+:agent2 a prov:Agent; foaf:name "Joost Vennekens (Vrije Universiteit Brussel)".
 :agent3 a prov:Agent; foaf:name "Simon Vandevelde (KU Leuven)".

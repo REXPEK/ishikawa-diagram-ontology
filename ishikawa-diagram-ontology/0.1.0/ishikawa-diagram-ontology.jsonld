@@ -15,85 +15,130 @@
   "@id" : "http://purl.org/dc/elements/1.1/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/terms/created",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ishikawa-diagram-ontology#Factor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-  } ]
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/citation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/ma-ont#format",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The MIME type of the resource (e.g., wrapper or bucket media types, container types), ideally including as much information as possible about the resource such as media type parameters, for example, using the \"codecs\" parameter [RFC 4281]."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "format"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/ma-ont#locator",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The logical address at which the resource can be accessed (e.g. a URL, or a DVB URI)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "locator"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/oa#Annotation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The class for Web Annotations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Annotation"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/oa#FragmentSelector",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The FragmentSelector class is used to record the segment of a representation using the IRI fragment specification defined by the representation's media type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FragmentSelector"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/oa#Motivation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The Motivation class is used to record the user's intent or motivation for the creation of the Annotation, or the inclusion of the body or target, that it is associated with."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Motivation"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/oa#SpecificResource",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The SpecificResource refers to the source resource and the constraints that make it more specific."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SpecificResource"
+  } ]
 }, {
   "@id" : "http://www.w3.org/ns/oa#TextualBody",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "In many situations, the Body of the Annotation will be in a text format, and created at the same time as the Annotation without a separate IRI. In these cases, the Body's text can be included as part of the Annotation to avoid having to interact with multiple systems. The Body may also have the features of External Web Resources, including especially the language of the text and the format that it is conveyed in."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TextualBody"
+  } ]
 }, {
   "@id" : "http://www.w3.org/ns/oa#hasBody",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The object of the relationship is a resource that is a body of the Annotation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasBody"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/oa#hasPurpose",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The purpose served by the resource in the Annotation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasPurpose"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/oa#hasSelector",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The object of the relationship is a Selector that describes the segment or region of interest within the source resource. Please note that the domain (oa:ResourceSelection) is not used directly in the Web Annotation model."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasSelector"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/oa#hasSource",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The resource that the ResourceSelection, or its subclass SpecificResource, is refined from, or more specific than. Please note that the domain (oa:ResourceSelection) is not used directly in the Web Annotation model."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasSource"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/oa#hasTarget",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The relationship between an Annotation and its Target."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasTarget"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/oa#highlighting",
@@ -109,66 +154,81 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Activity"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#Agent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Agent"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#Association",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Association"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#Attribution",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Attribution is the ascribing of an entity to an agent. When an entity e is attributed to agent ag, entity e was generated by some unspecified activity that in turn was associated to agent ag. Thus, this relation is useful when the activity is not known, or irrelevant."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Attribution"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#Bundle",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A bundle is a named set of provenance descriptions, and is itself an Entity, so allowing provenance of provenance to be expressed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bundle"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#Entity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Entity"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#Influence",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Influence"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#Role",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Role"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#agent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The prov:agent property references an prov:Agent which influenced a resource. This property applies to an prov:AgentInfluence, which is given by a subproperty of prov:qualifiedInfluence from the influenced prov:Entity, prov:Activity or prov:Agent."
-  } ]
-}, {
-  "@id" : "http://www.w3.org/ns/prov#alternateOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Two alternate entities present aspects of the same thing. These aspects may be the same or different, and the alternate entities may or may not overlap in time."
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/ns/prov#Entity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/ns/prov#Entity"
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "agent"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#contributed",
@@ -179,6 +239,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/ns/prov#Agent"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contributed"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ],
@@ -188,8 +251,14 @@
 }, {
   "@id" : "http://www.w3.org/ns/prov#hadDerivation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "inverse property of wasDerivedFrom"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hadDerivation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/ns/prov#Entity"
@@ -203,6 +272,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hadRole"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/ns/prov#Role"
   } ],
@@ -215,6 +287,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "influenced"
+  } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#wasInfluencedBy"
   } ]
@@ -223,6 +298,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "This property is used as part of the qualified influence pattern. Subclasses of prov:Influence use these subproperties to reference the resource (Entity, Agent, or Activity) whose influence is being qualified."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "influencer"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#qualifiedAssociation",
@@ -232,6 +310,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/ns/prov#Association"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "qualifiedAssociation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/ns/prov#Activity"
@@ -245,6 +326,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/ns/prov#Activity"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "qualifiedAssociationOf"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/ns/prov#Association"
   } ]
@@ -256,6 +340,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "qualifiedAttribution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/ns/prov#Attribution"
@@ -269,6 +356,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/ns/prov#Attribution"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "qualifiedAttributionOf"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ]
@@ -277,6 +367,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "qualifiedInfluence"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/ns/prov#Influence"
@@ -292,6 +385,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/ns/prov#Influence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "qualifiedInfluenceOf"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#wasAssociatedFor",
@@ -301,6 +397,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/ns/prov#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "wasAssociatedFor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/ns/prov#Activity"
@@ -317,6 +416,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/ns/prov#Activity"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "wasAssociatedWith"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/ns/prov#Agent"
   } ]
@@ -328,6 +430,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "wasAttributedTo"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/ns/prov#Agent"
@@ -341,6 +446,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "wasDerivedFrom"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ]
@@ -349,6 +457,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "wasInfluencedBy"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#wasRoleIn",
@@ -358,6 +469,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/ns/prov#Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "wasRoleIn"
   } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology",
@@ -367,23 +481,37 @@
   }, {
     "@value" : "Duo Yang (KU Leuven)"
   }, {
-    "@value" : "Joost Vennekens (Vrije Universiteit Brussels)"
+    "@value" : "Joost Vennekens (Vrije Universiteit Brussel)"
   }, {
     "@value" : "Simon Vandevelde (KU Leuven)"
   } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Ishikawa diagram ontology"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2025-05-13T00:00:00"
+  } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "ishi"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/ishikawa-diagram-ontology"
+  } ],
+  "http://schema.org/citation" : [ {
+    "@value" : "Cite this vocabulary as: Fleiner, C., Yang, D., Vandevelde, S., and Vennekens, J. (2025). Ishikawa diagram ontology 0.1.0. https://w3id.org/ishikawa-diagram-ontology/0.1.0"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The Ishikawa ontology aims to provide a data and view model to manage data encoded in Ishikawa diagrams which are also known as fishbone or cause and effect diagram (CED).\nIshikawa diagrams result from (iterative) workshops. Thus, the ontology includes the basic modelling of workshops to create Ishikawa diagrams."
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Ishikawa Diagram Ontology"
-  } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology/0.1.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1.0"
   } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#4S",
@@ -438,6 +566,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A cause is a factor where its characteristics has direct influence on the characteristics of another factor."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cause"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Factor"
   } ]
@@ -447,6 +578,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "CauseEffect is the capacity of a factor to have an effect on the character of another. The class is used to record qualified cause-effect relationships."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CauseEffect"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#Influence"
   } ]
@@ -455,12 +589,18 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The class is used to record the type of cause-effect relationship that exists between at least one cause and at least one effect."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CauseEffectType"
   } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#CertaintyScale",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A WeightScale where the numerical weight refers to the certainty."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CertaintyScale"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#WeightScale"
@@ -476,12 +616,18 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The class is used to record the design pattern which was applied in the course of the Ishikawa diagram creation. Instances of the class refer to best practices."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DesignPattern"
   } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#Diagram",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A visual representation of an Ishikawa diagram model or of a portion of it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Diagram"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#Entity"
@@ -491,6 +637,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The class is used to record the type of the Ishikawa diagram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DiagramType"
   } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#DoE",
@@ -512,6 +661,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An effect is a factor where its characteristics are directly influenced by the characteristics of another factor."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Effect"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Factor"
   } ]
@@ -520,18 +672,27 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Evidence refers to all resources that (partially) validate a cause-effeect relationship."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Evidence"
   } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#EvidenceType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The class is used to specify Evidence resources."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EvidenceType"
   } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#Factor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A factor is any activity or entity with identified cause-effect relationships in the context of root-cause analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Factor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "_:genid1"
@@ -541,6 +702,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A WeightScale where the numerical weight refers to an imact value. Impact describes the estimated and quantified effect an occurence of a cause-effect relationship might have."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ImpactScale"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#WeightScale"
@@ -557,6 +721,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A major cause has a direct cause-effect relationship with the root cause in the context of an Ishikawa diagram. When design patterns are used, major causes are abstract causes which are commonly referred to as categories."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MajorCause"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Cause"
   } ]
@@ -565,6 +732,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The Model class is used to record factors and their cause-effect relationships. It can be seen as the data model of an Ishikawa diagram."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Model"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#Bundle"
@@ -575,6 +745,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A WeightScale where the numerical weight refers to a probability value. Probability describes the likelihood of occurence of a cause-effect relationship."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ProbabilityScale"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#WeightScale"
   } ]
@@ -584,6 +757,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A problem is a factor which does not influence any known factor in the context of an Ishikawa diagram."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Problem"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Effect"
   } ]
@@ -592,6 +768,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A WeightScale where the numerical weight refers to a relevance value. Relevance describes the importance a cause-effect relationship has in the context of a root-cause analysis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RelevanceScale"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#WeightScale"
@@ -608,6 +787,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A WeightScale where the numerical weight refers to a risk value. Risk describes the estimated potential damage the occurence of a cause-effect relationship might have. Risk is often calculated as the product of probability and impact."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RiskScale"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#WeightScale"
   } ]
@@ -617,6 +799,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A role is the function of an agent with respect to a factor. The ontology incorporates role instances adhering to the RASCI model."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Role"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#Role"
   } ]
@@ -625,6 +810,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A root cause is a factor which is not influenced by any known factor in the context of an Ishikawa diagram."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RootCause"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Cause"
@@ -655,6 +843,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An established activity with the goal of peperapring or creating an Ishikawa diagram"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Technique"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/pko#Procedure"
   } ]
@@ -663,24 +854,36 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The weight class is used to assign values to a cause-effect relationship for priorization. The intended meaning of the weight depends on the referenced WeightScale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Weight"
   } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#WeightRange",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The WeightRange class is used to specify and name subranges."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "WeightRange"
   } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#WeightScale",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A class that specifies the min and max range of values for the weight of a cause-effect relationship."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "WeightScale"
   } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#Workshop",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A structured or guided activity to create an Ishikawa diagram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Workshop"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/pko#ProcedureExecution"
@@ -700,14 +903,23 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#CauseEffect"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cause"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Cause"
   } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#causeEffect",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property links CauseEffects to their Model."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "causeEffect"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#CauseEffect"
@@ -723,6 +935,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#CauseEffect"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "causeEffectType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#CauseEffectType"
@@ -742,6 +957,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Cause"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "caused"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Effect"
   } ],
@@ -760,14 +978,23 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Diagram"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "depth"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#designPattern",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property specifies which DesignPattern was used in an Ishikawa diagram."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Diagram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "designPattern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#DesignPattern"
@@ -780,6 +1007,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "diagram"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Diagram"
@@ -795,6 +1025,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Diagram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "diagramType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#DiagramType"
@@ -814,6 +1047,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#CauseEffect"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "effect"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Effect"
   } ]
@@ -825,6 +1061,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Diagram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "enumerated"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -838,14 +1077,23 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Evidence"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "evidenceType"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#EvidenceType"
   } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#factor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property links Factors to their Model."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "factor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Factor"
@@ -858,6 +1106,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "In the context of the Ishikawa ontology, this property is used to assign roles according to the RASCI model."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hadRole"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Role"
@@ -874,6 +1125,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#CauseEffect"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasEvidence"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Evidence"
   } ]
@@ -886,6 +1140,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#WeightScale"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasNamedRange"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#WeightRange"
   } ]
@@ -897,6 +1154,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#CauseEffect"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasQualitativeEvidence"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Evidence"
@@ -913,6 +1173,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#CauseEffect"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasQuantitativeEvidence"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Evidence"
   } ],
@@ -928,6 +1191,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#WeightScale"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasWeightRange"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#WeightRange"
   } ]
@@ -939,6 +1205,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Diagram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "illustratedEvidence"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -952,6 +1221,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Diagram"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "illustratedFactorInfluence"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
@@ -963,6 +1235,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Diagram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "illustratedRoles"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -976,14 +1251,23 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Diagram"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "illustratedWeight"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#isCauseEffectOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "inverse property to causeEffect"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#CauseEffect"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isCauseEffectOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Model"
@@ -991,8 +1275,14 @@
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#isFactorOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "inverse property to factor"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Factor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isFactorOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Model"
@@ -1005,6 +1295,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Diagram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "model"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Model"
@@ -1036,6 +1329,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Factor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "qualifiedCauseEffect"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#CauseEffect"
   } ],
@@ -1053,6 +1349,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#CauseEffect"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "qualifiedCauseEffectOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Factor"
@@ -1081,6 +1380,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Weight"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "scale"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#WeightScale"
   } ]
@@ -1093,8 +1395,14 @@
 }, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology#usedTechnique",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property to indicate which Technique was used in the Workshop"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Workshop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "usedTechnique"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Technique"
@@ -1108,6 +1416,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Effect"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "wasCausedBy"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Cause"
   } ],
@@ -1119,6 +1430,8 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "This property is used to link a Weight to a CauseEffect"
+  }, {
+    "@value" : "weight"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#CauseEffect"
@@ -1131,11 +1444,17 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A Procedure represents a sequence of actions to be executed in order to achieve a desired outcome."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Procedure"
   } ]
 }, {
   "@id" : "https://w3id.org/pko#ProcedureExecution",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A Procedure Execution is an Activity representing the execution of a certain Procedure, performed by one or more Agents, during a time interval."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ProcedureExecution"
   } ]
 } ]
