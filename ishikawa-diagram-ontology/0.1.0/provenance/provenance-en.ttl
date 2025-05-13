@@ -4,13 +4,14 @@
 @prefix : <> .
 <https://w3id.org/ishikawa-diagram-ontology/0.1.0> a prov:Entity;
 	 dc:title "Ishikawa diagram ontology";
-	 prov:wasAttributedTo :agent0;
-	 prov:wasAttributedTo :agent1;
-	 prov:wasAttributedTo :agent2;
-	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo <https://orcid.org/0000-0001-7312-3675>;
+	 dc:creator <https://orcid.org/0000-0001-7312-3675>;
+	 prov:wasAttributedTo <https://orcid.org/0000-0002-0791-0176>;
+	 dc:creator <https://orcid.org/0000-0002-0791-0176>;
+	 prov:wasAttributedTo <https://orcid.org/0000-0003-4280-670X>;
+	 dc:creator <https://orcid.org/0000-0003-4280-670X>;
+	 prov:wasAttributedTo <https://orcid.org/0009-0008-5942-3397>;
+	 dc:creator <https://orcid.org/0009-0008-5942-3397>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "2025-04-24T12:00:00";
 .
-:agent0 a prov:Agent; foaf:name "Christian Fleiner (KU Leuven)".
-:agent1 a prov:Agent; foaf:name "Duo Yang (KU Leuven)".
-:agent2 a prov:Agent; foaf:name "Joost Vennekens (Vrije Universiteit Brussel)".
-:agent3 a prov:Agent; foaf:name "Simon Vandevelde (KU Leuven)".

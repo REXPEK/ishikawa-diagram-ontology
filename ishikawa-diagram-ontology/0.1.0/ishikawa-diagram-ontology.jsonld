@@ -18,10 +18,16 @@
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/issued",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
@@ -474,25 +480,71 @@
     "@value" : "wasRoleIn"
   } ]
 }, {
+  "@id" : "http://xmlns.com/foaf/0.1/mbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://orcid.org/0000-0001-7312-3675",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Simon Vandevelde"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Simon Vandevelde"
+  } ]
+}, {
+  "@id" : "https://orcid.org/0000-0002-0791-0176",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Joost Vennekens"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Joost Vennekens"
+  } ]
+}, {
+  "@id" : "https://orcid.org/0000-0003-4280-670X",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Christian Fleiner"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Christian Fleiner"
+  } ]
+}, {
+  "@id" : "https://orcid.org/0009-0008-5942-3397",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Duo Yang"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Duo Yang"
+  } ]
+}, {
   "@id" : "https://w3id.org/ishikawa-diagram-ontology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Christian Fleiner (KU Leuven)"
+    "@id" : "https://orcid.org/0000-0001-7312-3675"
   }, {
-    "@value" : "Duo Yang (KU Leuven)"
+    "@id" : "https://orcid.org/0000-0002-0791-0176"
   }, {
-    "@value" : "Joost Vennekens (Vrije Universiteit Brussel)"
+    "@id" : "https://orcid.org/0000-0003-4280-670X"
   }, {
-    "@value" : "Simon Vandevelde (KU Leuven)"
+    "@id" : "https://orcid.org/0009-0008-5942-3397"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@value" : "Ishikawa diagram ontology"
   } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@value" : "2025-05-13T00:00:00"
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-24T12:00:00"
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://www.kuleuven.be/kuleuven/"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "ishi"
@@ -1430,11 +1482,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "This property is used to link a Weight to a CauseEffect"
-  }, {
-    "@value" : "weight"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#CauseEffect"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "weight"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ishikawa-diagram-ontology#Weight"
@@ -1456,5 +1509,14 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "ProcedureExecution"
+  } ]
+}, {
+  "@id" : "https://www.kuleuven.be/kuleuven/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "KU Leuven"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "KU Leuven"
   } ]
 } ]

@@ -8,13 +8,14 @@
 
 <https://w3id.org/ishikawa-diagram-ontology> rdf:type owl:Ontology ;
                                               owl:versionIRI <https://w3id.org/ishikawa-diagram-ontology/0.1.0> ;
-                                              <http://purl.org/dc/elements/1.1/creator> "Christian Fleiner (KU Leuven)" ,
-                                                                                        "Duo Yang (KU Leuven)" ,
-                                                                                        "Joost Vennekens (Vrije Universiteit Brussel)" ,
-                                                                                        "Simon Vandevelde (KU Leuven)" ;
+                                              <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0001-7312-3675> ,
+                                                                                        <https://orcid.org/0000-0002-0791-0176> ,
+                                                                                        <https://orcid.org/0000-0003-4280-670X> ,
+                                                                                        <https://orcid.org/0009-0008-5942-3397> ;
                                               <http://purl.org/dc/elements/1.1/title> "Ishikawa diagram ontology" ;
-                                              <http://purl.org/dc/terms/issued> "2025-05-13T00:00:00" ;
+                                              <http://purl.org/dc/terms/created> "2025-04-24T12:00:00"^^xsd:dateTime ;
                                               <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                              <http://purl.org/dc/terms/publisher> <https://www.kuleuven.be/kuleuven/> ;
                                               <http://purl.org/vocab/vann/preferredNamespacePrefix> "ishi" ;
                                               <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ishikawa-diagram-ontology" ;
                                               <http://schema.org/citation> "Cite this vocabulary as: Fleiner, C., Yang, D., Vandevelde, S., and Vennekens, J. (2025). Ishikawa diagram ontology 0.1.0. https://w3id.org/ishikawa-diagram-ontology/0.1.0" ;
@@ -38,12 +39,20 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/issued
 <http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
@@ -56,6 +65,14 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 ###  http://schema.org/citation
 <http://schema.org/citation> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -449,8 +466,8 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 :weight rdf:type owl:ObjectProperty ;
         rdfs:domain :CauseEffect ;
         rdfs:range :Weight ;
-        rdfs:comment "This property is used to link a Weight to a CauseEffect" ,
-                     "weight" .
+        rdfs:comment "This property is used to link a Weight to a CauseEffect" ;
+        rdfs:label "weight" .
 
 
 #################################################################
@@ -780,6 +797,30 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                                        rdfs:comment "The motivation for when the user intends to highlight the Target resource or segment of it." .
 
 
+###  https://orcid.org/0000-0001-7312-3675
+<https://orcid.org/0000-0001-7312-3675> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Simon Vandevelde" ;
+                                        <http://xmlns.com/foaf/0.1/name> "Simon Vandevelde" .
+
+
+###  https://orcid.org/0000-0002-0791-0176
+<https://orcid.org/0000-0002-0791-0176> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Joost Vennekens" ;
+                                        <http://xmlns.com/foaf/0.1/name> "Joost Vennekens" .
+
+
+###  https://orcid.org/0000-0003-4280-670X
+<https://orcid.org/0000-0003-4280-670X> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Christian Fleiner" ;
+                                        <http://xmlns.com/foaf/0.1/name> "Christian Fleiner" .
+
+
+###  https://orcid.org/0009-0008-5942-3397
+<https://orcid.org/0009-0008-5942-3397> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Duo Yang" ;
+                                        <http://xmlns.com/foaf/0.1/name> "Duo Yang" .
+
+
 ###  https://w3id.org/ishikawa-diagram-ontology#Accountable
 :Accountable rdf:type owl:NamedIndividual ,
                       :Role .
@@ -883,6 +924,12 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                                                          :DesignPattern ;
                                                 rdfs:comment "The categories are \"price\", \"people\", \"place\", \"procedure\", \"promotion\", \"processes\", \"products\", and \"policies\""@en ;
                                                 rdfs:label "Service industry 8P method"@en .
+
+
+###  https://www.kuleuven.be/kuleuven/
+<https://www.kuleuven.be/kuleuven/> rdf:type owl:NamedIndividual ;
+                                    rdfs:label "KU Leuven" ;
+                                    <http://xmlns.com/foaf/0.1/name> "KU Leuven" .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

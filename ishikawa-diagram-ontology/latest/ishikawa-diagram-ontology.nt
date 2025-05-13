@@ -1,12 +1,13 @@
 <https://w3id.org/ishikawa-diagram-ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/ishikawa-diagram-ontology> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/ishikawa-diagram-ontology/0.1.0> .
-<https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/elements/1.1/creator> "Christian Fleiner (KU Leuven)" .
-<https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/elements/1.1/creator> "Duo Yang (KU Leuven)" .
-<https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/elements/1.1/creator> "Joost Vennekens (Vrije Universiteit Brussel)" .
-<https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/elements/1.1/creator> "Simon Vandevelde (KU Leuven)" .
+<https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0001-7312-3675> .
+<https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0791-0176> .
+<https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0003-4280-670X> .
+<https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0009-0008-5942-3397> .
 <https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/elements/1.1/title> "Ishikawa diagram ontology" .
-<https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/terms/issued> "2025-05-13T00:00:00" .
+<https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/terms/created> "2025-04-24T12:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/dc/terms/publisher> <https://www.kuleuven.be/kuleuven/> .
 <https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ishi" .
 <https://w3id.org/ishikawa-diagram-ontology> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ishikawa-diagram-ontology" .
 <https://w3id.org/ishikawa-diagram-ontology> <http://schema.org/citation> "Cite this vocabulary as: Fleiner, C., Yang, D., Vandevelde, S., and Vennekens, J. (2025). Ishikawa diagram ontology 0.1.0. https://w3id.org/ishikawa-diagram-ontology/0.1.0" .
@@ -30,11 +31,17 @@
 # http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/issued
 <http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/vocab/vann/preferredNamespacePrefix
 <http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -44,6 +51,12 @@
 # 
 # http://schema.org/citation
 <http://schema.org/citation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -393,7 +406,7 @@
 <https://w3id.org/ishikawa-diagram-ontology#weight> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ishikawa-diagram-ontology#CauseEffect> .
 <https://w3id.org/ishikawa-diagram-ontology#weight> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ishikawa-diagram-ontology#Weight> .
 <https://w3id.org/ishikawa-diagram-ontology#weight> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to link a Weight to a CauseEffect" .
-<https://w3id.org/ishikawa-diagram-ontology#weight> <http://www.w3.org/2000/01/rdf-schema#comment> "weight" .
+<https://w3id.org/ishikawa-diagram-ontology#weight> <http://www.w3.org/2000/01/rdf-schema#label> "weight" .
 # 
 # 
 # 
@@ -694,6 +707,26 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.w3.org/ns/oa#highlighting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/oa#Motivation> .
 <http://www.w3.org/ns/oa#highlighting> <http://www.w3.org/2000/01/rdf-schema#comment> "The motivation for when the user intends to highlight the Target resource or segment of it." .
 # 
+# https://orcid.org/0000-0001-7312-3675
+<https://orcid.org/0000-0001-7312-3675> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://orcid.org/0000-0001-7312-3675> <http://www.w3.org/2000/01/rdf-schema#label> "Simon Vandevelde" .
+<https://orcid.org/0000-0001-7312-3675> <http://xmlns.com/foaf/0.1/name> "Simon Vandevelde" .
+# 
+# https://orcid.org/0000-0002-0791-0176
+<https://orcid.org/0000-0002-0791-0176> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://orcid.org/0000-0002-0791-0176> <http://www.w3.org/2000/01/rdf-schema#label> "Joost Vennekens" .
+<https://orcid.org/0000-0002-0791-0176> <http://xmlns.com/foaf/0.1/name> "Joost Vennekens" .
+# 
+# https://orcid.org/0000-0003-4280-670X
+<https://orcid.org/0000-0003-4280-670X> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://orcid.org/0000-0003-4280-670X> <http://www.w3.org/2000/01/rdf-schema#label> "Christian Fleiner" .
+<https://orcid.org/0000-0003-4280-670X> <http://xmlns.com/foaf/0.1/name> "Christian Fleiner" .
+# 
+# https://orcid.org/0009-0008-5942-3397
+<https://orcid.org/0009-0008-5942-3397> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://orcid.org/0009-0008-5942-3397> <http://www.w3.org/2000/01/rdf-schema#label> "Duo Yang" .
+<https://orcid.org/0009-0008-5942-3397> <http://xmlns.com/foaf/0.1/name> "Duo Yang" .
+# 
 # https://w3id.org/ishikawa-diagram-ontology#Accountable
 <https://w3id.org/ishikawa-diagram-ontology#Accountable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ishikawa-diagram-ontology#Accountable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ishikawa-diagram-ontology#Role> .
@@ -779,5 +812,10 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/ishikawa-diagram-ontology#8P> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ishikawa-diagram-ontology#DesignPattern> .
 <https://w3id.org/ishikawa-diagram-ontology#8P> <http://www.w3.org/2000/01/rdf-schema#comment> "The categories are \"price\", \"people\", \"place\", \"procedure\", \"promotion\", \"processes\", \"products\", and \"policies\""@en .
 <https://w3id.org/ishikawa-diagram-ontology#8P> <http://www.w3.org/2000/01/rdf-schema#label> "Service industry 8P method"@en .
+# 
+# https://www.kuleuven.be/kuleuven/
+<https://www.kuleuven.be/kuleuven/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.kuleuven.be/kuleuven/> <http://www.w3.org/2000/01/rdf-schema#label> "KU Leuven" .
+<https://www.kuleuven.be/kuleuven/> <http://xmlns.com/foaf/0.1/name> "KU Leuven" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
