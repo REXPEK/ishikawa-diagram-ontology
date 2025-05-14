@@ -22,21 +22,20 @@ The ontology reuses existing ontologies, including the [Web Annotation Ontology]
 For designing the ontology, we adopted the [Linked Open Terms (LOT) methodology](https://zenodo.org/records/2539305). 
 
 
-The intended use of terms is detailed in the [diagram](./ishikawa-diagram-ontology/media/ishikawa-diagram-ontology.png), which uses the [Chowlk notation]( https://chowlk.linkeddata.es/notation):
+See [documentation](w3id.org/ishikawa-diagram-ontology)
 
-<p align="left"><img src="./chowlk/ishikawa-diagram-ontology.png" alt="Diagram of Ishikawa diagram ontology" width="800"></p>
 
 ## Use Cases
 
 ### Use Case A: Keeping knowledge explicit 
 
-Ishikawa diagrams are visual representations that summarize cause and effect relationship to serve as basis for formulating actions to resolve the problem under investigation. Ishikawa diagrams are often pruned with factor descriptions kept short to provide a concise summary, leading to loss of information and potential misinterpretations. As a solution, the data model should contain additional information like explicit factor definitions or the importance of a relationship, which is not always shown in the diagram directly to maintain readability. After all, a diagram is a visual representation of a subset of the data model.
+Ishikawa diagrams are visual representations that summarize cause and effect relationships to serve as basis for formulating actions to resolve the problem under investigation. Ishikawa diagrams are often pruned with factor descriptions kept short to provide a concise summary, leading to loss of information and potential misinterpretations. As a solution, the data model should contain additional information like explicit factor definitions or the importance of a relationship, which is not always shown in the diagram directly to maintain readability. In this way, a diagram is a visual representation of a subset of a larger data model.
 
-### Use Case B: Disclosing the dynamic knowledge space 
-Ishikawa diagrams are commonly developed over multiple workshop sessions where the participating group is only a fraction of the workforce, which might lead to an incomplete knowledge space. Additionally, false or outdated knowledge could be captured. As a solution, data models and the activities they have resulted from are captured. This enables the back-tracking of the introduction or removal of factors and relationships. In a broader sense, Ishikawa diagrams can be also used in this manner to measure the effectiveness of trainings.
+### Use Case B: Tracking the dynamic knowledge space 
+Ishikawa diagrams are commonly developed over multiple workshop sessions where the participating group is only a fraction of the workforce, which might lead to an incomplete knowledge space. Additionally, false or outdated knowledge could be captured. To solve this problem, the ontology should allow capturing the evolution of the diagrams and the activities that have produced them. This enables the back-tracking of the introduction or removal of factors and relationships. In a broader sense, Ishikawa diagrams can be also used in this manner to measure the effectiveness of trainings by comparing the completeness of Ishikawa diagram iterations.    
 
 ### Use Case C: Referencing responsibilities The formulation of problem-resolving
-actions includes the assignment of responsibilities which should be derivable from the Ishikawa diagram. The ontology should incorporate means to describe and easily reference responsibilities or roles.
+Formulating problem-resolving actions encompasses the assignment of responsibilities which should be stored in the model of the Ishikawa diagram. Thus, the ontology should incorporate means to describe and easily reference responsibilities or roles.
 
 ## Content of the repository
 
