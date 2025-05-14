@@ -10,7 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="http://schema.org/">
+     xmlns:schema="http://schema.org/"
+     xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#">
     <owl:Ontology rdf:about="https://w3id.org/ishikawa-diagram-ontology">
         <owl:versionIRI rdf:resource="https://w3id.org/ishikawa-diagram-ontology/0.1.0"/>
         <dc:creator rdf:resource="https://orcid.org/0000-0001-7312-3675"/>
@@ -19,6 +20,7 @@
         <dc:creator rdf:resource="https://orcid.org/0009-0008-5942-3397"/>
         <dc:title>Ishikawa diagram ontology</dc:title>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-24T12:00:00</terms:created>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-13T12:00:00</terms:issued>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:publisher rdf:resource="https://www.kuleuven.be/kuleuven/"/>
         <vann:preferredNamespacePrefix>ishi</vann:preferredNamespacePrefix>
@@ -40,6 +42,27 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
      -->
 
 
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPosition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionX -->
+
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionY -->
+
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
     
 
 
@@ -224,7 +247,6 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#contributed">
         <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#wasAttributedTo"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Agent"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>Attribution is the ascribing of an entity to an agent.</rdfs:comment>
         <rdfs:label>contributed</rdfs:label>
@@ -354,7 +376,6 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedFor">
         <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Agent"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment>An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity.</rdfs:comment>
         <rdfs:label>wasAssociatedFor</rdfs:label>
@@ -367,7 +388,6 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Agent"/>
         <rdfs:comment>An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity.</rdfs:comment>
         <rdfs:label>wasAssociatedWith</rdfs:label>
     </owl:ObjectProperty>
@@ -379,7 +399,6 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAttributedTo">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Agent"/>
         <rdfs:comment>Attribution is the ascribing of an entity to an agent.</rdfs:comment>
         <rdfs:label>wasAttributedTo</rdfs:label>
     </owl:ObjectProperty>
@@ -830,9 +849,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/oa#Annotation">
+        <opla-sd:entityPosition rdf:nodeID="genid1"/>
         <rdfs:comment>The class for Web Annotations.</rdfs:comment>
         <rdfs:label>Annotation</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid1">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">262.60054007337317</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">273.27089440190986</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -840,9 +865,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/oa#FragmentSelector">
+        <opla-sd:entityPosition rdf:nodeID="genid2"/>
         <rdfs:comment>The FragmentSelector class is used to record the segment of a representation using the IRI fragment specification defined by the representation&apos;s media type.</rdfs:comment>
         <rdfs:label>FragmentSelector</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid2">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">47.65346144081374</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">141.37704659353253</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -850,9 +881,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/oa#Motivation">
+        <opla-sd:entityPosition rdf:nodeID="genid3"/>
         <rdfs:comment>The Motivation class is used to record the user&apos;s intent or motivation for the creation of the Annotation, or the inclusion of the body or target, that it is associated with.</rdfs:comment>
         <rdfs:label>Motivation</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid3">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">11.378884177799524</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">196.4347150289925</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -860,9 +897,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/oa#SpecificResource">
+        <opla-sd:entityPosition rdf:nodeID="genid4"/>
         <rdfs:comment>The SpecificResource refers to the source resource and the constraints that make it more specific.</rdfs:comment>
         <rdfs:label>SpecificResource</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid4">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">39.49400972229051</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">194.57459388530083</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -870,9 +913,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/oa#TextualBody">
+        <opla-sd:entityPosition rdf:nodeID="genid5"/>
         <rdfs:comment>In many situations, the Body of the Annotation will be in a text format, and created at the same time as the Annotation without a separate IRI. In these cases, the Body&apos;s text can be included as part of the Annotation to avoid having to interact with multiple systems. The Body may also have the features of External Web Resources, including especially the language of the text and the format that it is conveyed in.</rdfs:comment>
         <rdfs:label>TextualBody</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid5">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">210.76522335428353</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">138.38587639131916</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -880,19 +929,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity">
+        <opla-sd:entityPosition rdf:nodeID="genid6"/>
         <rdfs:comment>An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.</rdfs:comment>
         <rdfs:label>Activity</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#Agent -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent">
-        <rdfs:comment>An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent&apos;s activity.</rdfs:comment>
-        <rdfs:label>Agent</rdfs:label>
-    </owl:Class>
+    <rdf:Description rdf:nodeID="genid6">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">141.13734681592098</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">226.58562189754716</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -900,9 +945,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Association">
+        <opla-sd:entityPosition rdf:nodeID="genid7"/>
         <rdfs:comment>An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity.</rdfs:comment>
         <rdfs:label>Association</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid7">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">125.29571885545357</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">74.61963866965631</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -910,9 +961,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Attribution">
+        <opla-sd:entityPosition rdf:nodeID="genid8"/>
         <rdfs:comment>Attribution is the ascribing of an entity to an agent. When an entity e is attributed to agent ag, entity e was generated by some unspecified activity that in turn was associated to agent ag. Thus, this relation is useful when the activity is not known, or irrelevant.</rdfs:comment>
         <rdfs:label>Attribution</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid8">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">124.49059871755664</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">29.033253085720943</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -920,9 +977,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Bundle">
+        <opla-sd:entityPosition rdf:nodeID="genid9"/>
         <rdfs:comment>A bundle is a named set of provenance descriptions, and is itself an Entity, so allowing provenance of provenance to be expressed.</rdfs:comment>
         <rdfs:label>Bundle</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid9">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">166.71073231376351</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">112.32769843718287</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -930,9 +993,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity">
+        <opla-sd:entityPosition rdf:nodeID="genid10"/>
         <rdfs:comment>An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary.</rdfs:comment>
         <rdfs:label>Entity</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid10">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">132.9134137344035</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">213.6443287245277</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -940,9 +1009,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Influence">
+        <opla-sd:entityPosition rdf:nodeID="genid11"/>
         <rdfs:comment>Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation.</rdfs:comment>
         <rdfs:label>Influence</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid11">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">231.75978966030578</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">135.39395010229686</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -950,9 +1025,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Role">
+        <opla-sd:entityPosition rdf:nodeID="genid12"/>
         <rdfs:comment>A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end.</rdfs:comment>
         <rdfs:label>Role</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid12">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">276.40391538023187</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">184.36380575964503</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -961,9 +1042,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#Cause">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Factor"/>
+        <opla-sd:entityPosition rdf:nodeID="genid13"/>
         <rdfs:comment>A cause is a factor where its characteristics has direct influence on the characteristics of another factor.</rdfs:comment>
         <rdfs:label>Cause</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid13">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">123.00737762664976</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">184.60500911497746</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -972,9 +1059,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#CauseEffect">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+        <opla-sd:entityPosition rdf:nodeID="genid14"/>
         <rdfs:comment>CauseEffect is the capacity of a factor to have an effect on the character of another. The class is used to record qualified cause-effect relationships.</rdfs:comment>
         <rdfs:label>CauseEffect</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid14">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">192.77304817678424</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">213.85712373828505</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -982,9 +1075,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#CauseEffectType">
+        <opla-sd:entityPosition rdf:nodeID="genid15"/>
         <rdfs:comment>The class is used to record the type of cause-effect relationship that exists between at least one cause and at least one effect.</rdfs:comment>
         <rdfs:label>CauseEffectType</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid15">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">93.66061160817183</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">159.28894452827677</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -993,9 +1092,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#CertaintyScale">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ishikawa-diagram-ontology#WeightScale"/>
+        <opla-sd:entityPosition rdf:nodeID="genid16"/>
         <rdfs:comment>A WeightScale where the numerical weight refers to the certainty.</rdfs:comment>
         <rdfs:label>CertaintyScale</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid16">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">155.00527322145606</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">112.5814291960231</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1003,9 +1108,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#DesignPattern">
+        <opla-sd:entityPosition rdf:nodeID="genid17"/>
         <rdfs:comment>The class is used to record the design pattern which was applied in the course of the Ishikawa diagram creation. Instances of the class refer to best practices.</rdfs:comment>
         <rdfs:label>DesignPattern</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid17">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">175.32226400587672</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">105.48417296868017</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1014,9 +1125,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#Diagram">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <opla-sd:entityPosition rdf:nodeID="genid18"/>
         <rdfs:comment>A visual representation of an Ishikawa diagram model or of a portion of it.</rdfs:comment>
         <rdfs:label>Diagram</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid18">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">269.8080784374408</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">248.94200277221174</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1024,9 +1141,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#DiagramType">
+        <opla-sd:entityPosition rdf:nodeID="genid19"/>
         <rdfs:comment>The class is used to record the type of the Ishikawa diagram</rdfs:comment>
         <rdfs:label>DiagramType</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid19">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">145.8908904841744</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">198.25424818705645</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1035,9 +1158,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#Effect">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Factor"/>
+        <opla-sd:entityPosition rdf:nodeID="genid20"/>
         <rdfs:comment>An effect is a factor where its characteristics are directly influenced by the characteristics of another factor.</rdfs:comment>
         <rdfs:label>Effect</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid20">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">190.3623717800639</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">152.8318002740762</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1045,9 +1174,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#Evidence">
+        <opla-sd:entityPosition rdf:nodeID="genid21"/>
         <rdfs:comment>Evidence refers to all resources that (partially) validate a cause-effeect relationship.</rdfs:comment>
         <rdfs:label>Evidence</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid21">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">156.99065914717298</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">152.07659396192778</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1055,9 +1190,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#EvidenceType">
+        <opla-sd:entityPosition rdf:nodeID="genid22"/>
         <rdfs:comment>The class is used to specify Evidence resources.</rdfs:comment>
         <rdfs:label>EvidenceType</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid22">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">176.05457779258518</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">208.61848644315535</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1073,9 +1214,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid26"/>
         <rdfs:comment>A factor is any activity or entity with identified cause-effect relationships in the context of root-cause analysis</rdfs:comment>
         <rdfs:label>Factor</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid26">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">113.3780664588734</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">91.98102992910789</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1084,9 +1231,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#ImpactScale">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ishikawa-diagram-ontology#WeightScale"/>
+        <opla-sd:entityPosition rdf:nodeID="genid27"/>
         <rdfs:comment>A WeightScale where the numerical weight refers to an imact value. Impact describes the estimated and quantified effect an occurence of a cause-effect relationship might have.</rdfs:comment>
         <rdfs:label>ImpactScale</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid27">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">46.46906575234697</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">187.1974842846684</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1095,9 +1248,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#MajorCause">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Cause"/>
+        <opla-sd:entityPosition rdf:nodeID="genid28"/>
         <rdfs:comment>A major cause has a direct cause-effect relationship with the root cause in the context of an Ishikawa diagram. When design patterns are used, major causes are abstract causes which are commonly referred to as categories.</rdfs:comment>
         <rdfs:label>MajorCause</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid28">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.3291512670125463</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">51.82777428099638</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1106,9 +1265,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#Model">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Bundle"/>
+        <opla-sd:entityPosition rdf:nodeID="genid29"/>
         <rdfs:comment>The Model class is used to record factors and their cause-effect relationships. It can be seen as the data model of an Ishikawa diagram.</rdfs:comment>
         <rdfs:label>Model</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid29">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">194.4887213176196</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">60.54246765747193</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1117,9 +1282,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#ProbabilityScale">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ishikawa-diagram-ontology#WeightScale"/>
+        <opla-sd:entityPosition rdf:nodeID="genid30"/>
         <rdfs:comment>A WeightScale where the numerical weight refers to a probability value. Probability describes the likelihood of occurence of a cause-effect relationship.</rdfs:comment>
         <rdfs:label>ProbabilityScale</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid30">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">23.151223151161403</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">26.32028108643747</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1128,9 +1299,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#Problem">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Effect"/>
+        <opla-sd:entityPosition rdf:nodeID="genid31"/>
         <rdfs:comment>A problem is a factor which does not influence any known factor in the context of an Ishikawa diagram.</rdfs:comment>
         <rdfs:label>Problem</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid31">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">258.97498324737865</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">61.931412441922205</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1139,9 +1316,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#RelevanceScale">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ishikawa-diagram-ontology#WeightScale"/>
+        <opla-sd:entityPosition rdf:nodeID="genid32"/>
         <rdfs:comment>A WeightScale where the numerical weight refers to a relevance value. Relevance describes the importance a cause-effect relationship has in the context of a root-cause analysis.</rdfs:comment>
         <rdfs:label>RelevanceScale</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid32">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">204.2452469668632</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">287.4680312533</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1150,9 +1333,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#RiskScale">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ishikawa-diagram-ontology#WeightScale"/>
+        <opla-sd:entityPosition rdf:nodeID="genid33"/>
         <rdfs:comment>A WeightScale where the numerical weight refers to a risk value. Risk describes the estimated potential damage the occurence of a cause-effect relationship might have. Risk is often calculated as the product of probability and impact.</rdfs:comment>
         <rdfs:label>RiskScale</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid33">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">292.09895184288615</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">72.36217107678436</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1161,9 +1350,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#Role">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Role"/>
+        <opla-sd:entityPosition rdf:nodeID="genid34"/>
         <rdfs:comment>A role is the function of an agent with respect to a factor. The ontology incorporates role instances adhering to the RASCI model.</rdfs:comment>
         <rdfs:label>Role</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid34">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.83212502449234</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">107.44791090828923</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1172,9 +1367,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#RootCause">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Cause"/>
+        <opla-sd:entityPosition rdf:nodeID="genid35"/>
         <rdfs:comment>A root cause is a factor which is not influenced by any known factor in the context of an Ishikawa diagram.</rdfs:comment>
         <rdfs:label>RootCause</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid35">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">11.375887232578583</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">247.23992497186617</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1183,9 +1384,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#Technique">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pko#Procedure"/>
+        <opla-sd:entityPosition rdf:nodeID="genid36"/>
         <rdfs:comment>An established activity with the goal of peperapring or creating an Ishikawa diagram</rdfs:comment>
         <rdfs:label>Technique</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid36">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.778757559180475</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">107.75919065025721</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1193,9 +1400,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#Weight">
+        <opla-sd:entityPosition rdf:nodeID="genid37"/>
         <rdfs:comment>The weight class is used to assign values to a cause-effect relationship for priorization. The intended meaning of the weight depends on the referenced WeightScale</rdfs:comment>
         <rdfs:label>Weight</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid37">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">215.53292469569942</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">291.04154394313963</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1203,9 +1416,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#WeightRange">
+        <opla-sd:entityPosition rdf:nodeID="genid38"/>
         <rdfs:comment>The WeightRange class is used to specify and name subranges.</rdfs:comment>
         <rdfs:label>WeightRange</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid38">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">91.17107303325758</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">250.6976235311414</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1213,9 +1432,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#WeightScale">
+        <opla-sd:entityPosition rdf:nodeID="genid39"/>
         <rdfs:comment>A class that specifies the min and max range of values for the weight of a cause-effect relationship.</rdfs:comment>
         <rdfs:label>WeightScale</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid39">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">179.4398154124525</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">103.76174220733877</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1224,9 +1449,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:Class rdf:about="https://w3id.org/ishikawa-diagram-ontology#Workshop">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pko#ProcedureExecution"/>
+        <opla-sd:entityPosition rdf:nodeID="genid40"/>
         <rdfs:comment>A structured or guided activity to create an Ishikawa diagram</rdfs:comment>
         <rdfs:label>Workshop</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid40">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">255.87952327805928</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.7777315637728495</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1234,9 +1465,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="https://w3id.org/pko#Procedure">
+        <opla-sd:entityPosition rdf:nodeID="genid41"/>
         <rdfs:comment>A Procedure represents a sequence of actions to be executed in order to achieve a desired outcome.</rdfs:comment>
         <rdfs:label>Procedure</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid41">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.329808236279934</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">218.42590320776011</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1244,9 +1481,15 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 
     <owl:Class rdf:about="https://w3id.org/pko#ProcedureExecution">
+        <opla-sd:entityPosition rdf:nodeID="genid42"/>
         <rdfs:comment>A Procedure Execution is an Activity representing the execution of a certain Procedure, performed by one or more Agents, during a time interval.</rdfs:comment>
         <rdfs:label>ProcedureExecution</rdfs:label>
     </owl:Class>
+    <rdf:Description rdf:nodeID="genid42">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5740530814539975</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">195.96139264701569</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1312,24 +1555,6 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
     
 
 
-    <!-- https://w3id.org/ishikawa-diagram-ontology#Accountable -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/ishikawa-diagram-ontology#Accountable">
-        <rdf:type rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Role"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/ishikawa-diagram-ontology#Consulted -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/ishikawa-diagram-ontology#Consulted">
-        <rdf:type rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Role"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/ishikawa-diagram-ontology#DoE -->
 
 
@@ -1337,24 +1562,6 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
         <rdf:type rdf:resource="https://w3id.org/ishikawa-diagram-ontology#DesignPattern"/>
         <rdfs:comment xml:lang="en">The categories are &quot;uncontrollable factors&quot;, &quot;controllable factors&quot;, &quot;blockable nuisance factors&quot;, and &quot;held-constant factors&quot;</rdfs:comment>
         <rdfs:label xml:lang="en">Design of experiments</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/ishikawa-diagram-ontology#Informed -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/ishikawa-diagram-ontology#Informed">
-        <rdf:type rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Role"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/ishikawa-diagram-ontology#Responsible -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/ishikawa-diagram-ontology#Responsible">
-        <rdf:type rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Role"/>
     </owl:NamedIndividual>
     
 
@@ -1370,10 +1577,10 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
     
 
 
-    <!-- https://w3id.org/ishikawa-diagram-ontology#Supporting -->
+    <!-- https://w3id.org/ishikawa-diagram-ontology#accountable -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ishikawa-diagram-ontology#Supporting">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ishikawa-diagram-ontology#accountable">
         <rdf:type rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Role"/>
     </owl:NamedIndividual>
     
@@ -1397,11 +1604,29 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
     
 
 
+    <!-- https://w3id.org/ishikawa-diagram-ontology#consulted -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ishikawa-diagram-ontology#consulted">
+        <rdf:type rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/ishikawa-diagram-ontology#dispersionAnalysisDiagram -->
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ishikawa-diagram-ontology#dispersionAnalysisDiagram">
         <rdf:type rdf:resource="https://w3id.org/ishikawa-diagram-ontology#DiagramType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ishikawa-diagram-ontology#informed -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ishikawa-diagram-ontology#informed">
+        <rdf:type rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Role"/>
     </owl:NamedIndividual>
     
 
@@ -1447,6 +1672,24 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ishikawa-diagram-ontology#quantitativeEvidence">
         <rdf:type rdf:resource="https://w3id.org/ishikawa-diagram-ontology#EvidenceType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ishikawa-diagram-ontology#responsible -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ishikawa-diagram-ontology#responsible">
+        <rdf:type rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ishikawa-diagram-ontology#supporting -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ishikawa-diagram-ontology#supporting">
+        <rdf:type rdf:resource="https://w3id.org/ishikawa-diagram-ontology#Role"/>
     </owl:NamedIndividual>
     
 
@@ -1500,6 +1743,11 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
         <rdfs:label>KU Leuven</rdfs:label>
         <foaf:name>KU Leuven</foaf:name>
     </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid43">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">117.47579526926195</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">108.68761168108256</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
 </rdf:RDF>
 
 

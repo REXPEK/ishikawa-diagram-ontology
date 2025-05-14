@@ -24,8 +24,8 @@ if exist "%VOCABULARY%\%RELEASE%" (
     mkdir "%VOCABULARY%\%RELEASE%"
 
     rem Create serialisations and documentation
-    java -jar tools\widoco.jar -excludeIntroduction -ontFile "%VOCABULARY%\%VOCABULARY%.owl" -outFolder "%VOCABULARY%\latest" -lang en
-
+    java -jar tools\widoco.jar  -ontFile "%VOCABULARY%\%VOCABULARY%.owl" -outFolder "%VOCABULARY%\latest" -lang en -oops
+    rem -excludeIntroduction
     rem Move files
     move "%VOCABULARY%\latest\index-en.html" "%VOCABULARY%\latest\index.html"
 

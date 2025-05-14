@@ -4,7 +4,6 @@ This section provides details for each class and property defined by Ishikawa di
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
   <li><a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a></li>
-  <li><a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a></li>
   <li><a href="#http://www.w3.org/ns/oa#Annotation" title="http://www.w3.org/ns/oa#Annotation">Annotation</a></li>
   <li><a href="#http://www.w3.org/ns/prov#Association" title="http://www.w3.org/ns/prov#Association">Association</a></li>
   <li><a href="#http://www.w3.org/ns/prov#Attribution" title="http://www.w3.org/ns/prov#Attribution">Attribution</a></li>
@@ -62,27 +61,6 @@ This section provides details for each class and property defined by Ishikawa di
    </dt>
    <dd>
     <a href="#http://www.w3.org/ns/prov#qualifiedAssociation" title="http://www.w3.org/ns/prov#qualifiedAssociation">qualifiedAssociation</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAssociatedFor" title="http://www.w3.org/ns/prov#wasAssociatedFor">wasAssociatedFor</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://www.w3.org/ns/prov#Agent">
-  <h3>Agent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#Agent</p>
-  <div class="comment">
-   <span class="markdown">An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#http://www.w3.org/ns/prov#contributed" title="http://www.w3.org/ns/prov#contributed">contributed</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAssociatedFor" title="http://www.w3.org/ns/prov#wasAssociatedFor">wasAssociatedFor</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">wasAssociatedWith</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAttributedTo" title="http://www.w3.org/ns/prov#wasAttributedTo">wasAttributedTo</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -694,7 +672,7 @@ This section provides details for each class and property defined by Ishikawa di
     has members
    </dt>
    <dd>
-    <a href="#Accountable" title="https://w3id.org/ishikawa-diagram-ontology#Accountable">Accountable</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Consulted" title="https://w3id.org/ishikawa-diagram-ontology#Consulted">Consulted</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Informed" title="https://w3id.org/ishikawa-diagram-ontology#Informed">Informed</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Responsible" title="https://w3id.org/ishikawa-diagram-ontology#Responsible">Responsible</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Supporting" title="https://w3id.org/ishikawa-diagram-ontology#Supporting">Supporting</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#accountable" title="https://w3id.org/ishikawa-diagram-ontology#accountable">accountable</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#consulted" title="https://w3id.org/ishikawa-diagram-ontology#consulted">consulted</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#informed" title="https://w3id.org/ishikawa-diagram-ontology#informed">informed</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#responsible" title="https://w3id.org/ishikawa-diagram-ontology#responsible">responsible</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#supporting" title="https://w3id.org/ishikawa-diagram-ontology#supporting">supporting</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -1011,12 +989,6 @@ This section provides details for each class and property defined by Ishikawa di
   </div>
   <div class="description">
    <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
-    </dd>
     <dt>
      has range
     </dt>
@@ -1855,12 +1827,6 @@ This section provides details for each class and property defined by Ishikawa di
   <div class="description">
    <dl>
     <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
      has range
     </dt>
     <dd>
@@ -1890,12 +1856,6 @@ This section provides details for each class and property defined by Ishikawa di
      <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
      is inverse of
     </dt>
     <dd>
@@ -1917,12 +1877,6 @@ This section provides details for each class and property defined by Ishikawa di
     </dt>
     <dd>
      <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      is inverse of
@@ -2218,16 +2172,16 @@ This section provides details for each class and property defined by Ishikawa di
  <h3 id="namedindividuals" class="list">Named Individuals</h3>
  <ul class="hlist">
   <li><a href="#5MandE" title="https://w3id.org/ishikawa-diagram-ontology#5MandE">5M&amp;E structure</a></li>
-  <li><a href="#Accountable" title="https://w3id.org/ishikawa-diagram-ontology#Accountable"> <span>Accountable</span> </a></li>
+  <li><a href="#accountable" title="https://w3id.org/ishikawa-diagram-ontology#accountable"> <span>accountable</span> </a></li>
   <li><a href="#aggravating" title="https://w3id.org/ishikawa-diagram-ontology#aggravating"> <span>aggravating</span> </a></li>
   <li><a href="#causeEnumerationDiagram" title="https://w3id.org/ishikawa-diagram-ontology#causeEnumerationDiagram"> <span>cause Enumeration Diagram</span> </a></li>
   <li><a href="#https://orcid.org/0000-0003-4280-670X" title="https://orcid.org/0000-0003-4280-670X">Christian Fleiner</a></li>
-  <li><a href="#Consulted" title="https://w3id.org/ishikawa-diagram-ontology#Consulted"> <span>Consulted</span> </a></li>
+  <li><a href="#consulted" title="https://w3id.org/ishikawa-diagram-ontology#consulted"> <span>consulted</span> </a></li>
   <li><a href="#DoE" title="https://w3id.org/ishikawa-diagram-ontology#DoE">Design of experiments</a></li>
   <li><a href="#dispersionAnalysisDiagram" title="https://w3id.org/ishikawa-diagram-ontology#dispersionAnalysisDiagram"> <span>dispersion Analysis Diagram</span> </a></li>
   <li><a href="#https://orcid.org/0009-0008-5942-3397" title="https://orcid.org/0009-0008-5942-3397">Duo Yang</a></li>
   <li><a href="#http://www.w3.org/ns/oa#highlighting" title="http://www.w3.org/ns/oa#highlighting"> <span>highlighting</span> </a></li>
-  <li><a href="#Informed" title="https://w3id.org/ishikawa-diagram-ontology#Informed"> <span>Informed</span> </a></li>
+  <li><a href="#informed" title="https://w3id.org/ishikawa-diagram-ontology#informed"> <span>informed</span> </a></li>
   <li><a href="#https://orcid.org/0000-0002-0791-0176" title="https://orcid.org/0000-0002-0791-0176">Joost Vennekens</a></li>
   <li><a href="#https://www.kuleuven.be/kuleuven/" title="https://www.kuleuven.be/kuleuven/">KU Leuven</a></li>
   <li><a href="#neutralizing" title="https://w3id.org/ishikawa-diagram-ontology#neutralizing"> <span>neutralizing</span> </a></li>
@@ -2235,12 +2189,12 @@ This section provides details for each class and property defined by Ishikawa di
   <li><a href="#productProcessClassificationDiagram" title="https://w3id.org/ishikawa-diagram-ontology#productProcessClassificationDiagram"> <span>product Process Classification Diagram</span> </a></li>
   <li><a href="#qualitativeEvidence" title="https://w3id.org/ishikawa-diagram-ontology#qualitativeEvidence"> <span>qualitative Evidence</span> </a></li>
   <li><a href="#quantitativeEvidence" title="https://w3id.org/ishikawa-diagram-ontology#quantitativeEvidence"> <span>quantitative Evidence</span> </a></li>
-  <li><a href="#Responsible" title="https://w3id.org/ishikawa-diagram-ontology#Responsible"> <span>Responsible</span> </a></li>
+  <li><a href="#responsible" title="https://w3id.org/ishikawa-diagram-ontology#responsible"> <span>responsible</span> </a></li>
   <li><a href="#4S" title="https://w3id.org/ishikawa-diagram-ontology#4S">Service industry 4S method</a></li>
   <li><a href="#8P" title="https://w3id.org/ishikawa-diagram-ontology#8P">Service industry 8P method</a></li>
   <li><a href="#https://orcid.org/0000-0001-7312-3675" title="https://orcid.org/0000-0001-7312-3675">Simon Vandevelde</a></li>
   <li><a href="#STEPC" title="https://w3id.org/ishikawa-diagram-ontology#STEPC">STEPC method</a></li>
-  <li><a href="#Supporting" title="https://w3id.org/ishikawa-diagram-ontology#Supporting"> <span>Supporting</span> </a></li>
+  <li><a href="#supporting" title="https://w3id.org/ishikawa-diagram-ontology#supporting"> <span>supporting</span> </a></li>
   <li><a href="#undecided" title="https://w3id.org/ishikawa-diagram-ontology#undecided"> <span>undecided</span> </a></li>
  </ul>
  <div class="entity" id="5MandE">
@@ -2258,9 +2212,9 @@ This section provides details for each class and property defined by Ishikawa di
    </dd>
   </dl>
  </div>
- <div class="entity" id="Accountable">
-  <h3>Accountable<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#Accountable</p>
+ <div class="entity" id="accountable">
+  <h3>accountable<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#accountable</p>
   <dl class="description">
    <dt>
     belongs to
@@ -2298,9 +2252,9 @@ This section provides details for each class and property defined by Ishikawa di
   <h3>Christian Fleiner<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://orcid.org/0000-0003-4280-670X</p>
  </div>
- <div class="entity" id="Consulted">
-  <h3>Consulted<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#Consulted</p>
+ <div class="entity" id="consulted">
+  <h3>consulted<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#consulted</p>
   <dl class="description">
    <dt>
     belongs to
@@ -2356,9 +2310,9 @@ This section provides details for each class and property defined by Ishikawa di
    </dd>
   </dl>
  </div>
- <div class="entity" id="Informed">
-  <h3>Informed<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#Informed</p>
+ <div class="entity" id="informed">
+  <h3>informed<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#informed</p>
   <dl class="description">
    <dt>
     belongs to
@@ -2436,9 +2390,9 @@ This section provides details for each class and property defined by Ishikawa di
    </dd>
   </dl>
  </div>
- <div class="entity" id="Responsible">
-  <h3>Responsible<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#Responsible</p>
+ <div class="entity" id="responsible">
+  <h3>responsible<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#responsible</p>
   <dl class="description">
    <dt>
     belongs to
@@ -2497,9 +2451,9 @@ This section provides details for each class and property defined by Ishikawa di
    </dd>
   </dl>
  </div>
- <div class="entity" id="Supporting">
-  <h3>Supporting<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#Supporting</p>
+ <div class="entity" id="supporting">
+  <h3>supporting<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ishikawa-diagram-ontology#supporting</p>
   <dl class="description">
    <dt>
     belongs to

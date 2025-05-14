@@ -14,6 +14,7 @@
                                                                                         <https://orcid.org/0009-0008-5942-3397> ;
                                               <http://purl.org/dc/elements/1.1/title> "Ishikawa diagram ontology" ;
                                               <http://purl.org/dc/terms/created> "2025-04-24T12:00:00"^^xsd:dateTime ;
+                                              <http://purl.org/dc/terms/issued> "2025-05-13T12:00:00"^^xsd:dateTime ;
                                               <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                               <http://purl.org/dc/terms/publisher> <https://www.kuleuven.be/kuleuven/> ;
                                               <http://purl.org/vocab/vann/preferredNamespacePrefix> "ishi" ;
@@ -26,6 +27,18 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://ontologydesignpatterns.org/opla-sd#entityPosition
+<http://ontologydesignpatterns.org/opla-sd#entityPosition> rdf:type owl:AnnotationProperty .
+
+
+###  http://ontologydesignpatterns.org/opla-sd#entityPositionX
+<http://ontologydesignpatterns.org/opla-sd#entityPositionX> rdf:type owl:AnnotationProperty .
+
+
+###  http://ontologydesignpatterns.org/opla-sd#entityPositionY
+<http://ontologydesignpatterns.org/opla-sd#entityPositionY> rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/elements/1.1/contributor
 <http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
@@ -130,7 +143,6 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 ###  http://www.w3.org/ns/prov#contributed
 <http://www.w3.org/ns/prov#contributed> rdf:type owl:ObjectProperty ;
                                         owl:inverseOf <http://www.w3.org/ns/prov#wasAttributedTo> ;
-                                        rdfs:domain <http://www.w3.org/ns/prov#Agent> ;
                                         rdfs:range <http://www.w3.org/ns/prov#Entity> ;
                                         rdfs:comment "Attribution is the ascribing of an entity to an agent." ;
                                         rdfs:label "contributed" .
@@ -216,7 +228,6 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 ###  http://www.w3.org/ns/prov#wasAssociatedFor
 <http://www.w3.org/ns/prov#wasAssociatedFor> rdf:type owl:ObjectProperty ;
                                              owl:inverseOf <http://www.w3.org/ns/prov#wasAssociatedWith> ;
-                                             rdfs:domain <http://www.w3.org/ns/prov#Agent> ;
                                              rdfs:range <http://www.w3.org/ns/prov#Activity> ;
                                              rdfs:comment "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity." ;
                                              rdfs:label "wasAssociatedFor" .
@@ -225,7 +236,6 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 ###  http://www.w3.org/ns/prov#wasAssociatedWith
 <http://www.w3.org/ns/prov#wasAssociatedWith> rdf:type owl:ObjectProperty ;
                                               rdfs:domain <http://www.w3.org/ns/prov#Activity> ;
-                                              rdfs:range <http://www.w3.org/ns/prov#Agent> ;
                                               rdfs:comment "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity." ;
                                               rdfs:label "wasAssociatedWith" .
 
@@ -233,7 +243,6 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 ###  http://www.w3.org/ns/prov#wasAttributedTo
 <http://www.w3.org/ns/prov#wasAttributedTo> rdf:type owl:ObjectProperty ;
                                             rdfs:domain <http://www.w3.org/ns/prov#Entity> ;
-                                            rdfs:range <http://www.w3.org/ns/prov#Agent> ;
                                             rdfs:comment "Attribution is the ascribing of an entity to an agent." ;
                                             rdfs:label "wasAttributedTo" .
 
@@ -528,145 +537,249 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 
 ###  http://www.w3.org/ns/oa#Annotation
 <http://www.w3.org/ns/oa#Annotation> rdf:type owl:Class ;
+                                     <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid1 ;
                                      rdfs:comment "The class for Web Annotations." ;
                                      rdfs:label "Annotation" .
+
+_:genid1 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "262.60054007337317"^^xsd:double ;
+          <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "273.27089440190986"^^xsd:double ;
+          rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  http://www.w3.org/ns/oa#FragmentSelector
 <http://www.w3.org/ns/oa#FragmentSelector> rdf:type owl:Class ;
+                                           <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid2 ;
                                            rdfs:comment "The FragmentSelector class is used to record the segment of a representation using the IRI fragment specification defined by the representation's media type." ;
                                            rdfs:label "FragmentSelector" .
+
+_:genid2 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "47.65346144081374"^^xsd:double ;
+          <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "141.37704659353253"^^xsd:double ;
+          rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  http://www.w3.org/ns/oa#Motivation
 <http://www.w3.org/ns/oa#Motivation> rdf:type owl:Class ;
+                                     <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid3 ;
                                      rdfs:comment "The Motivation class is used to record the user's intent or motivation for the creation of the Annotation, or the inclusion of the body or target, that it is associated with." ;
                                      rdfs:label "Motivation" .
+
+_:genid3 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "11.378884177799524"^^xsd:double ;
+          <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "196.4347150289925"^^xsd:double ;
+          rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  http://www.w3.org/ns/oa#SpecificResource
 <http://www.w3.org/ns/oa#SpecificResource> rdf:type owl:Class ;
+                                           <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid4 ;
                                            rdfs:comment "The SpecificResource refers to the source resource and the constraints that make it more specific." ;
                                            rdfs:label "SpecificResource" .
+
+_:genid4 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "39.49400972229051"^^xsd:double ;
+          <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "194.57459388530083"^^xsd:double ;
+          rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  http://www.w3.org/ns/oa#TextualBody
 <http://www.w3.org/ns/oa#TextualBody> rdf:type owl:Class ;
+                                      <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid5 ;
                                       rdfs:comment "In many situations, the Body of the Annotation will be in a text format, and created at the same time as the Annotation without a separate IRI. In these cases, the Body's text can be included as part of the Annotation to avoid having to interact with multiple systems. The Body may also have the features of External Web Resources, including especially the language of the text and the format that it is conveyed in." ;
                                       rdfs:label "TextualBody" .
+
+_:genid5 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "210.76522335428353"^^xsd:double ;
+          <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "138.38587639131916"^^xsd:double ;
+          rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  http://www.w3.org/ns/prov#Activity
 <http://www.w3.org/ns/prov#Activity> rdf:type owl:Class ;
+                                     <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid6 ;
                                      rdfs:comment "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities." ;
                                      rdfs:label "Activity" .
 
-
-###  http://www.w3.org/ns/prov#Agent
-<http://www.w3.org/ns/prov#Agent> rdf:type owl:Class ;
-                                  rdfs:comment "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity." ;
-                                  rdfs:label "Agent" .
+_:genid6 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "141.13734681592098"^^xsd:double ;
+          <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "226.58562189754716"^^xsd:double ;
+          rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  http://www.w3.org/ns/prov#Association
 <http://www.w3.org/ns/prov#Association> rdf:type owl:Class ;
+                                        <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid7 ;
                                         rdfs:comment "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity." ;
                                         rdfs:label "Association" .
+
+_:genid7 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "125.29571885545357"^^xsd:double ;
+          <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "74.61963866965631"^^xsd:double ;
+          rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  http://www.w3.org/ns/prov#Attribution
 <http://www.w3.org/ns/prov#Attribution> rdf:type owl:Class ;
+                                        <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid8 ;
                                         rdfs:comment "Attribution is the ascribing of an entity to an agent. When an entity e is attributed to agent ag, entity e was generated by some unspecified activity that in turn was associated to agent ag. Thus, this relation is useful when the activity is not known, or irrelevant." ;
                                         rdfs:label "Attribution" .
+
+_:genid8 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "124.49059871755664"^^xsd:double ;
+          <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "29.033253085720943"^^xsd:double ;
+          rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  http://www.w3.org/ns/prov#Bundle
 <http://www.w3.org/ns/prov#Bundle> rdf:type owl:Class ;
+                                   <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid9 ;
                                    rdfs:comment "A bundle is a named set of provenance descriptions, and is itself an Entity, so allowing provenance of provenance to be expressed." ;
                                    rdfs:label "Bundle" .
+
+_:genid9 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "166.71073231376351"^^xsd:double ;
+          <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "112.32769843718287"^^xsd:double ;
+          rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  http://www.w3.org/ns/prov#Entity
 <http://www.w3.org/ns/prov#Entity> rdf:type owl:Class ;
+                                   <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid10 ;
                                    rdfs:comment "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary." ;
                                    rdfs:label "Entity" .
+
+_:genid10 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "132.9134137344035"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "213.6443287245277"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  http://www.w3.org/ns/prov#Influence
 <http://www.w3.org/ns/prov#Influence> rdf:type owl:Class ;
+                                      <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid11 ;
                                       rdfs:comment "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation." ;
                                       rdfs:label "Influence" .
+
+_:genid11 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "231.75978966030578"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "135.39395010229686"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  http://www.w3.org/ns/prov#Role
 <http://www.w3.org/ns/prov#Role> rdf:type owl:Class ;
+                                 <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid12 ;
                                  rdfs:comment "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end." ;
                                  rdfs:label "Role" .
+
+_:genid12 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "276.40391538023187"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "184.36380575964503"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Cause
 :Cause rdf:type owl:Class ;
        rdfs:subClassOf :Factor ;
+       <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid13 ;
        rdfs:comment "A cause is a factor where its characteristics has direct influence on the characteristics of another factor." ;
        rdfs:label "Cause" .
+
+_:genid13 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "123.00737762664976"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "184.60500911497746"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#CauseEffect
 :CauseEffect rdf:type owl:Class ;
              rdfs:subClassOf <http://www.w3.org/ns/prov#Influence> ;
+             <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid14 ;
              rdfs:comment "CauseEffect is the capacity of a factor to have an effect on the character of another. The class is used to record qualified cause-effect relationships." ;
              rdfs:label "CauseEffect" .
+
+_:genid14 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "192.77304817678424"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "213.85712373828505"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#CauseEffectType
 :CauseEffectType rdf:type owl:Class ;
+                 <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid15 ;
                  rdfs:comment "The class is used to record the type of cause-effect relationship that exists between at least one cause and at least one effect." ;
                  rdfs:label "CauseEffectType" .
+
+_:genid15 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "93.66061160817183"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "159.28894452827677"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#CertaintyScale
 :CertaintyScale rdf:type owl:Class ;
                 rdfs:subClassOf :WeightScale ;
+                <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid16 ;
                 rdfs:comment "A WeightScale where the numerical weight refers to the certainty." ;
                 rdfs:label "CertaintyScale" .
+
+_:genid16 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "155.00527322145606"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "112.5814291960231"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#DesignPattern
 :DesignPattern rdf:type owl:Class ;
+               <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid17 ;
                rdfs:comment "The class is used to record the design pattern which was applied in the course of the Ishikawa diagram creation. Instances of the class refer to best practices." ;
                rdfs:label "DesignPattern" .
+
+_:genid17 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "175.32226400587672"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "105.48417296868017"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Diagram
 :Diagram rdf:type owl:Class ;
          rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+         <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid18 ;
          rdfs:comment "A visual representation of an Ishikawa diagram model or of a portion of it." ;
          rdfs:label "Diagram" .
+
+_:genid18 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "269.8080784374408"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "248.94200277221174"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#DiagramType
 :DiagramType rdf:type owl:Class ;
+             <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid19 ;
              rdfs:comment "The class is used to record the type of the Ishikawa diagram" ;
              rdfs:label "DiagramType" .
+
+_:genid19 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "145.8908904841744"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "198.25424818705645"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Effect
 :Effect rdf:type owl:Class ;
         rdfs:subClassOf :Factor ;
+        <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid20 ;
         rdfs:comment "An effect is a factor where its characteristics are directly influenced by the characteristics of another factor." ;
         rdfs:label "Effect" .
+
+_:genid20 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "190.3623717800639"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "152.8318002740762"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Evidence
 :Evidence rdf:type owl:Class ;
+          <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid21 ;
           rdfs:comment "Evidence refers to all resources that (partially) validate a cause-effeect relationship." ;
           rdfs:label "Evidence" .
+
+_:genid21 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "156.99065914717298"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "152.07659396192778"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#EvidenceType
 :EvidenceType rdf:type owl:Class ;
+              <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid22 ;
               rdfs:comment "The class is used to specify Evidence resources." ;
               rdfs:label "EvidenceType" .
+
+_:genid22 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "176.05457779258518"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "208.61848644315535"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Factor
@@ -676,115 +789,200 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                                         <http://www.w3.org/ns/prov#Entity>
                                       )
                         ] ;
+        <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid26 ;
         rdfs:comment "A factor is any activity or entity with identified cause-effect relationships in the context of root-cause analysis" ;
         rdfs:label "Factor" .
+
+_:genid26 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "113.3780664588734"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "91.98102992910789"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#ImpactScale
 :ImpactScale rdf:type owl:Class ;
              rdfs:subClassOf :WeightScale ;
+             <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid27 ;
              rdfs:comment "A WeightScale where the numerical weight refers to an imact value. Impact describes the estimated and quantified effect an occurence of a cause-effect relationship might have." ;
              rdfs:label "ImpactScale" .
+
+_:genid27 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "46.46906575234697"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "187.1974842846684"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#MajorCause
 :MajorCause rdf:type owl:Class ;
             rdfs:subClassOf :Cause ;
+            <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid28 ;
             rdfs:comment "A major cause has a direct cause-effect relationship with the root cause in the context of an Ishikawa diagram. When design patterns are used, major causes are abstract causes which are commonly referred to as categories." ;
             rdfs:label "MajorCause" .
+
+_:genid28 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "3.3291512670125463"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "51.82777428099638"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Model
 :Model rdf:type owl:Class ;
        rdfs:subClassOf <http://www.w3.org/ns/prov#Bundle> ;
+       <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid29 ;
        rdfs:comment "The Model class is used to record factors and their cause-effect relationships. It can be seen as the data model of an Ishikawa diagram." ;
        rdfs:label "Model" .
+
+_:genid29 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "194.4887213176196"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "60.54246765747193"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#ProbabilityScale
 :ProbabilityScale rdf:type owl:Class ;
                   rdfs:subClassOf :WeightScale ;
+                  <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid30 ;
                   rdfs:comment "A WeightScale where the numerical weight refers to a probability value. Probability describes the likelihood of occurence of a cause-effect relationship." ;
                   rdfs:label "ProbabilityScale" .
+
+_:genid30 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "23.151223151161403"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "26.32028108643747"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Problem
 :Problem rdf:type owl:Class ;
          rdfs:subClassOf :Effect ;
+         <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid31 ;
          rdfs:comment "A problem is a factor which does not influence any known factor in the context of an Ishikawa diagram." ;
          rdfs:label "Problem" .
+
+_:genid31 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "258.97498324737865"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "61.931412441922205"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#RelevanceScale
 :RelevanceScale rdf:type owl:Class ;
                 rdfs:subClassOf :WeightScale ;
+                <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid32 ;
                 rdfs:comment "A WeightScale where the numerical weight refers to a relevance value. Relevance describes the importance a cause-effect relationship has in the context of a root-cause analysis." ;
                 rdfs:label "RelevanceScale" .
+
+_:genid32 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "204.2452469668632"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "287.4680312533"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#RiskScale
 :RiskScale rdf:type owl:Class ;
            rdfs:subClassOf :WeightScale ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid33 ;
            rdfs:comment "A WeightScale where the numerical weight refers to a risk value. Risk describes the estimated potential damage the occurence of a cause-effect relationship might have. Risk is often calculated as the product of probability and impact." ;
            rdfs:label "RiskScale" .
+
+_:genid33 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "292.09895184288615"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "72.36217107678436"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Role
 :Role rdf:type owl:Class ;
       rdfs:subClassOf <http://www.w3.org/ns/prov#Role> ;
+      <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid34 ;
       rdfs:comment "A role is the function of an agent with respect to a factor. The ontology incorporates role instances adhering to the RASCI model." ;
       rdfs:label "Role" .
+
+_:genid34 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "65.83212502449234"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "107.44791090828923"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#RootCause
 :RootCause rdf:type owl:Class ;
            rdfs:subClassOf :Cause ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid35 ;
            rdfs:comment "A root cause is a factor which is not influenced by any known factor in the context of an Ishikawa diagram." ;
            rdfs:label "RootCause" .
+
+_:genid35 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "11.375887232578583"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "247.23992497186617"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Technique
 :Technique rdf:type owl:Class ;
            rdfs:subClassOf <https://w3id.org/pko#Procedure> ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid36 ;
            rdfs:comment "An established activity with the goal of peperapring or creating an Ishikawa diagram" ;
            rdfs:label "Technique" .
+
+_:genid36 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "2.778757559180475"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "107.75919065025721"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Weight
 :Weight rdf:type owl:Class ;
+        <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid37 ;
         rdfs:comment "The weight class is used to assign values to a cause-effect relationship for priorization. The intended meaning of the weight depends on the referenced WeightScale" ;
         rdfs:label "Weight" .
+
+_:genid37 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "215.53292469569942"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "291.04154394313963"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#WeightRange
 :WeightRange rdf:type owl:Class ;
+             <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid38 ;
              rdfs:comment "The WeightRange class is used to specify and name subranges." ;
              rdfs:label "WeightRange" .
+
+_:genid38 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "91.17107303325758"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "250.6976235311414"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#WeightScale
 :WeightScale rdf:type owl:Class ;
+             <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid39 ;
              rdfs:comment "A class that specifies the min and max range of values for the weight of a cause-effect relationship." ;
              rdfs:label "WeightScale" .
+
+_:genid39 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "179.4398154124525"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "103.76174220733877"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#Workshop
 :Workshop rdf:type owl:Class ;
           rdfs:subClassOf <https://w3id.org/pko#ProcedureExecution> ;
+          <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid40 ;
           rdfs:comment "A structured or guided activity to create an Ishikawa diagram" ;
           rdfs:label "Workshop" .
+
+_:genid40 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "255.87952327805928"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "3.7777315637728495"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/pko#Procedure
 <https://w3id.org/pko#Procedure> rdf:type owl:Class ;
+                                 <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid41 ;
                                  rdfs:comment "A Procedure represents a sequence of actions to be executed in order to achieve a desired outcome." ;
                                  rdfs:label "Procedure" .
+
+_:genid41 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "8.329808236279934"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "218.42590320776011"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 ###  https://w3id.org/pko#ProcedureExecution
 <https://w3id.org/pko#ProcedureExecution> rdf:type owl:Class ;
+                                          <http://ontologydesignpatterns.org/opla-sd#entityPosition> _:genid42 ;
                                           rdfs:comment "A Procedure Execution is an Activity representing the execution of a certain Procedure, performed by one or more Agents, during a time interval." ;
                                           rdfs:label "ProcedureExecution" .
+
+_:genid42 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "3.5740530814539975"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "195.96139264701569"^^xsd:double ;
+           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 
 #################################################################
@@ -821,31 +1019,11 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                                         <http://xmlns.com/foaf/0.1/name> "Duo Yang" .
 
 
-###  https://w3id.org/ishikawa-diagram-ontology#Accountable
-:Accountable rdf:type owl:NamedIndividual ,
-                      :Role .
-
-
-###  https://w3id.org/ishikawa-diagram-ontology#Consulted
-:Consulted rdf:type owl:NamedIndividual ,
-                    :Role .
-
-
 ###  https://w3id.org/ishikawa-diagram-ontology#DoE
 :DoE rdf:type owl:NamedIndividual ,
               :DesignPattern ;
      rdfs:comment "The categories are \"uncontrollable factors\", \"controllable factors\", \"blockable nuisance factors\", and \"held-constant factors\""@en ;
      rdfs:label "Design of experiments"@en .
-
-
-###  https://w3id.org/ishikawa-diagram-ontology#Informed
-:Informed rdf:type owl:NamedIndividual ,
-                   :Role .
-
-
-###  https://w3id.org/ishikawa-diagram-ontology#Responsible
-:Responsible rdf:type owl:NamedIndividual ,
-                      :Role .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#STEPC
@@ -855,9 +1033,9 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
        rdfs:label "STEPC method"@en .
 
 
-###  https://w3id.org/ishikawa-diagram-ontology#Supporting
-:Supporting rdf:type owl:NamedIndividual ,
-                     :Role .
+###  https://w3id.org/ishikawa-diagram-ontology#accountable
+:accountable rdf:type owl:NamedIndividual ,
+                      :Role .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#aggravating
@@ -870,9 +1048,19 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                                   :DiagramType .
 
 
+###  https://w3id.org/ishikawa-diagram-ontology#consulted
+:consulted rdf:type owl:NamedIndividual ,
+                    :Role .
+
+
 ###  https://w3id.org/ishikawa-diagram-ontology#dispersionAnalysisDiagram
 :dispersionAnalysisDiagram rdf:type owl:NamedIndividual ,
                                     :DiagramType .
+
+
+###  https://w3id.org/ishikawa-diagram-ontology#informed
+:informed rdf:type owl:NamedIndividual ,
+                   :Role .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#neutralizing
@@ -898,6 +1086,16 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
 ###  https://w3id.org/ishikawa-diagram-ontology#quantitativeEvidence
 :quantitativeEvidence rdf:type owl:NamedIndividual ,
                                :EvidenceType .
+
+
+###  https://w3id.org/ishikawa-diagram-ontology#responsible
+:responsible rdf:type owl:NamedIndividual ,
+                      :Role .
+
+
+###  https://w3id.org/ishikawa-diagram-ontology#supporting
+:supporting rdf:type owl:NamedIndividual ,
+                     :Role .
 
 
 ###  https://w3id.org/ishikawa-diagram-ontology#undecided
@@ -931,5 +1129,9 @@ Ishikawa diagrams result from (iterative) workshops. Thus, the ontology includes
                                     rdfs:label "KU Leuven" ;
                                     <http://xmlns.com/foaf/0.1/name> "KU Leuven" .
 
+
+_:genid43 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "117.47579526926195"^^xsd:double ;
+          <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "108.68761168108256"^^xsd:double ;
+          rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
