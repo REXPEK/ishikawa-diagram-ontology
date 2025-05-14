@@ -22,7 +22,7 @@ The ontology reuses existing ontologies, including the [Web Annotation Ontology]
 For designing the ontology, we adopted the [Linked Open Terms (LOT) methodology](https://zenodo.org/records/2539305). 
 
 
-See [documentation](w3id.org/ishikawa-diagram-ontology)
+See [documentation](https://w3id.org/ishikawa-diagram-ontology)
 
 
 ## Use Cases
